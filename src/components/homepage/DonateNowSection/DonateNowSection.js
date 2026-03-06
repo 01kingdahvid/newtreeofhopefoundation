@@ -21,6 +21,7 @@ const DonateNowSection = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    phoneNumber: "",
     country: "",
     program: "",
     note: "",
@@ -136,10 +137,11 @@ const DonateNowSection = () => {
             onChange={(e)=>setForm({...form,email:e.target.value})}
           />
 
-          <textarea
-            placeholder="Optional message"
-            className={styles.textarea}
-            onChange={(e)=>setForm({...form,note:e.target.value})}
+          <input
+            className={styles.input}
+            placeholder="Phone Number"
+            type="number"
+            onChange={(e)=>setForm({...form,phoneNumber:e.target.value})}
           />
 
           <button
