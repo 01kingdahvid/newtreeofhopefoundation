@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./DonateNowSection.module.css";
 
 const cryptoWallets = {
@@ -11,12 +11,14 @@ const cryptoWallets = {
 };
 
 const DonateNowSection = () => {
-
   const [step, setStep] = useState(1);
   const [amount, setAmount] = useState("");
+  const [selectedAmount, setSelectedAmount] = useState(null);
   const [crypto, setCrypto] = useState("");
   const [wallet, setWallet] = useState("");
   const [time, setTime] = useState(900);
+  const [errors, setErrors] = useState({});
+  const modalRef = useRef();
 
   const [form, setForm] = useState({
     name: "",
@@ -29,6 +31,22 @@ const DonateNowSection = () => {
     finalAmount: "",
   });
 
+  // Close modal when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (modalRef.current && !modalRef.current.contains(e.target)) {
+        setStep(1);
+      }
+    };
+    if (step === 6) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [step]);
+
+  // Timer logic
   useEffect(() => {
     if (step === 4 && time > 0) {
       const timer = setInterval(() => setTime(time - 1), 1000);
@@ -36,16 +54,37 @@ const DonateNowSection = () => {
     }
   }, [time, step]);
 
+  // Handle amount selection
+  const handleAmountSelect = (a) => {
+    setAmount(a);
+    setSelectedAmount(a);
+  };
+
+  // Handle custom amount input
+  const handleAmountInput = (e) => {
+    const value = e.target.value;
+    if (!isNaN(value) && value >= 0) {
+      setAmount(value);
+      setSelectedAmount(null);
+      setErrors({ ...errors, amount: "" });
+    } else {
+      setErrors({ ...errors, amount: "Please enter a valid amount" });
+    }
+  };
+
+  // Copy wallet address
   const copyAddress = () => {
     navigator.clipboard.writeText(wallet);
   };
 
+  // Handle crypto selection
   const handleCrypto = (c) => {
     setCrypto(c);
     setWallet(cryptoWallets[c]);
     setStep(4);
   };
 
+  // Format timer
   const formatTime = () => {
     const m = Math.floor(time / 60);
     const s = time % 60;
@@ -54,39 +93,34 @@ const DonateNowSection = () => {
 
   return (
     <section className={styles.section}>
-
-      {/* STEP 1 DONATION FORM */}
-
+      {/* STEP 1: DONATION FORM */}
       {step === 1 && (
         <div className={styles.card}>
-
           <span className={styles.badge}>GIVE NOW</span>
-
-          <h1 className={styles.title}>
-            CHANGE LIVES INSTANTLY
-          </h1>
+          <h1 className={styles.title}>CHANGE LIVES INSTANTLY</h1>
 
           <div className={styles.amountRow}>
-            {[50,100,250,500,1000].map(a=>(
+            {[50, 100, 250, 500, 1000].map((a) => (
               <button
                 key={a}
-                onClick={()=>setAmount(a)}
-                className={styles.amountBtn}
+                onClick={() => handleAmountSelect(a)}
+                className={`${styles.amountBtn} ${selectedAmount === a ? styles.selected : ""}`}
               >
                 ${a}
               </button>
             ))}
-
             <input
               placeholder="Other"
               className={styles.amountInput}
-              onChange={(e)=>setAmount(e.target.value)}
+              value={amount}
+              onChange={handleAmountInput}
             />
           </div>
+          {errors.amount && <p style={{ color: "red" }}>{errors.amount}</p>}
 
           <select
             className={styles.input}
-            onChange={(e)=>setForm({...form,country:e.target.value})}
+            onChange={(e) => setForm({ ...form, country: e.target.value })}
           >
             <option>Select Country</option>
             <option>South Korea</option>
@@ -96,7 +130,7 @@ const DonateNowSection = () => {
 
           <select
             className={styles.input}
-            onChange={(e)=>setForm({...form,program:e.target.value})}
+            onChange={(e) => setForm({ ...form, program: e.target.value })}
           >
             <option>Select Program</option>
             <option>Food Relief</option>
@@ -105,159 +139,126 @@ const DonateNowSection = () => {
           </select>
 
           <label className={styles.checkbox}>
-            <input type="checkbox"/>
+            <input type="checkbox" />
             I&apos;d like to help cover the transaction fees
           </label>
 
           <button
             className={styles.primaryBtn}
-            onClick={()=>setStep(2)}
+            onClick={() => {
+              if (!amount) {
+                setErrors({ ...errors, amount: "Please select or enter an amount" });
+              } else {
+                setStep(2);
+              }
+            }}
           >
             DONATE NOW
           </button>
-
         </div>
       )}
 
-      {/* STEP 2 USER INFO */}
-
+      {/* STEP 2: USER INFO */}
       {step === 2 && (
         <div className={styles.card}>
           <h2>Donor Information</h2>
-
           <input
             className={styles.input}
             placeholder="Full Name"
-            onChange={(e)=>setForm({...form,name:e.target.value})}
+            onChange={(e) => setForm({ ...form, name: e.target.value })}
           />
-
           <input
             className={styles.input}
             placeholder="Email Address"
-            onChange={(e)=>setForm({...form,email:e.target.value})}
+            onChange={(e) => setForm({ ...form, email: e.target.value })}
           />
-
           <input
             className={styles.input}
             placeholder="Phone Number"
             type="number"
-            onChange={(e)=>setForm({...form,phoneNumber:e.target.value})}
+            onChange={(e) => setForm({ ...form, phoneNumber: e.target.value })}
           />
-
-          <button
-            className={styles.primaryBtn}
-            onClick={()=>setStep(3)}
-          >
+          <button className={styles.primaryBtn} onClick={() => setStep(3)}>
             Continue
           </button>
-
         </div>
       )}
 
-      {/* STEP 3 CRYPTO SELECT */}
-
+      {/* STEP 3: CRYPTO SELECT */}
       {step === 3 && (
         <div className={styles.card}>
-
           <h2>Select Crypto Asset</h2>
-
           <div className={styles.cryptoRow}>
-            {Object.keys(cryptoWallets).map(c=>(
+            {Object.keys(cryptoWallets).map((c) => (
               <button
                 key={c}
-                onClick={()=>handleCrypto(c)}
+                onClick={() => handleCrypto(c)}
                 className={styles.cryptoBtn}
               >
                 {c}
               </button>
             ))}
           </div>
-
         </div>
       )}
 
-      {/* STEP 4 PAYMENT */}
-
+      {/* STEP 4: PAYMENT */}
       {step === 4 && (
         <div className={styles.card}>
-
-          <div className={styles.timer}>
-            {formatTime()}
-          </div>
-
+          <div className={styles.timer}>{formatTime()}</div>
           <h2>Send {crypto}</h2>
-
           <img
             src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${wallet}`}
             className={styles.qr}
           />
-
           <div className={styles.walletBox}>
             {wallet}
-
-            <button
-              className={styles.copy}
-              onClick={copyAddress}
-            >
+            <button className={styles.copy} onClick={copyAddress}>
               Copy
             </button>
           </div>
-
-          <button
-            className={styles.primaryBtn}
-            onClick={()=>setStep(5)}
-          >
+          <button className={styles.primaryBtn} onClick={() => setStep(5)}>
             I've Sent The Money
           </button>
-
         </div>
       )}
 
-      {/* STEP 5 CONFIRMATION */}
-
+      {/* STEP 5: CONFIRMATION */}
       {step === 5 && (
         <div className={styles.card}>
-
           <h2>Confirm Transaction</h2>
-
           <input
             className={styles.input}
             placeholder="Transaction Hash"
-            onChange={(e)=>setForm({...form,hash:e.target.value})}
+            onChange={(e) => setForm({ ...form, hash: e.target.value })}
           />
-
           <input
             className={styles.input}
             placeholder="Final Amount Sent"
-            onChange={(e)=>setForm({...form,finalAmount:e.target.value})}
+            onChange={(e) => setForm({ ...form, finalAmount: e.target.value })}
           />
-
           <textarea
             placeholder="Optional note"
             className={styles.textarea}
           />
-
-          <button
-            className={styles.primaryBtn}
-            onClick={()=>setStep(6)}
-          >
+          <button className={styles.primaryBtn} onClick={() => setStep(6)}>
             Submit Donation
           </button>
-
         </div>
       )}
 
       {/* THANK YOU MODAL */}
-
       {step === 6 && (
         <div className={styles.modal}>
-          <div className={styles.modalCard}>
+          <div className={styles.modalCard} ref={modalRef}>
+            <button className={styles.modalClose} onClick={() => setStep(1)}>
+              &times;
+            </button>
             <h2>Thank You ❤️</h2>
             <p>Your donation helps change lives.</p>
           </div>
         </div>
       )}
-
     </section>
   );
 };

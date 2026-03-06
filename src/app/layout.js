@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer/Footer";
 
 
 export const metadata = {
-  title: "NGO Website",
+  title: "New Tree of Hope Foundation - UTHF",
   description: "Relief and Development NGO",
 };
 

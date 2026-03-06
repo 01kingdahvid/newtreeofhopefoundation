@@ -49,12 +49,15 @@
   margin-right: 8px;
 }
 
+/* Amount buttons row */
 .amountRow {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
+/* Amount button styling */
 .amountBtn {
   background: white;
   border: none;
@@ -66,10 +69,20 @@
   font-weight: 500;
   line-height: 14px;
   color: rgb(1, 1, 1);
+  min-width: 80px;
+  text-align: center;
 }
 
+/* Selected amount button */
+.amountBtn.selected {
+  background: #07b2f3;
+  color: white;
+}
+
+/* Amount input */
 .amountInput {
   flex: 1;
+  min-width: 120px;
   padding: 14px;
   border-radius: 6px;
   border: none;
@@ -188,6 +201,18 @@
   z-index: 999;
 }
 
+/* Modal close icon */
+.modalClose {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+}
+
 .modalCard {
   background: white;
   padding: 40px;
@@ -223,7 +248,12 @@
   }
 
   .amountRow {
-    flex-direction: column;
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+  .amountBtn {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
   }
 }
 

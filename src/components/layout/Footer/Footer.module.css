@@ -131,7 +131,6 @@
   margin-top: 15px;
   font-size: 13px;
   opacity: 0.8;
-  line-height: 1.5;
 }
 
 .bottom {
@@ -141,7 +140,6 @@
   font-family: Figtree, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
   color: rgb(18, 18, 18);
   background-color: white;
 }
