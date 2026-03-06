@@ -1,0 +1,171 @@
+.section {
+  background: #e6f7ff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.subheading {
+  color: #1da1d2;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16.8px;
+  font-weight: 500;
+  line-height: 20.8px;
+  color: rgb(0, 173, 238);
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 56px;
+  color: rgb(18, 18, 18);
+  margin-bottom: 20px;
+}
+
+.description {
+  max-width: 700px;
+  margin: auto;
+  font-family: Figtree, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(18, 18, 18);
+  margin-bottom: 50px;
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 20px;
+  border: 1px solid #75c6e6;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card span {
+  margin-top: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.card:hover {
+  background: white;
+  transform: translateY(-4px);
+}
+
+.card span {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 15.8px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: rgb(18, 18, 18);
+  text-transform: uppercase;
+}
+
+/* ICON */
+
+.icon {
+  width: 80px;
+  height: 80px;
+  stroke: #1a1a1a;
+  stroke-width: 2;
+  fill: none;
+}
+
+/* BUTTON */
+
+.button {
+  background: linear-gradient(135deg, #1da1d2, #0a7eb2);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+/* TRANSLATE FLOAT BUTTON */
+
+.translate {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #1da1d2;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.translate svg {
+  width: 26px;
+  height: 26px;
+  stroke: white;
+  stroke-width: 2;
+  fill: none;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+}
+
+/* Small Tablet */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .section {
+    padding: 60px 15px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

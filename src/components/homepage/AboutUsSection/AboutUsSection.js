@@ -32,7 +32,7 @@ const AboutUsSection = () => {
           </p>
 
           <button className={styles.cta}>
-            LEARN ABOUT THF
+            LEARN ABOUT NTHF
           </button>
         </div>
 

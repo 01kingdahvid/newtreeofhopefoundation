@@ -11,7 +11,7 @@ const OurProgramsSection = () => {
       <div className={styles.header}>
         <p className={styles.smallTitle}>OUR GLOBAL PROGRAMS</p>
 
-        <h2 className={styles.title}>
+        <h2 className={styles.title}> 
           EXPLORE OUR HUMANITARIAN PROGRAMS
         </h2>
 

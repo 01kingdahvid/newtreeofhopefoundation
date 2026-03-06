@@ -7,7 +7,7 @@
 .card {
   /* max-width:900px; */
   width: 100%;
-  background: #1597c9;
+  background: #07b2f3;
   padding: 40px;
   border-radius: 20px;
   display: flex;
@@ -18,17 +18,35 @@
 
 .title {
   text-align: center;
-  font-size: 36px;
-  font-weight: 700;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 35.2px;
+  font-weight: 600;
+  line-height: 35.2px;
+  color: rgb(255, 255, 255);
 }
 
 .badge {
   margin: auto;
-  background: white;
-  color: #1597c9;
+  background: #63d1f0;
   padding: 6px 16px;
   border-radius: 20px;
+  font-family: Figtree, sans-serif;
   font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: rgb(255, 255, 255);
+}
+
+.checkbox {
+  font-family: Figtree, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgb(18, 18, 18);
+}
+
+.checkbox input {
+  margin-right: 8px;
 }
 
 .amountRow {
@@ -43,6 +61,11 @@
   padding: 14px 20px;
   border-radius: 6px;
   cursor: pointer;
+  font-family: Figtree, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: rgb(1, 1, 1);
 }
 
 .amountInput {
@@ -50,12 +73,22 @@
   padding: 14px;
   border-radius: 6px;
   border: none;
+  font-family: Figtree, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgb(0, 0, 0);
 }
 
 .input {
   padding: 14px;
   border-radius: 6px;
   border: none;
+  font-family: Figtree, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgb(0, 0, 0);
 }
 
 .textarea {
@@ -63,16 +96,36 @@
   border-radius: 6px;
   border: none;
   min-height: 100px;
+  font-family: Figtree, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
 }
 
 .primaryBtn {
   padding: 16px;
-  background: #0c6c8e;
+  background: #60d0ed;
   border: none;
   border-radius: 40px;
+  font-family: Figtree, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
   color: white;
-  font-weight: 600;
   cursor: pointer;
+}
+
+.primaryBtn:hover {
+  font-family: Figtree, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: rgb(151, 151, 151);
+}
+
+.primaryBtn :disabled {
+  background: #32bef1;
 }
 
 .cryptoRow {

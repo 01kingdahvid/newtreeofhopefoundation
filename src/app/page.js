@@ -1,5 +1,6 @@
 import AboutUsSection from '@/components/homepage/AboutUsSection/AboutUsSection'
 import DonateNowSection from '@/components/homepage/DonateNowSection/DonateNowSection'
+import FeaturedLocalProject from '@/components/homepage/FeaturedLocalProject/FeaturedLocalProject'
 import HeroSlider from '@/components/homepage/HeroSlider/HeroSlider'
 import OurProgramsSection from '@/components/homepage/OurProgramsSection/OurProgramsSection'
 
@@ -10,6 +11,7 @@ export default function Home () {
       <AboutUsSection/>
       <DonateNowSection/>
       <OurProgramsSection/>
+      <FeaturedLocalProject/>
     </main>
   )
 }

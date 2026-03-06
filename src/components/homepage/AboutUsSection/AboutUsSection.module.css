@@ -78,7 +78,12 @@
 }
 
 .cta:hover {
-  background: #256528;
+  background: #5ecefa;
+  font-family: Figtree, sans-serif;
+  font-size: 14.4px;
+  font-weight: 500;
+  line-height: 15.84px;
+  color: white;
   transform: translateY(-2px);
 }
 

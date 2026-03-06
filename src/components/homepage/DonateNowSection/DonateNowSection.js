@@ -105,7 +105,7 @@ const DonateNowSection = () => {
 
           <label className={styles.checkbox}>
             <input type="checkbox"/>
-            I'd like to help cover the transaction fees
+            I&apos;d like to help cover the transaction fees
           </label>
 
           <button

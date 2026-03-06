@@ -52,7 +52,7 @@ const Footer = () => {
             <li>ABOUT US</li>
             <li>OUR STORY</li>
             <li>OUR PROGRAMS</li>
-            <li>WHERE WE WORK</li>
+            <li>CONTACT US</li>
             <li>IMPACT</li>
             <li>WAYS TO HELP</li>
             <li>PARTNERSHIPS</li>
@@ -106,7 +106,7 @@ const Footer = () => {
           </button>
 
           <p className={styles.note}>
-            THF is a registered nonprofit humanitarian organization.
+            NTHF is a registered nonprofit humanitarian organization.
             Donations help support vulnerable communities worldwide.
           </p>
 
