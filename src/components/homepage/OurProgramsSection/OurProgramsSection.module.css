@@ -15,7 +15,6 @@
   font-family: "Barlow Condensed", sans-serif;
   font-size: 16.8px;
   font-weight: 600;
-  line-height: 30.8px;
   color: rgb(255, 255, 255);
 }
 
@@ -23,7 +22,6 @@
   font-family: "Barlow Condensed", sans-serif;
   font-size: 38px;
   font-weight: 600;
-  line-height: 56px;
   color: rgb(255, 255, 255);
   /* margin: 10px 0 20px; */
 }
@@ -36,7 +34,6 @@
   font-family: Figtree, sans-serif;
   font-size: 14.4px;
   font-weight: 500;
-  line-height: 15.84px;
   color: black;
   cursor: pointer;
 }
@@ -45,7 +42,6 @@
   font-family: Figtree, sans-serif;
   font-size: 14.4px;
   font-weight: 500;
-  line-height: 15.84px;
   color: rgb(153, 226, 252);
 }
 
@@ -88,11 +84,11 @@
   text-transform: uppercase;
 }
 
-.overlay p{
-    font-family: "Barlow Condensed", sans-serif;
+.overlay p {
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 15px;
   font-weight: 500;
-  color: rgb(255, 255, 255); 
+  color: rgb(255, 255, 255);
 }
 
 .subtitle {
