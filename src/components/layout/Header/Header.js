@@ -11,10 +11,18 @@ export default function Header() {
       </div>
 
       <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <span>NTHF</span>
-          <small>New Tree Of Hope Foundation</small>
-        </div>
+        <div className={styles.logoIcon}>
+            <img
+              src='/images/logos/nthf-logo.png'
+              alt='New Tree of Hope Foundation helping children'
+              className={styles.logo}
+            />
+
+            <div className={styles.logo}>
+              <span>NTHF</span>
+              <small>New Tree Of Hope Foundation</small>
+            </div>
+          </div>
 
         <ul className={styles.navLinks}>
           <li>Home</li>

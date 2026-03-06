@@ -1,16 +1,24 @@
-import React from "react";
-import styles from "./Footer.module.css";
+import React from 'react'
+import styles from './Footer.module.css'
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-
       <div className={styles.container}>
-
         {/* COLUMN 1 */}
         <div className={styles.col}>
-          <h2 className={styles.logo}>THF</h2>
-          <p className={styles.tagline}>TREE OF HOPE FOUNDATION</p>
+          <div className={styles.logoIcon}>
+            <img
+              src='/images/logos/nthf-logo.png'
+              alt='New Tree of Hope Foundation helping children'
+              className={styles.logo}
+            />
+
+            <div className={styles.logo}>
+              <span>NTHF</span>
+              <small>New Tree Of Hope Foundation</small>
+            </div>
+          </div>
 
           <ul className={styles.contact}>
             <li>📍 Seoul, South Korea</li>
@@ -18,31 +26,26 @@ const Footer = () => {
             <li>✉️ contact@treeofhopefoundation.org</li>
           </ul>
 
-          <div className={styles.socials}>
+          {/* <div className={styles.socials}>
             <span>f</span>
             <span>x</span>
             <span>ig</span>
             <span>yt</span>
             <span>t</span>
-          </div>
-
+          </div> */}
         </div>
-
 
         {/* COLUMN 2 */}
         <div className={styles.col}>
           <h3>OTHER WAYS TO DONATE</h3>
           <ul>
-            <li>Zelle: donate@thf.org</li>
-            <li>PayPal: donate@thf.org</li>
-            <li>Bank Transfer Available</li>
+            <li>BTC: donate@nthf.org</li>
+            <li>ETH: donate@nthf.org</li>
+            <li>SOL: sgshssheyye</li>
           </ul>
 
-          <button className={styles.donateBtn}>
-            DONATE
-          </button>
+          <button className={styles.donateBtn}>DONATE</button>
         </div>
-
 
         {/* COLUMN 3 */}
         <div className={styles.col}>
@@ -59,9 +62,7 @@ const Footer = () => {
             <li>EVENTS</li>
           </ul>
 
-          <h4 className={styles.subheading}>
-            LEGAL & POLICY
-          </h4>
+          <h4 className={styles.subheading}>LEGAL & POLICY</h4>
 
           <ul>
             <li>LEGAL DOCUMENTS</li>
@@ -70,7 +71,6 @@ const Footer = () => {
             <li>PRIVACY POLICY</li>
           </ul>
         </div>
-
 
         {/* COLUMN 4 */}
         <div className={styles.col}>
@@ -90,36 +90,27 @@ const Footer = () => {
           </ul>
         </div>
 
-
         {/* COLUMN 5 */}
         <div className={styles.col}>
           <h3>JOIN OUR MAILING LIST</h3>
 
-          <input
-            type="email"
-            placeholder="Email"
-            className={styles.input}
-          />
+          <input type='email' placeholder='Email' className={styles.input} />
 
-          <button className={styles.subscribeBtn}>
-            SUBSCRIBE
-          </button>
+          <button className={styles.subscribeBtn}>SUBSCRIBE</button>
 
           <p className={styles.note}>
-            NTHF is a registered nonprofit humanitarian organization.
-            Donations help support vulnerable communities worldwide.
+            NTHF is a registered nonprofit humanitarian organization. Donations
+            help support vulnerable communities worldwide.
           </p>
-
         </div>
-
       </div>
 
       <div className={styles.bottom}>
-        © {new Date().getFullYear()} New Tree of Hope Foundation. All Rights Reserved.
+        © {new Date().getFullYear()} New Tree of Hope Foundation. All Rights
+        Reserved.
       </div>
-
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -52,8 +52,26 @@
   padding: 18px 6%;
 }
 
+.logoIcon {
+  display: flex;
+}
+
+.logoIcon img {
+  width: 52px;
+  height: 52px;
+  font-weight: 700;
+  margin-right: 3px;
+  padding: 0px;
+}
+
+.logo {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
 .logo span {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -61,6 +79,7 @@
   display: block;
   font-size: 10px;
   letter-spacing: 1px;
+  margin-bottom: 1rem;
 }
 
 .navLinks {
