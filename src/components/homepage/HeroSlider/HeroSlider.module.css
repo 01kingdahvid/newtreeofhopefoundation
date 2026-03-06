@@ -1,0 +1,178 @@
+.hero {
+  width: 100%;
+  height: 650px;
+  background: #004660;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-top: 90px; /* Adjust if your header is fixed and 80px tall */
+}
+
+/* particle pattern */
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/shared/hero-section-bg.png") !important;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 0; /* Below .inner */
+}
+
+/* layout */
+
+.inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 6%;
+  position: relative;
+  z-index: 2;
+}
+
+/* TEXT */
+
+.content {
+  max-width: 600px;
+  color: white;
+}
+
+.content h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.content button {
+  background: #2aa7d6;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.content button:hover {
+  background: #1e8fb8;
+}
+
+/* IMAGE */
+
+.imageWrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrap img {
+  max-width: 520px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* arrows */
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  font-size: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+/* -------------------- */
+/* RESPONSIVE */
+/* -------------------- */
+
+/* Desktop */
+
+@media (max-width: 1200px) {
+  .hero {
+    height: 560px;
+  }
+
+  .content h1 {
+    font-size: 48px;
+  }
+
+  .imageWrap img {
+    max-width: 420px;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 120px 0 80px;
+  }
+
+  .inner {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+
+  .imageWrap {
+    margin-top: 40px;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+}
+
+/* Small Tablet */
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 120px; /* Adjust if your header is fixed and 80px tall */
+  }
+
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  .imageWrap img {
+    max-width: 300px;
+  }
+
+  .arrow {
+    display: none;
+  }
+}

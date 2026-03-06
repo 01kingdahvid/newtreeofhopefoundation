@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Emergency Relief & Disaster Response",
+    "subtitle": "Immediate aid in crisis",
+    "description": "NTHF provides immediate assistance to communities affected by conflict, natural disasters, and other crises. THF delivers customized food parcels, clean water, shelter materials, medical supplies, and essential non-food items to help families survive and recover.",
+    "image": "/images/shared/hero-section-give-kazat.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Food Security",
+    "subtitle": "Hunger Relief",
+    "description": "NTHF combats hunger and malnutrition through regular food distributions and nutritional support for families. THF promotes long-term food sustainability to strengthen community resilience.",
+    "image": "/images/shared/hero-section-give-kazat.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Water, Sanitation & Hygiene (WASH)",
+    "subtitle": "Access to clean water & hygiene",
+    "description": "NTHF provides safe, dignified and protective shelter and water access for displaced families and vulnerable communities affected by conflict and disasters.",
+    "image": "/images/shared/hero-section-give-kazat.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Health",
+    "subtitle": "Restoring health & medical support",
+    "description": "NTHF sends shipments of medical supplies to countries in crisis ensuring families in need can access essential treatment and healthcare services.",
+    "image": "/images/shared/hero-section-give-kazat.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Shelter",
+    "subtitle": "Providing safe durable housing",
+    "description": "NTHF provides safe, dignified and protective shelter for displaced families and vulnerable communities affected by conflict or disasters.",
+    "image": "/images/shared/hero-section-give-kazat.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Child Protection & Widow Family Assistance",
+    "subtitle": "Safeguarding vulnerable children",
+    "description": "NTHF supports orphaned and vulnerable children with education, healthcare, nutrition and psychosocial care ensuring every child grows safely.",
+    "image": "/images/shared/hero-section-give-kazat.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Education",
+    "subtitle": "Access to learning and self-reliance",
+    "description": "NTHF provides access to quality education, school supplies and vocational training opportunities to empower youth and adults.",
+    "image": "/images/shared/hero-section-give-kazat.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Faith-based Giving",
+    "subtitle": "Bringing relief & joy",
+    "description": "NTHF provides seasonal support including Ramadan food baskets, Eid gifts and Qurbani meat distribution to help families celebrate important occasions.",
+    "image": "/images/shared/hero-section-give-kazat.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Livelihoods & Women Empowerment",
+    "subtitle": "Empowering communities to thrive",
+    "description": "NTHF focuses on empowering vulnerable communities by helping individuals build sustainable livelihoods and economic independence.",
+    "image": "/images/shared/hero-section-give-kazat.jpg"
+  }
+]
