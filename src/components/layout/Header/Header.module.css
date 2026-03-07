@@ -1,5 +1,6 @@
+/* Header */
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -8,8 +9,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* TOP BAR */
-
+/* Top Bar */
 .topBar {
   display: flex;
   justify-content: center;
@@ -41,74 +41,80 @@
   text-transform: uppercase;
 }
 
-/* NAVBAR */
-
+/* Navbar */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 6%;
+  padding: 12px 6%;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
 }
 
 .logoIcon {
   display: flex;
+  align-items: center;
 }
 
-.logoIcon img {
+.logoImg {
   width: 52px;
   height: 52px;
-  font-weight: 700;
-  margin-right: 3px;
-  padding: 0px;
+  margin-right: 8px;
 }
 
-.logo {
-  flex-direction: column;
+.logoText {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
-.logo span {
-  font-size: 32px;
+.logoText span {
+  font-size: 24px;
   font-weight: 700;
+  line-height: 1;
 }
 
-.logo small {
-  display: block;
+.logoText small {
   font-size: 10px;
   letter-spacing: 1px;
-  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
+/* Nav Links (Desktop) */
 .navLinks {
   display: flex;
   gap: 28px;
   list-style: none;
-  font-weight: 500;
+  margin: 0;
+  padding: 0;
 }
 
-.navLinks li {
+.navLink {
   cursor: pointer;
   transition: 0.3s;
   font-family: Figtree, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
+  color: white;
+  text-decoration: none;
 }
 
-.navLinks li:hover {
-  opacity: 0.7;
+.navLink:hover,
+.navLink.active {
+  opacity: 0.8;
+  border-bottom: 2px solid #2aa7d6;
 }
 
+/* Actions (Donate Button) */
 .actions {
   display: flex;
   align-items: center;
   gap: 18px;
-}
-
-.icon {
-  font-size: 18px;
-  cursor: pointer;
 }
 
 .donate {
@@ -118,18 +124,93 @@
   border-radius: 25px;
   color: white;
   cursor: pointer;
+  font-family: Figtree, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-/* TABLET */
+/* Mobile Menu Button */
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+}
 
+/* Mobile Nav Links (Centered Div Below Navbar) */
+.mobileNavLinks {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: white;
+  text-align: center;
+  width: 100%;
+}
+
+.mobileNavLink {
+  color: black;
+  text-decoration: none;
+  font-family: Figtree, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobileNavLink:hover,
+.mobileNavLink.active {
+  color: #2aa7d6;
+}
+
+.mobileDonate {
+  color: white;
+  text-decoration: none;
+  font-family: Figtree, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #2aa7d6;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 12px;
+  display: inline-block;
+}
+
+/* Tablet & Mobile */
 @media (max-width: 1200px) {
   .navLinks {
     display: none;
   }
+
+  .menuButton {
+    display: block;
+  }
+
+  .actions {
+    display: none;
+  }
+
+  .mobileNavLinks {
+    display: flex;
+  }
 }
 
-/* MOBILE */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 20px;
+  }
 
-@media (max-width: 480px) {
+  .logoText span {
+    font-size: 20px;
+  }
 
+  .logoText small {
+    font-size: 8px;
+  }
 }

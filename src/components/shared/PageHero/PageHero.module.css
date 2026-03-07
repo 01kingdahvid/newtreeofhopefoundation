@@ -1,0 +1,74 @@
+.hero {
+  position: relative;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #96edff17;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.content h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  text-shadow: 2px 3px 2px 0 black;
+}
+
+.content span {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 3px 2px 0 black;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 15rem 0;
+  }
+
+  .content h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 29px;
+  }
+
+  .content span{
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .content h1 {
+    font-size: 25px;
+  }
+
+  .content span{
+    font-size: 12px;
+  }
+}

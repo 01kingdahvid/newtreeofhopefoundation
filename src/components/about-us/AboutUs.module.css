@@ -1,0 +1,148 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* rows */
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.rowReverse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.image {
+  width: 50%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.text {
+  width: 50%;
+}
+
+.text h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(18, 18, 18);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.text h5 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16.8px;
+  font-weight: 600;
+  color: rgb(18, 18, 18);
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.text p {
+  margin-bottom: 12px;
+  font-family: Figtree, sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: rgb(18, 18, 18);
+}
+
+/* vision mission */
+
+.visionMission {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background: #e6f7ff;
+  border: 2px solid #96edff;
+  padding: 40px;
+  line-height: 25px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30.2px;
+  font-weight: 600;
+  color: rgb(18, 18, 18);
+  text-transform: uppercase;
+}
+
+.card p {
+  font-family: Figtree, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(18, 18, 18);
+}
+
+/* tablet */
+
+@media (max-width: 1200px) {
+  .row,
+  .rowReverse {
+    flex-direction: column;
+  }
+
+  .image,
+  .text {
+    width: 100%;
+  }
+}
+
+/* small tablet */
+
+@media (max-width: 768px) {
+  .visionMission {
+    grid-template-columns: 1fr;
+  }
+
+  .text h2 {
+    font-size: 26px;
+  }
+
+  .text h5 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 12.4px;
+    line-height: 14.4px;
+    color: rgb(18, 18, 18);
+  }
+
+  .text p {
+    font-family: Figtree, sans-serif;
+    font-size: 14.4px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: rgb(18, 18, 18);
+  }
+
+  .rowReverse {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 60px 16px;
+  }
+}
