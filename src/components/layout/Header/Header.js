@@ -26,8 +26,8 @@ export default function Header () {
       <header className={styles.header}>
         {/* Top Bar */}
         <div className={styles.topBar}>
-          <p>🌙 Never laylatul qadr – Automate your Ramadan Giving</p>
-          <button>Schedule My Giving</button>
+          <p>Join us to learn how you can protect children.</p>
+          <button>Join Us</button>
         </div>
 
         {/* Navbar */}
