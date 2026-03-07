@@ -26,7 +26,7 @@ export default function Header () {
       <header className={styles.header}>
         {/* Top Bar */}
         <div className={styles.topBar}>
-          <p>🌙 Never forget a night – Automate your Ramadan Giving</p>
+          <p>🌙 Never laylatul qadr – Automate your Ramadan Giving</p>
           <button>Schedule My Giving</button>
         </div>
 

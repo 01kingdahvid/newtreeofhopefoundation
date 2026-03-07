@@ -64,12 +64,13 @@
 .logoImg {
   width: 52px;
   height: 52px;
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 .logoText {
   display: flex;
   flex-direction: column;
+  text-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.098);
 }
 
 .logoText span {
@@ -106,8 +107,7 @@
 
 .navLink:hover,
 .navLink.active {
-  opacity: 0.8;
-  border-bottom: 2px solid #2aa7d6;
+  color: #00adef;
 }
 
 /* Actions (Donate Button) */
@@ -118,15 +118,16 @@
 }
 
 .donate {
-  background: #2aa7d6;
+  background: #00adef;
   border: none;
-  padding: 10px 22px;
+  padding: 10px 30px;
   border-radius: 25px;
   color: white;
   cursor: pointer;
   font-family: Figtree, sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 /* Mobile Menu Button */
@@ -138,6 +139,13 @@
   font-size: 24px;
   cursor: pointer;
   padding: 8px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to the icon */
+  border-radius: 4px; /* Optional: Softens edges */
+  transition: text-shadow 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.menuButton:hover {
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7); /* Darker shadow on hover */
 }
 
 /* Mobile Nav Links (Centered Div Below Navbar) */
@@ -164,7 +172,8 @@
 
 .mobileNavLink:hover,
 .mobileNavLink.active {
-  color: #2aa7d6;
+  color: white;
+  background: #98e2fb;
 }
 
 .mobileDonate {
@@ -211,6 +220,6 @@
   }
 
   .logoText small {
-    font-size: 8px;
+    font-size: 7px;
   }
 }
