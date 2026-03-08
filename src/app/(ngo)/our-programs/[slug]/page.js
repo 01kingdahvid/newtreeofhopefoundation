@@ -1,9 +1,15 @@
-import React from 'react'
+import programs from "@/data/programs.json";
+import ProgramDetail from "@/components/our-programs/ProgramDetail/ProgramDetail";
 
-const page = () => {
+export default function ProgramDetailPage({ params }) {
+
+  const program = programs.find(
+    (p) => p.slug === params.slug
+  );
+
   return (
-    <div>page</div>
-  )
+    <main>
+      <ProgramDetail program={program} />
+    </main>
+  );
 }
-
-export default page

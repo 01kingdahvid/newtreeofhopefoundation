@@ -8,10 +8,98 @@
   },
   {
     "id": 2,
+    "slug": "food-security",
     "title": "Food Security",
     "subtitle": "Hunger Relief",
-    "description": "NTHF combats hunger and malnutrition through regular food distributions and nutritional support for families. THF promotes long-term food sustainability to strengthen community resilience.",
-    "image": "/images/shared/hero-section-give-kazat.jpg"
+    "tagline": "Feeding Families In Need",
+    "description": "NTHF combats hunger and malnutrition through regular food distributions and nutritional support for families. NTHF promotes long-term food sustainability to strengthen community resilience.",
+
+    "image": "/images/shared/hero-section-give-kazat.jpg",
+
+    "hero": {
+      "title": "Food Security",
+      "heading": "Feeding Families In Need",
+      "image": "/images/programs/food-security/food-security-hero.jpg",
+      "overlayText": "Ensuring every family has access to nutritious food and a healthier future."
+    },
+
+    "overview": {
+      "title": "Give the Gift of Food Security",
+      "content": "As a monthly donor, you become part of a powerful initiative that ensures vulnerable families have access to nutritious meals and essential support. Every day, your generosity provides hope, comfort, and nourishment to those facing hunger and displacement.",
+      "additionalText": "For $100 a month, you can provide a family of seven with a customized food parcel filled with nutritious foods that will sustain them for one month. No one should go to bed hungry — yet millions do. Your support helps change that reality."
+    },
+
+    "donation": {
+      "monthlyAmount": 100,
+      "feedsFamilySize": 7,
+      "duration": "1 month",
+      "ctaText": "Donate Now"
+    },
+
+    "impactStats": [
+      {
+        "number": "821M",
+        "label": "People around the world face chronic malnutrition."
+      },
+      {
+        "number": "690M",
+        "label": "People go to bed hungry every night."
+      },
+      {
+        "number": "135M",
+        "label": "People face hunger due to crises and conflicts."
+      }
+    ],
+
+    "priorities": {
+      "title": "Our Priorities",
+      "description": "Humanitarian crises have grown dramatically over the past decade. Wars, conflicts, natural disasters, and climate change continue to worsen food insecurity worldwide. Our mission focuses on providing immediate food assistance while building long-term resilience within communities."
+    },
+
+    "initiatives": [
+      {
+        "title": "Baby Formula Program",
+        "description": "This initiative provides life-saving baby formula to infants who have lost access to breast milk or safe food due to displacement or conflict. By supplying nutritious formula and feeding support to families, we prevent malnutrition and strengthen infant health.",
+        "image": "/images/programs/food-security/baby-formula.jpg",
+        "cta": "Donate Now"
+      },
+      {
+        "title": "Monthly Food Parcels",
+        "description": "Our teams and partners deliver essential food parcels to families living in extreme poverty and refugee communities. Each parcel provides enough nutritious food to sustain a family for an entire month.",
+        "image": "/images/programs/food-security/food-parcels.jpg",
+        "cta": "Donate Now"
+      },
+      {
+        "title": "Fighting Hunger in Emergencies",
+        "description": "During humanitarian crises, we distribute emergency food packages including vegetable bags, flour bags, bread, and meat supplies to families affected by disasters, conflict, and displacement.",
+        "image": "/images/programs/food-security/emergency-food.jpg",
+        "cta": "Donate Now"
+      },
+      {
+        "title": "Community Kitchens (Tikkiyat)",
+        "description": "Our community kitchens provide daily hot meals to displaced families. These kitchens operate in safe locations such as schools and shelters, delivering nutritious dishes including rice, beans, lentils, soups, chicken, and bulgur.",
+        "image": "/images/programs/food-security/community-kitchen.jpg",
+        "cta": "Donate Now"
+      }
+    ],
+
+    "kitchenImpact": {
+      "title": "Bringing Warm Meals and Hope",
+      "description": "Through six active community kitchens, thousands of displaced families receive warm meals every day. These kitchens have become an essential lifeline for families facing severe food insecurity.",
+      "kitchens": 6,
+      "mealsPerDay": 5000
+    },
+
+    "impactMessage": {
+      "title": "Your Impact",
+      "content": "Every dollar you contribute directly supports families struggling with hunger. Your donations help keep community kitchens running, distribute food parcels, and deliver life-saving nutrition to vulnerable families."
+    },
+
+    "gallery": [
+      "/images/programs/food-security/gallery1.jpg",
+      "/images/programs/food-security/gallery2.jpg",
+      "/images/programs/food-security/gallery3.jpg"
+    ]
   },
   {
     "id": 3,

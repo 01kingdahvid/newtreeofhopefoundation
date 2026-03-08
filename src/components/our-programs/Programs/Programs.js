@@ -1,45 +1,49 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import styles from "./Programs.module.css";
 import programs from "@/data/programs.json";
 
-const Programs= () => {
+const Programs = () => {
   return (
     <section className={styles.section}>
-
-      
-
       <div className={styles.grid}>
         {programs.map((program) => (
-          <div
+          
+          <Link
             key={program.id}
-            className={styles.card}
+            href={`/our-programs/${program.slug}`}
+            className={styles.cardLink}
           >
-            <img
-              src={program.image}
-              className={styles.image}
-            />
 
-            <div className={styles.overlay}>
-              <h3>{program.title}</h3>
-              <p className={styles.subtitle}>
-                {program.subtitle}
-              </p>
+            <div className={styles.card}>
+              <img
+                src={program.image}
+                className={styles.image}
+                alt={program.title}
+              />
+
+              <div className={styles.overlay}>
+                <h3>{program.title}</h3>
+                <p className={styles.subtitle}>
+                  {program.subtitle}
+                </p>
+              </div>
+
+              <div className={styles.hoverContent}>
+                <p>{program.description}</p>
+
+                <button className={styles.donateBtn}>
+                  DONATE NOW
+                </button>
+              </div>
             </div>
 
-            <div className={styles.hoverContent}>
-              <p>{program.description}</p>
+          </Link>
 
-              <button className={styles.donateBtn}>
-                DONATE NOW
-              </button>
-            </div>
-
-          </div>
         ))}
       </div>
-
     </section>
   );
 };
