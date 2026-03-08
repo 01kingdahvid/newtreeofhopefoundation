@@ -17,7 +17,7 @@ export default function ProgramDetail ({ program }) {
       <h1>{program.title}</h1>
       <p>{program.tagline}</p>
 
-      <img src={program.hero?.image} alt={program.title} />
+      <img src={program?.image} alt={program.title} />
 
       <section>
         <h2>{program.overview?.title}</h2>
