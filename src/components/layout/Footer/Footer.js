@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Footer.module.css'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -7,18 +8,19 @@ const Footer = () => {
       <div className={styles.container}>
         {/* COLUMN 1 */}
         <div className={styles.col}>
-          <div className={styles.logoIcon}>
-            <img
-              src='/images/logos/nthf-logo.png'
-              alt='New Tree of Hope Foundation helping children'
-              className={styles.logo}
-            />
-
-            <div className={styles.logo}>
-              <span>NTHF</span>
-              <small>New Tree Of Hope Foundation</small>
+          <Link href='/' className={styles.logoLink}>
+            <div className={styles.logoIcon}>
+              <img
+                src='/images/logos/nthf-logo.png'
+                alt='New Tree of Hope Foundation helping children'
+                className={styles.logoImg}
+              />
+              <div className={styles.logoText}>
+                <span>NTHF</span>
+                <small>New Tree Of Hope Foundation</small>
+              </div>
             </div>
-          </div>
+          </Link>
 
           <ul className={styles.contact}>
             <li>📍 Seoul, South Korea</li>

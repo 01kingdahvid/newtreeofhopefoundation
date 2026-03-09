@@ -64,6 +64,15 @@ export default function ProgramDonate({ program: initialProgram = null }) {
 
   const copyTimeoutRef = useRef(null);
 
+  const sectionRef = useRef(null);
+
+// Add this useEffect to handle scroll on step change
+useEffect(() => {
+  if (sectionRef.current) {
+    sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}, [step]);
+
   // ---------- Effects ----------
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 800);
@@ -450,7 +459,7 @@ export default function ProgramDonate({ program: initialProgram = null }) {
 
   // ---------- Render ----------
   return (
-    <section className={styles.section}>
+    <section className={styles.section} ref={sectionRef}>
       {step === 1 && renderStep1()}
       {step === 2 && renderStep2()}
       {step === 3 && renderStep3()}

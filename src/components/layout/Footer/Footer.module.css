@@ -13,34 +13,45 @@
   padding: 0 40px 60px;
 }
 
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
 .logoIcon {
   display: flex;
+  align-items: center;
 }
 
-.logoIcon img {
+.logoImg {
   width: 52px;
   height: 52px;
+  margin-right: 4px;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  text-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.098);
+}
+
+.logoText span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
   font-weight: 700;
-  margin-right: 3px;
-  padding: 0px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
 }
 
-.logo{
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-}
-
-.logo span {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.logo small {
-  display: block;
+.logoText small {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
 }
 
 .tagline {
@@ -168,7 +179,11 @@
     padding: 0 20px 40px;
   }
 
-  .logo {
-    font-size: 28px;
+  .logoText span {
+    font-size: 20px;
+  }
+
+  .logoText small {
+    font-size: 7px;
   }
 }
