@@ -1,0 +1,268 @@
+.section {
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  /* max-width:900px; *
+  width: 100%;
+  background: #07b2f3;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 35.2px;
+  font-weight: 600;
+  line-height: 35.2px;
+  color: rgb(255, 255, 255);
+}
+
+.badge {
+  margin: auto;
+  background: #63d1f0;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-family: Figtree, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: rgb(255, 255, 255);
+}
+
+.checkbox {
+  font-family: Figtree, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgb(18, 18, 18);
+}
+
+.checkbox input {
+  margin-right: 8px;
+}
+
+/* Amount buttons row */
+.amountRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Amount button styling */
+.amountBtn {
+  background: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: Figtree, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: rgb(1, 1, 1);
+  min-width: 80px;
+  text-align: center;
+}
+
+/* Selected amount button */
+.amountBtn.selected {
+  background: #65d0f4;
+  font-family: Figtree, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: rgb(18, 18, 18);
+}
+
+/* Amount input */
+.amountInput {
+  flex: 1;
+  min-width: 120px;
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  font-family: Figtree, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.input {
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  font-family: Figtree, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.textarea {
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  min-height: 100px;
+  font-family: Figtree, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.primaryBtn {
+  padding: 16px;
+  background: #60d0ed;
+  border: none;
+  border-radius: 40px;
+  font-family: Figtree, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.primaryBtn:hover {
+  font-family: Figtree, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: rgb(151, 151, 151);
+}
+
+.primaryBtn :disabled {
+  background: #32bef1;
+}
+
+.cryptoRow {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cryptoBtn {
+  background: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.qr {
+  width: 200px;
+  margin: auto;
+}
+
+.walletBox {
+  background: white;
+  color: black;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copy {
+  border: none;
+  background: #1597c9;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.timer {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background: white;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal close icon */
+.modalClose {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: black !important;
+}
+
+.modalCard {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  animation: pop 0.3s ease;
+  color: black;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .section {
+    padding: 20px;
+  }
+  .card {
+    padding: 25px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .amountRow {
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+  .amountBtn {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px;
+  }
+}

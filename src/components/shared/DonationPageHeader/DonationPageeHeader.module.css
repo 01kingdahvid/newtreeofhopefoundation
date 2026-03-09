@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+   background-image: linear-gradient(to right, #00aff0, #ffffff);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.partners {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.partnerWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.partnerIcon {
+  cursor: help;
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.partnerWrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}

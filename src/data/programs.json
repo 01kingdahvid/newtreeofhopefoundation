@@ -1,10 +1,75 @@
 [
   {
     "id": 1,
+    "slug": "emergency-relief-disaster-response",
     "title": "Emergency Relief & Disaster Response",
     "subtitle": "Immediate aid in crisis",
-    "description": "NTHF provides immediate assistance to communities affected by conflict, natural disasters, and other crises. THF delivers customized food parcels, clean water, shelter materials, medical supplies, and essential non-food items to help families survive and recover.",
-    "image": "/images/shared/hero-section-give-kazat.jpg"
+    "tagline": "Immediate Aid",
+    "description": "UHR provides immediate assistance to communities affected by conflict, natural disasters, and other crises. We deliver customized food parcels, clean water, shelter materials, medical supplies, and essential non-food items to help families survive and recover.",
+    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "hero": {
+      "title": "Emergency Relief & Disaster Response",
+      "heading": "Immediate Aid",
+      "image": "/images/shared/hero-section-give-kazat.jpg",
+      "overlayText": "Providing lifesaving aid to families in crisis."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Immediate Aid",
+          "content": "UHR provides immediate assistance to communities affected by conflict, natural disasters, and other crises. We deliver customized food parcels, clean water, shelter materials, medical supplies, and essential non-food items to help families survive and recover.",
+          "cta": "Donate Now"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Bring Hope and Relief in The Face Of Disaster",
+          "content": [
+            { "paragraph": "After years of civil war, people continue to face significant challenges. Millions of people need humanitarian assistance. Many live in overcrowded camps where there is little food or clean water." },
+            { "paragraph": "Illness and other health risks can spread quickly in crisis conditions. People urgently need basic essentials to protect themselves and stay well during this critical time." },
+            { "paragraph": "Help us support vulnerable families so they don’t have to choose between having food to eat and staying safe. Provide a displaced family with a food parcel to help them eat well for a whole month." }
+          ],
+          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "imagePosition": "right"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Food Parcels Distribution for Palestinian Refugees",
+          "content": "Providing essential food parcels to Palestinian refugees affected by conflict and displacement.",
+          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "imagePosition": "left"
+        }
+      },
+      {
+        "type": "simpleText",
+        "props": {
+          "title": "Project Reports",
+          "content": "Engages in humanitarian projects both locally and internationally to assist those in dire need of assistance. It is our goal to empower individuals and families within their communities."
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Help Change Lives Today",
+          "content": "Your support allows UHR to deliver lifesaving aid and long-term solutions to communities in need.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
   },
   {
     "id": 2,
@@ -12,142 +77,780 @@
     "title": "Food Security",
     "subtitle": "Hunger Relief",
     "tagline": "Feeding Families In Need",
-    "description": "NTHF combats hunger and malnutrition through regular food distributions and nutritional support for families. NTHF promotes long-term food sustainability to strengthen community resilience.",
-
+    "description": "UHR combats hunger and malnutrition through regular food distributions and nutritional support for families. UHR promotes long-term food sustainability to strengthen community resilience.",
     "image": "/images/shared/hero-section-give-kazat.jpg",
-
     "hero": {
       "title": "Food Security",
       "heading": "Feeding Families In Need",
-      "image": "/images/programs/food-security/food-security-hero.jpg",
+      "image": "/images/shared/hero-section-give-kazat.jpg",
       "overlayText": "Ensuring every family has access to nutritious food and a healthier future."
     },
-
-    "overview": {
-      "title": "Give the Gift of Food Security",
-      "content": "As a monthly donor, you become part of a powerful initiative that ensures vulnerable families have access to nutritious meals and essential support. Every day, your generosity provides hope, comfort, and nourishment to those facing hunger and displacement.",
-      "additionalText": "For $100 a month, you can provide a family of seven with a customized food parcel filled with nutritious foods that will sustain them for one month. No one should go to bed hungry — yet millions do. Your support helps change that reality."
-    },
-
-    "donation": {
-      "monthlyAmount": 100,
-      "feedsFamilySize": 7,
-      "duration": "1 month",
-      "ctaText": "Donate Now"
-    },
-
-    "impactStats": [
+    "sections": [
       {
-        "number": "821M",
-        "label": "People around the world face chronic malnutrition."
+        "type": "impactCard",
+        "props": {
+          "title": "Feeding Families In Need",
+          "content": "UHR combats hunger and malnutrition through regular food distributions and nutritional support for families. UHR promotes long-term food sustainability to strengthen community resilience.",
+          "cta": "Donate Now"
+        }
       },
       {
-        "number": "690M",
-        "label": "People go to bed hungry every night."
+        "type": "stats",
+        "props": {
+          "title": "Our Impact in Numbers",
+          "stats": [
+            { "number": "821M", "label": "People around the world face chronic malnutrition." },
+            { "number": "690M", "label": "People go to bed hungry every night." },
+            { "number": "135M", "label": "People face hunger due to crises and conflicts." }
+          ]
+        }
       },
       {
-        "number": "135M",
-        "label": "People face hunger due to crises and conflicts."
+        "type": "initiatives",
+        "props": {
+          "title": "Our Initiatives",
+          "initiatives": [
+            {
+              "title": "Baby Formula Program",
+              "description": "This initiative provides life-saving baby formula to infants who have lost access to breast milk or safe food due to displacement or conflict.",
+              "image": "/images/shared/hero-section-give-kazat.jpg",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Monthly Food Parcels",
+              "description": "Our teams and partners deliver essential food parcels to families living in extreme poverty and refugee communities.",
+              "image": "/images/shared/hero-section-give-kazat.jpg",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Fighting Hunger in Emergencies",
+              "description": "During humanitarian crises, we distribute emergency food packages including vegetable bags, flour bags, bread, and meat supplies to families affected by disasters, conflict, and displacement.",
+              "image": "/images/shared/hero-section-give-kazat.jpg",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Community Kitchens (Tikkiyat)",
+              "description": "Our community kitchens provide daily hot meals to displaced families. These kitchens operate in safe locations such as schools and shelters, delivering nutritious dishes including rice, beans, lentils, soups, chicken, and bulgur.",
+              "image": "/images/shared/hero-section-give-kazat.jpg",
+              "cta": "Donate Now"
+            }
+          ]
+        }
+      },
+      {
+        "type": "simpleText",
+        "props": {
+          "title": "Bringing Warm Meals and Hope",
+          "content": "Through six active community kitchens, thousands of displaced families receive warm meals every day. These kitchens have become an essential lifeline for families facing severe food insecurity."
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Help Change Lives Today",
+          "content": "Your support allows UHR to deliver lifesaving aid and long-term solutions to communities in need.",
+          "cta": "DONATE NOW"
+        }
       }
-    ],
-
-    "priorities": {
-      "title": "Our Priorities",
-      "description": "Humanitarian crises have grown dramatically over the past decade. Wars, conflicts, natural disasters, and climate change continue to worsen food insecurity worldwide. Our mission focuses on providing immediate food assistance while building long-term resilience within communities."
-    },
-
-    "initiatives": [
-      {
-        "title": "Baby Formula Program",
-        "description": "This initiative provides life-saving baby formula to infants who have lost access to breast milk or safe food due to displacement or conflict. By supplying nutritious formula and feeding support to families, we prevent malnutrition and strengthen infant health.",
-        "image": "/images/programs/food-security/baby-formula.jpg",
-        "cta": "Donate Now"
-      },
-      {
-        "title": "Monthly Food Parcels",
-        "description": "Our teams and partners deliver essential food parcels to families living in extreme poverty and refugee communities. Each parcel provides enough nutritious food to sustain a family for an entire month.",
-        "image": "/images/programs/food-security/food-parcels.jpg",
-        "cta": "Donate Now"
-      },
-      {
-        "title": "Fighting Hunger in Emergencies",
-        "description": "During humanitarian crises, we distribute emergency food packages including vegetable bags, flour bags, bread, and meat supplies to families affected by disasters, conflict, and displacement.",
-        "image": "/images/programs/food-security/emergency-food.jpg",
-        "cta": "Donate Now"
-      },
-      {
-        "title": "Community Kitchens (Tikkiyat)",
-        "description": "Our community kitchens provide daily hot meals to displaced families. These kitchens operate in safe locations such as schools and shelters, delivering nutritious dishes including rice, beans, lentils, soups, chicken, and bulgur.",
-        "image": "/images/programs/food-security/community-kitchen.jpg",
-        "cta": "Donate Now"
-      }
-    ],
-
-    "kitchenImpact": {
-      "title": "Bringing Warm Meals and Hope",
-      "description": "Through six active community kitchens, thousands of displaced families receive warm meals every day. These kitchens have become an essential lifeline for families facing severe food insecurity.",
-      "kitchens": 6,
-      "mealsPerDay": 5000
-    },
-
-    "impactMessage": {
-      "title": "Your Impact",
-      "content": "Every dollar you contribute directly supports families struggling with hunger. Your donations help keep community kitchens running, distribute food parcels, and deliver life-saving nutrition to vulnerable families."
-    },
-
-    "gallery": [
-      "/images/programs/food-security/gallery1.jpg",
-      "/images/programs/food-security/gallery2.jpg",
-      "/images/programs/food-security/gallery3.jpg"
     ]
   },
   {
     "id": 3,
+    "slug": "water-sanitation-hygiene",
     "title": "Water, Sanitation & Hygiene (WASH)",
-    "subtitle": "Access to clean water & hygiene",
-    "description": "NTHF provides safe, dignified and protective shelter and water access for displaced families and vulnerable communities affected by conflict and disasters.",
-    "image": "/images/shared/hero-section-give-kazat.jpg"
+    "subtitle": "Access to Clean Water & Hygiene",
+    "tagline": "Donate Clean Water Through our Water Aid Projects",
+    "description": "UHR ensures access to safe water and improved sanitation facilities. We conduct hygiene promotion campaigns to reduce the spread of waterborne diseases and improve community health.",
+    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "hero": {
+      "title": "Water, Sanitation & Hygiene (WASH)",
+      "heading": "Donate Clean Water Through our Water Aid Projects",
+      "image": "/images/shared/hero-section-give-kazat.jpg",
+      "overlayText": "Ensuring every family has access to clean water and dignified sanitation."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Donate Clean Water Through our Water Aid Projects",
+          "content": "UHR ensures access to safe water and improved sanitation facilities. We conduct hygiene promotion campaigns to reduce the spread of waterborne diseases and improve community health.",
+          "cta": "Donate Now"
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "Our Impact in Numbers",
+          "stats": [
+            { "number": "3.6M", "label": "An estimated 3.6 billion people lack access to clean drinking water (more than 35% of the world’s population)." },
+            { "number": "780M", "label": "Worldwide, 780 million people do not have access to an improved water source." },
+            { "number": "2 mins", "label": "Every 2 minutes a child dies from a water-related disease." },
+            { "number": "5 hrs", "label": "Children spend up to five hours a day fetching water, taking time away from school." }
+          ]
+        }
+      },
+      {
+        "type": "simpleText",
+        "props": {
+          "title": "Access to Clean Water Improves Life!",
+          "content": [
+            { "point": "Education", "description": "Children no longer spend hours each day collecting water—so they can return to school." },
+            { "point": "Food Security", "description": "Safe water supports crops, helps sustain livestock, and strengthens household stability." },
+            { "point": "Health", "description": "Clean water and hygiene go hand in hand. Safe water reduces disease risk and helps families stay well and productive." },
+            { "point": "Economic Resilience", "description": "With fewer illnesses and less time spent fetching water, families can work more consistently and move toward long-term stability." },
+            { "point": "Breaking the Cycle of Poverty", "description": "Reliable water access helps communities build safer, healthier futures." }
+          ]
+        }
+      },
+      {
+        "type": "initiatives",
+        "props": {
+          "title": "Our Projects",
+          "initiatives": [
+            {
+              "title": "Water Wells Construction",
+              "description": "UHR facilitates the digging of water wells in isolated communities affected by water crises. Each well provides over 16,000 people with access to safe clean water.",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Water Trucking in Gaza and East Africa",
+              "description": "This project delivers safe, clean water by truck to families in Gaza and East Africa who have lost access to reliable water sources due to conflict, drought, or damaged infrastructure.",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Water Purification Units and Solar Panels",
+              "description": "Through UHR’s Build A Water Well program, you can provide safe clean water for vulnerable communities to drink, maintain their hygiene, irrigate their crops, and keep their livestock hydrated.",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Sanitation Facilities Construction/Public Bathrooms in East Africa",
+              "description": "This project builds and maintains safe, dignified public bathrooms and sanitation facilities in underserved communities across East Africa.",
+              "cta": "Donate Now"
+            }
+          ]
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Help Change Lives Today",
+          "content": "Your support allows UHR to deliver lifesaving aid and long-term solutions to communities in need.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
   },
   {
     "id": 4,
+    "slug": "health",
     "title": "Health",
-    "subtitle": "Restoring health & medical support",
-    "description": "NTHF sends shipments of medical supplies to countries in crisis ensuring families in need can access essential treatment and healthcare services.",
-    "image": "/images/shared/hero-section-give-kazat.jpg"
+    "subtitle": "Restoring Health & Medical Support",
+    "tagline": "Quality healthcare is vital to fight poverty",
+    "description": "UHR sends shipments of medical supplies to countries in crisis, ensuring that families in need can access essential treatment. UHR helps underserved communities receive healthcare and provides medical equipment to hospitals to strengthen local health services.",
+    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "hero": {
+      "title": "Health",
+      "heading": "Quality Healthcare is Vital to Fight Poverty",
+      "image": "/images/shared/hero-section-give-kazat.jpg",
+      "overlayText": "Ensuring families in crisis can access essential medical treatment and healthcare services."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Quality Healthcare is Vital to Fight Poverty",
+          "content": "UHR sends shipments of medical supplies to countries in crisis, ensuring that families in need can access essential treatment. UHR helps underserved communities receive healthcare and provides medical equipment to hospitals to strengthen local health services.",
+          "cta": "Donate Now"
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "Our Impact in Numbers",
+          "stats": [
+            { "number": "1M", "label": "Children die from preventable diseases every year" },
+            { "number": "49.7%", "label": "Cataract is the leading cause of blindness and visual impairment in the world (WHO)" },
+            { "number": "1M", "label": "Children suffer from TB and quarter a million die from it yearly" }
+          ]
+        }
+      },
+      {
+        "type": "initiatives",
+        "props": {
+          "title": "Our Initiatives",
+          "initiatives": [
+            {
+              "title": "Emergency Medical Kits Shipments",
+              "description": "Each kit includes pain medication, gauze, surgical instruments, gloves, masks, sterilizers and more.",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Cataract Eye Surgeries",
+              "description": "Medical missions facilitated to perform surgeries in East Africa, Jordan and Egypt.",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "ENT Surgeries for Children",
+              "description": "To facilitate early detection of sensory impairments, UHR arranges for vision & hearing screening days for children in need to identify any sensory difficulties early on in life.",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Cleft Lip Surgeries",
+              "description": "Cleft lip surgeries restore a child’s ability to eat, speak, and smile with confidence. Your support helps provide safe, life-changing operations that repair facial deformities, relieve pain and social stigma, and give children a brighter future.",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Medical Supplies & Equipment",
+              "description": "UHR delivers multiple shipments yearly and distributes millions of dollars worth of medicines for chronic conditions, hospital equipment, wheelchairs, over-the-counter drugs, and health care supplies in communities where they are not readily available.",
+              "cta": "Donate Now"
+            }
+          ]
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Help Change Lives Today",
+          "content": "Your support allows UHR to deliver lifesaving medical aid and long-term healthcare solutions to communities in need.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
   },
   {
     "id": 5,
+    "slug": "shelter",
     "title": "Shelter",
-    "subtitle": "Providing safe durable housing",
-    "description": "NTHF provides safe, dignified and protective shelter for displaced families and vulnerable communities affected by conflict or disasters.",
-    "image": "/images/shared/hero-section-give-kazat.jpg"
+    "subtitle": "Providing Safe Durable Housing",
+    "tagline": "Shelter and Stability for Displaced Families",
+    "description": "UHR provides safe, dignified, and protective shelter for displaced families and vulnerable communities affected by conflict, disasters, and other crises.",
+    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "hero": {
+      "title": "Shelter",
+      "heading": "Shelter and Stability for Displaced Families",
+      "image": "/images/shared/hero-section-give-kazat.jpg",
+      "overlayText": "Providing safe, dignified, and protective shelter for displaced families and vulnerable communities."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Shelter and Stability for Displaced Families",
+          "content": "UHR provides safe, dignified, and protective shelter for displaced families and vulnerable communities affected by conflict, disasters, and other crises.",
+          "cta": "Donate Now"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "A Safe Place to Start Again",
+          "content": [
+            { "paragraph": "This project will establish a 100-tent camp in Gaza, designed to provide safe, dignified, and durable shelter for families in need." },
+            { "paragraph": "Each tent will be installed on a concrete flooring layout and fully equipped with bedding, eating utensils, and cooking pots to meet essential daily needs." },
+            { "paragraph": "We invite you to support this life-saving shelter program. Your contribution will directly help families rebuild their lives and offer them a secure environment where they can begin again." }
+          ],
+          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "imagePosition": "right"
+        }
+      },
+      {
+        "type": "list",
+        "props": {
+          "title": "Shelter Projects",
+          "description": "UHR provides various types of shelter solutions to meet the diverse needs of displaced families:",
+          "items": [
+            { "title": "Emergency Tents", "description": "Immediate shelter solutions for families in crisis situations." },
+            { "title": "Transitional Housing", "description": "Temporary housing solutions that bridge the gap between emergency shelter and permanent housing." },
+            { "title": "Repairs or Reconstruction", "description": "For damaged homes to help families regain stability, security, and a sense of normalcy." },
+            { "title": "Aid to IDPs", "description": "United Hands Relief delivers emergency assistance to the internally displaced. Assistance packages include winterization kits, non-food items (NFIs), and tents." }
+          ],
+          "pastAchievements": [
+            { "achievement": "Over 50 homes renovated in Gaza prior to the 2023 war, repairing damage from conflict or disaster" },
+            { "achievement": "500 weatherproof tents sent to Gaza to support displaced families" }
+          ]
+        }
+      },
+      {
+        "type": "projectCosts",
+        "props": {
+          "title": "Project Costs",
+          "description": "Your support can help another family find safety, warmth, and hope.",
+          "cta": "Join us in rebuilding lives—one home at a time.",
+          "costs": [
+            { "item": "Building a new durable home", "price": "$5,000" },
+            { "item": "Renovating an existing home", "price": "$1,500 - $4,500" },
+            { "item": "Providing a complete tent shelter (with tarps and waterproofing)", "price": "$350" }
+          ]
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Help Provide Shelter Today",
+          "content": "Your support allows UHR to deliver lifesaving shelter solutions and long-term housing stability to families in need.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
   },
   {
     "id": 6,
+    "slug": "child-protection-widow-assistance",
     "title": "Child Protection & Widow Family Assistance",
-    "subtitle": "Safeguarding vulnerable children",
-    "description": "NTHF supports orphaned and vulnerable children with education, healthcare, nutrition and psychosocial care ensuring every child grows safely.",
-    "image": "/images/shared/hero-section-give-kazat.jpg"
+    "subtitle": "Safeguarding Vulnerable Children",
+    "tagline": "Protecting Children, Empowering Families",
+    "description": "UHR supports orphaned and vulnerable children with education, healthcare, nutrition, and psychosocial care. UHR works to ensure every child grows in a safe and nurturing environment.",
+    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "hero": {
+      "title": "Child Protection & Widow Family Assistance",
+      "heading": "Protecting Children, Empowering Families",
+      "image": "/images/shared/hero-section-give-kazat.jpg",
+      "overlayText": "Supporting orphaned and vulnerable children with education, healthcare, and psychosocial care."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Protecting Children, Empowering Families",
+          "content": "UHR supports orphaned and vulnerable children with education, healthcare, nutrition, and psychosocial care. We work to ensure every child grows in a safe and nurturing environment.",
+          "cta": "Donate Now"
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "Our Impact in Numbers",
+          "stats": [
+            { "number": "153M", "label": "An estimated 153 million children worldwide are orphans (UNICEF)" },
+            { "number": "15.1M", "label": "Of the 153 million orphans worldwide, 15.1 million children have lost both parents" },
+            { "number": "66M", "label": "66 million primary school-aged children attend classes hungry across the developing world (WHO)" }
+          ]
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "United Hands Relief Orphan Sponsorship",
+          "content": "In a split second, you can transform an orphan's life. Help children learn, be happy, and thrive.",
+          "image": "/images/programs/child-protection/orphan-sponsorship.jpg",
+          "imagePosition": "right"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Gaza Daily Kitchen",
+          "content": "Providing daily nutritious meals to orphaned children and vulnerable families in Gaza to ensure they have access to food security and proper nutrition.",
+          "image": "/images/programs/child-protection/gaza-kitchen.jpg",
+          "imagePosition": "left"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Help Protect Children and Empower Families",
+          "content": "Your support allows UHR to provide comprehensive care and support to orphaned and vulnerable children, ensuring they grow up in safe and nurturing environments.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
   },
   {
     "id": 7,
+    "slug": "education",
     "title": "Education",
-    "subtitle": "Access to learning and self-reliance",
-    "description": "NTHF provides access to quality education, school supplies and vocational training opportunities to empower youth and adults.",
-    "image": "/images/shared/hero-section-give-kazat.jpg"
+    "subtitle": "Access to Learning and Self-Reliance",
+    "tagline": "UHR Education Program: Building Futures Through Learning",
+    "description": "UHR provides access to quality education, school supplies, and learning resources. UHR offers vocational training opportunities to equip youth and adults with the skills needed for self-reliance and success.",
+    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "hero": {
+      "title": "Education",
+      "heading": "Building Futures Through Learning",
+      "image": "/images/shared/hero-section-give-kazat.jpg",
+      "overlayText": "Providing access to quality education and vocational training to empower youth and adults."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Building Futures Through Learning",
+          "content": "UHR provides access to quality education, school supplies, and learning resources. We offer vocational training opportunities to equip youth and adults with the skills needed for self-reliance and success.",
+          "cta": "Donate Now"
+        }
+      },
+      {
+        "type": "list",
+        "props": {
+          "title": "Our Education Projects",
+          "items": [
+            { "title": "Shipments of Books", "description": "Providing educational books and learning materials to schools and communities in need." },
+            { "title": "School Supplies and Backpacks", "description": "Distributing essential school supplies and backpacks to children in vulnerable communities." },
+            { "title": "Teacher Training", "description": "Training and supporting teachers to improve the quality of education." },
+            { "title": "Established Schools", "description": "Built and established schools in Gaza to provide education to children in conflict zones." },
+            { "title": "Computer Centers", "description": "Established computer centers in Gaza and Bangladesh to provide digital literacy and technical skills training." }
+          ]
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "Our Impact in Numbers",
+          "stats": [
+            { "number": "250M", "label": "Children aged 5-12 can't read, write, or count" },
+            { "number": "130M", "label": "Girls are out of school, globally" },
+            { "number": "171M", "label": "People could be lifted out of poverty through basic reading skills" }
+          ]
+        }
+      },
+      {
+        "type": "quote",
+        "props": {
+          "quote": "Education can be the catalyst needed to pull families and communities out of the cycle of poverty. Knowledge gives children the power to dream of a better future and the confidence needed to pursue a full education, which in turn will help generations to come.",
+          "focusAreas": [
+            "Providing access to quality education for all children",
+            "Equipping youth and adults with vocational skills",
+            "Supporting teachers and educational infrastructure",
+            "Promoting literacy and lifelong learning"
+          ]
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Sponsor a Palestinian Student's Education",
+          "content": [
+            { "paragraph": "In partnership with local NGOs, UHR sponsors the tuition of Palestinian students in Gaza and the West Bank where young people are eager to further their education but face financial barriers." },
+            { "paragraph": "Access to education not only empowers youth but also opens doors to meaningful opportunities, helping them build a brighter future for themselves and their communities." },
+            { "paragraph": "Your support can help us offer the invaluable gift of education to students who are motivated and capable, yet unable to afford tuition on their own." }
+          ],
+          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "imagePosition": "right"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Back to School Campaigns",
+          "content": [
+            { "paragraph": "For many children in vulnerable communities, returning to school is not guaranteed. Through the UHR Back to School Campaign, we provide school supplies, uniforms, and learning materials to help students start the year ready to learn." },
+            { "paragraph": "Your support ensures that children — especially girls, displaced students, and those in crisis-affected areas — have the tools they need to succeed." }
+          ],
+          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "imagePosition": "left"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Help Build Futures Through Education",
+          "content": "Your support allows UHR to provide quality education and vocational training to youth and adults, empowering them to build better futures for themselves and their communities.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
   },
   {
     "id": 8,
+    "slug": "faith-based-giving",
     "title": "Faith-based Giving",
-    "subtitle": "Bringing relief & joy",
-    "description": "NTHF provides seasonal support including Ramadan food baskets, Eid gifts and Qurbani meat distribution to help families celebrate important occasions.",
-    "image": "/images/shared/hero-section-give-kazat.jpg"
+    "subtitle": "Bringing Relief & Joy",
+    "tagline": "Fulfill Your Sacred Duty. Share the Blessing.",
+    "description": "UHR provides seasonal support to bring relief and joy to families facing hardship. This includes Ramadan food baskets, Eid gifts, Qurbani meat distribution, and Thanksgiving assistance, helping communities celebrate these occasions even in difficult times.",
+    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "hero": {
+      "title": "Faith-based Giving",
+      "heading": "Fulfill Your Sacred Duty. Share the Blessing.",
+      "image": "/images/shared/hero-section-give-kazat.jpg",
+      "overlayText": "Providing seasonal support to help families celebrate important occasions with dignity and joy."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Fulfill Your Sacred Duty. Share the Blessing.",
+          "content": "UHR provides seasonal support to bring relief and joy to families facing hardship. This includes Ramadan food baskets, Eid gifts, Qurbani meat distribution, and Thanksgiving assistance, helping communities celebrate these occasions even in difficult times.",
+          "cta": "Donate Now"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Bring Hope, Share Qurbani: Join Hands with UHR",
+          "content": [
+            { "paragraph": "Qurbani, an act of worship, exemplifies the spirit of sacrifice and gratitude towards the blessings we enjoy." },
+            { "paragraph": "UHR is committed to empowering the most vulnerable communities through the spirit of unity and the strength of humanity." },
+            { "paragraph": "This Qurbani season, we are making a tangible difference in the lives of struggling families across 13 countries globally." }
+          ],
+          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "imagePosition": "right"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Ramadan: Extend Your Hands to Transform Lives",
+          "content": [
+            { "paragraph": "United Hands Relief invites you to share the blessings of Ramadan by giving hope, healing, and dignity to those in need." },
+            { "paragraph": "Automate your donations through all 30 days of Ramadan to maximize your rewards." }
+          ],
+          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "imagePosition": "left"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Eid: Make A Difference With An Eid Gift!",
+          "content": [
+            { "paragraph": "When you make a donation, you're doing much more than you might realize. You're not just giving $50; you're creating moments of joy, sparking smiles, and giving hope." },
+            { "paragraph": "Your Donation will make an impact with:" },
+            { "listItem": "New Clothes – Your contribution can help us purchase new outfits for kids who've had to make do with hand-me-downs." },
+            { "listItem": "Creating Memories – Your gift isn't just material. It's the joy a child feels when they are a part of the Eid celebrations." }
+          ],
+          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "imagePosition": "right"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Qurbani (Udhiya): Fulfill Your Sacred Duty. Share the Blessing.",
+          "content": [
+            { "paragraph": "This Eid al-Adha, honor the Sunnah of Prophet Ibrahim (AS) by offering your Qurbani/Udhiya to families in need." }
+          ],
+          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "imagePosition": "left"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Zakat: Purify Your Possessions",
+          "content": [
+            { "paragraph": "Pay your Zakat with UHR — Purify your possessions by setting aside a portion for the needy." },
+            { "paragraph": "Zakat is based on income and the value of possessions. The common minimum amount for those who qualify is 2.5%, or 1/40 of a Muslim's total savings and wealth." }
+          ],
+          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "imagePosition": "right"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Thanksgiving: Sharing Blessings",
+          "content": [
+            { "paragraph": "UHR is committed to empowering the most vulnerable communities through the spirit of unity and the strength of humanity." },
+            { "paragraph": "This season, we are making a tangible difference in the lives of struggling families globally." }
+          ],
+          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "imagePosition": "left"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Fulfill Your Faith-Based Giving",
+          "content": "Your support allows UHR to provide seasonal relief and joy to families in need, helping them celebrate important occasions with dignity and hope.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
   },
   {
     "id": 9,
+    "slug": "livelihoods-women-empowerment",
     "title": "Livelihoods & Women Empowerment",
-    "subtitle": "Empowering communities to thrive",
-    "description": "NTHF focuses on empowering vulnerable communities by helping individuals build sustainable livelihoods and economic independence.",
-    "image": "/images/shared/hero-section-give-kazat.jpg"
+    "subtitle": "Empowering Communities to Thrive",
+    "tagline": "Breaking the Cycle of Poverty",
+    "description": "UHR focuses on empowering vulnerable communities by helping individuals and families build sustainable livelihoods through vocational training, small business support, and sustainable farming initiatives.",
+    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "hero": {
+      "title": "Livelihoods & Women Empowerment",
+      "heading": "Breaking the Cycle of Poverty",
+      "image": "/images/shared/hero-section-give-kazat.jpg",
+      "overlayText": "Empowering communities through sustainable livelihoods and women's economic independence."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Breaking the Cycle of Poverty",
+          "content": "UHR focuses on empowering vulnerable communities by helping individuals and families build sustainable livelihoods through vocational training, small business support, and sustainable farming initiatives.",
+          "cta": "Donate Now"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Rice Farm in Bangladesh",
+          "content": [
+            { "paragraph": "Bangladesh is one of the world's top rice producers, with rice accounting for over 70% of the country's cropped area and providing the staple food for most of its population." },
+            { "paragraph": "UHR implements rice farming projects to help vulnerable families rebuild their livelihoods and achieve food security." }
+          ],
+          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "imagePosition": "right"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Support Sustainable Fish Farms",
+          "content": [
+            { "paragraph": "Fish farming in Bangladesh—locally known as 'pisciculture'—is a major component of the country's agricultural economy and food security system." },
+            { "listTitle": "Our fish farm projects provide:", "listItems": [
+              "Water Access – Inlet/outlet systems, pumps (if needed)",
+              "Fingerlings & Feed – Healthy stock and quality feed",
+              "Basic Equipment – Nets, feeders, water test kits",
+              "Training – For farm management and care",
+              "Licenses & Approvals – Land use and environmental clearance",
+              "Market Linkages – Buyers, transport, and cold storage if needed"
+            ] }
+          ],
+          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "imagePosition": "left"
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "Our Impact in Numbers",
+          "stats": [
+            { "number": "1.6B", "label": "Workers were at risk of losing their livelihoods during the pandemic" },
+            { "number": "400M", "label": "Jobs lost in the second quarter of the pandemic" },
+            { "number": "220B", "label": "Income losses expected in developing countries due to the pandemic (UNDP)" }
+          ]
+        }
+      },
+      {
+        "type": "initiatives",
+        "props": {
+          "title": "Our Priorities",
+          "sectors": [
+            {
+              "sector": "Agriculture & Food Production",
+              "initiatives": [
+                { "title": "Fruit & Vegetable Stands", "description": "Support for small-scale vendors to sell fresh produce, creating income opportunities and promoting healthy diets in local communities." },
+                { "title": "Fish Farming", "description": "Training and resources for aquaculture, enabling families to produce and sell fish, improving both nutrition and household income." },
+                { "title": "Rice Farming", "description": "Assistance for smallholder farmers to improve rice cultivation, boosting yields, incomes, and food security." },
+                { "title": "Chicken Farms", "description": "Provision of poultry, feed, and training to establish small chicken farms for egg and meat production." },
+                { "title": "Dairy Product Stores", "description": "Small shops offering milk, yogurt, and other dairy products, supporting family incomes and local nutrition." }
+              ]
+            },
+            {
+              "sector": "Retail & Small Business",
+              "initiatives": [
+                { "title": "Street Food Stands", "description": "Training and equipment for entrepreneurs to prepare and sell local street foods, boosting income while preserving cultural heritage." },
+                { "title": "Juice Bars", "description": "Set-up assistance for juice kiosks that provide fresh, nutritious beverages, supporting livelihoods and community health." },
+                { "title": "Mini Supermarkets", "description": "Micro-retail stores offering essential groceries, giving entrepreneurs steady income and communities convenient access to necessities." }
+              ]
+            },
+            {
+              "sector": "Skills Training & Employment",
+              "initiatives": [
+                { "title": "Sewing Machine Training Programs", "description": "Skills development and sewing machine provision for tailoring businesses, empowering women and youth toward economic independence." },
+                { "title": "Computer Training Centers", "description": "Facilities offering digital skills courses, increasing employment opportunities in IT and modern workplaces." },
+                { "title": "Hair Salons", "description": "Vocational training and start-up support for hairdressing businesses, empowering both men and women to gain financial stability." }
+              ]
+            },
+            {
+              "sector": "Transportation Services",
+              "initiatives": [
+                { "title": "Rickshaw Taxi Services", "description": "Support for purchasing and operating pedal or motorized rickshaws, providing affordable local transport and steady income." },
+                { "title": "Tuk Tuk Businesses", "description": "Assistance to launch tuk tuk transport services, creating stable employment and connecting communities to markets and services." }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg",
+            "/images/shared/hero-section-give-kazat.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Help Empower Communities Through Livelihoods",
+          "content": "Your support allows UHR to create sustainable livelihoods and empower women, helping communities break the cycle of poverty and build brighter futures.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
   }
 ]

@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   
-  padding: 0 40px;
+  padding: 0 0px;
   font-family:
     "Figtree",
     -apple-system,
@@ -527,4 +527,15 @@
     width: 160px;
     height: 160px;
   }
+}
+
+
+.staticProgram {
+  background: #f1f5f9;
+  border-radius: 60px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e2e8f0;
+  color: #0f172a;
+  font-size: 1rem;
 }

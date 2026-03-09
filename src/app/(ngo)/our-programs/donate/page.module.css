@@ -1,0 +1,31 @@
+.pageContainer {
+  display: flex;
+  min-height: 100vh; /* ensures the right column fills the viewport */
+}
+
+.leftColumn {
+  flex: 1;
+  overflow-y: auto;   /* makes the left side scrollable */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.rightColumn {
+  width: 50%;          /* adjust as needed */
+  position: sticky;
+  top: 0;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hide the right column on tablets and mobile */
+@media (max-width: 768px) {
+  .rightColumn {
+    display: none;
+  }
+  .leftColumn {
+    width: 100%;
+  }
+}
