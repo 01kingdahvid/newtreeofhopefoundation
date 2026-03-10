@@ -57,21 +57,22 @@ const Footer = () => {
             <li>ABOUT US</li>
             <li>OUR STORY</li>
             <li>OUR PROGRAMS</li>
+            <li>GET INVOLVED</li>
             <li>CONTACT US</li>
-            <li>IMPACT</li>
+            {/* <li>IMPACT</li>
             <li>WAYS TO HELP</li>
             <li>PARTNERSHIPS</li>
-            <li>EVENTS</li>
+            <li>EVENTS</li> */}
           </ul>
 
-          <h4 className={styles.subheading}>LEGAL & POLICY</h4>
+          {/* <h4 className={styles.subheading}>LEGAL & POLICY</h4>
 
           <ul>
             <li>LEGAL DOCUMENTS</li>
             <li>DONOR INTENT POLICY</li>
             <li>FUNDRAISING POLICY</li>
             <li>PRIVACY POLICY</li>
-          </ul>
+          </ul> */}
         </div>
 
         {/* COLUMN 4 */}

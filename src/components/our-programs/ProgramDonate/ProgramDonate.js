@@ -75,7 +75,7 @@ useEffect(() => {
 
   // ---------- Effects ----------
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 800);
+    const timer = setTimeout(() => setLoading(false), 1600);
     return () => clearTimeout(timer);
   }, []);
 

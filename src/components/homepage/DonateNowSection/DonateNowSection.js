@@ -96,7 +96,7 @@ const DonateNowSection = () => {
     // Simulate async fetch (programsData is imported)
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 800) // show loading state for demo
+    }, 1600) // show loading state for demo
     return () => clearTimeout(timer)
   }, [])
 
