@@ -1,0 +1,167 @@
+.mapSection {
+  position: relative;
+  /* padding:100px 20px; */
+  background: #f9fcff;
+  overflow: hidden;
+}
+
+/* subtle particles background */
+
+.mapSection::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  /* background:radial-gradient(circle,#03a1de20,transparent 70%); */
+  top: -200px;
+  left: -200px;
+  z-index: 0;
+}
+
+.mapSection::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  /* background:radial-gradient(circle,#03a1de15,transparent 70%); */
+  bottom: -200px;
+  right: -200px;
+  z-index: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.mapWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+}
+
+.country {
+  transition: all 0.25s ease;
+  cursor: pointer;
+  stroke: #ffffff;
+  stroke-width: 0.5;
+  /* removed filter: brightness(1.1) */
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .map {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .textHeader h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mapSection {
+    padding: 70px 10px;
+  }
+
+  .textHeader h2 {
+    font-size: 24px;
+  }
+}
+
+/* ── Tooltip ── */
+.tooltip {
+  position: fixed;
+  background: #0a1628;
+  color: #ffffff;
+  font-size: 1.1rem;
+  transition: background-color 0.2s;
+  font-family: Figtree, sans-serif;
+  font-weight: 500;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.3px;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 5px 5px 5px 0;
+  border-style: solid;
+  border-color: transparent #0a1628 transparent transparent;
+}
+
+/* ── Map wrapper needs relative positioning for zoom controls ── */
+.mapWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ── Zoom Controls ── */
+.zoomControls {
+  position: absolute;
+  bottom: 104px;
+  right: 34px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.zoomBtn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: #ffffff;
+  color: #333;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+  padding: 0;
+}
+
+.zoomBtn:hover:not(:disabled) {
+  background: #03a1de;
+  color: #ffffff;
+}
+
+.zoomBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.zoomDivider {
+  height: 1px;
+  background: #e5e5e5;
+  margin: 0 6px;
+}
