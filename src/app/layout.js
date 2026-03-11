@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header/Header";
 import "./globals.css";
 import Footer from "@/components/layout/Footer/Footer";
 import { Analytics } from "@vercel/analytics/next"
+import GoogleTranslateWidget from "@/components/shared/GoogleTranslate/GoogleTranslate";
 
 
 export const metadata = {
@@ -17,6 +18,8 @@ export default function RootLayout({ children }) {
         {children}
         <Footer/>
           <Analytics />
+
+          <GoogleTranslateWidget/>
       </body>
     </html>
   );

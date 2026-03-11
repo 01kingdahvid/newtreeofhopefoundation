@@ -72,17 +72,7 @@ export default function FeaturedLocalProject () {
       </div>
 
       {/* Fixed Translate Button */}
-      <a
-        href='https://translate.google.com/?sl=auto&tl=ko'
-        target='_blank'
-        className={styles.translate}
-        aria-label='Translate to Korean'
-      >
-        <svg viewBox='0 0 24 24'>
-          <path d='M12 3L4 7v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V7l-8-4z' />
-          <path d='M9 12h6M12 9v6' />
-        </svg>
-      </a>
+     
     </section>
   )
 }
