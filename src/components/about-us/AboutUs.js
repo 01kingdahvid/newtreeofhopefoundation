@@ -23,13 +23,27 @@ const AboutUs = () => {
           <div className={styles.text}>
             <h2>NEW TREE OF HOPE FOUNDATION</h2>
             <h5>
-              Compassionate relief and sustainable development for those most in
-              need.
+              A small team with a big heart, working tirelessly to bring hope
+              to those who need it most.
             </h5>
 
             <p>
-              New Tree of Hope Foundation (NTHF) is a nonprofit humanitarian and
-              development organization headquartered in Seoul, South Korea.
+              New Tree of Hope Foundation (NTHF) is a grassroots nonprofit
+              headquartered in Seoul, South Korea. We started with a simple
+              belief: that even a handful of dedicated people can make a real
+              difference. Today, we are still that handful—a small but passionate
+              team committed to serving vulnerable communities across Asia.
+            </p>
+
+            <p>
+              The truth is, we are not a large organization with endless
+              resources. We are a growing family of givers, doers, and dreamers
+              who often stretch every dollar to reach one more child, one more
+              family. Our vision is vast—a world where no one goes hungry,
+              homeless, or hopeless—but our current reach is limited by funds
+              and capacity. That’s why every partnership, every donation, and
+              every prayer matters. With your help, we can grow from a small
+              tree into a forest of hope.
             </p>
 
             <p>
@@ -37,14 +51,8 @@ const AboutUs = () => {
               serves people whose basic needs for food, shelter, health, and
               education are unmet due to disaster, conflict, or poverty. From
               emergency relief to long-term development, we work to restore
-              dignity and resilience for vulnerable communities worldwide and in
-              the U.S.
-            </p>
-
-            <p>
-              Our mission is not only to respond to urgent needs but to empower
-              communities to rebuild their lives and create a future filled with
-              possibility.
+              dignity and resilience for vulnerable communities in South Korea
+              and across Asia.
             </p>
           </div>
         </div>
@@ -58,7 +66,8 @@ const AboutUs = () => {
             <p>
               A world where every person affected by disaster, conflict, or
               poverty has the essentials to survive and the opportunity to
-              rebuild a dignified life.
+              rebuild a dignified life. We dream of expanding our reach to
+              every corner of Asia and beyond—but we know we can’t do it alone.
             </p>
           </div>
 
@@ -67,10 +76,12 @@ const AboutUs = () => {
 
             <p>
               New Tree of Hope Foundation (NTHF) provides emergency aid and
-              fosters sustainable development for communities in crisis. We
-              deliver food, shelter, healthcare, and education, while empowering
-              children, families, and vulnerable groups to overcome
-              hardship—regardless of race, nationality, or religion.
+              fosters sustainable development for communities in crisis. With
+              the resources we have, we deliver food, shelter, healthcare, and
+              education, while empowering children, families, and vulnerable
+              groups to overcome hardship—regardless of race, nationality, or
+              religion. As we grow, we aim to deepen our impact and broaden our
+              reach, one community at a time.
             </p>
           </div>
         </div>
@@ -80,37 +91,36 @@ const AboutUs = () => {
         <div className={styles.rowReverse}>
           <div className={styles.text}>
             <h2>Our Story</h2>
-            <h5>Empowering Humanity Together</h5>
+            <h5>From a seed of compassion to a growing tree of hope.</h5>
 
             <p>
-              New Tree of Hope Foundation (NTHF) is a humanitarian organization
-              committed to uplifting lives through compassion, action, and
-              community empowerment. New Tree of Hope Foundation was founded
-              with a simple yet powerful belief: that even the smallest act of
-              kindness can change a life. We believe that every person deserves
-              a fair chance to thrive. Through collaborative efforts and
-              grassroots initiatives, we strive to build a hunger-free world
-              where basic human rights are accessible to all.
+              New Tree of Hope Foundation began not in a boardroom, but in the
+              hearts of a few individuals who saw suffering and refused to look
+              away. What started as small acts of kindness—delivering meals to
+              elderly neighbors in Seoul, collecting school supplies for
+              orphanages—has slowly grown into an organized effort to serve
+              communities across Asia.
             </p>
 
             <p>
-              From global crises to local challenges, we respond with urgency
-              and care—providing essential aid and long-term support to
-              individuals and families in need. What began as a small initiative
-              to support families facing hardship has grown into a global
-              humanitarian effort dedicated to addressing urgent needs and
-              creating sustainable solutions.
+              But the truth is, we are still small. There are countless
+              villages we haven’t reached, orphanages we haven’t renovated,
+              children we haven’t sponsored. Our potential to do good far
+              outstrips our current resources. We are working day and night to
+              change that—building partnerships, raising awareness, and
+              stretching every donation to its maximum impact. We believe that
+              with more support, we can become the organization we dream of
+              being: one that can respond to every crisis, uplift every
+              community, and give every child a future.
             </p>
 
             <p>
               Our vision is rooted in dignity and inclusivity: we serve without
               boundaries of nationality, race, religion, or social status.
-            </p>
-
-            <p>
               Through partnerships, community engagement, and the generosity of
               supporters around the world, NTHF continues to expand its reach
-              and bring hope to people who need it most.
+              and bring hope to people who need it most—one step, one meal, one
+              life at a time.
             </p>
           </div>
 
