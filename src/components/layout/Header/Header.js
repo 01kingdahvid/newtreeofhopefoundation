@@ -2,12 +2,18 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import styles from './Header.module.css'
 
 export default function Header () {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const pathname = usePathname()
+   const router = useRouter()
+  
+    // Function to navigate to /our-programs
+    const handleContactUsClick = () => {
+      router.push('/contact-us')
+    }
 
   const toggleMobileNav = () => {
     setMobileNavOpen(!mobileNavOpen)
@@ -27,7 +33,7 @@ export default function Header () {
         {/* Top Bar */}
         <div className={styles.topBar}>
           <p>Join us to learn how you can protect children.</p>
-          <button>Join Us</button>
+          <button onClick={handleContactUsClick}>Join Us</button>
         </div>
 
         {/* Navbar */}

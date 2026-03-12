@@ -95,12 +95,18 @@
 .col ul {
   list-style: none;
   padding: 0;
+  text-decoration: none;
 }
 
 .col ul li {
   margin-bottom: 8px;
   opacity: 0.9;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.col ul li:hover {
+  color: #6fd0ea;
 }
 
 .subheading {
@@ -117,6 +123,11 @@
   color: white;
   font-weight: 600;
   cursor: pointer;
+}
+
+.donateBtn:hover{
+  background-color: #6fcfead0;
+  color: rgba(255, 255, 255, 0.429);
 }
 
 .input {
@@ -136,6 +147,11 @@
   color: white;
   font-weight: 600;
   cursor: pointer;
+}
+
+.subscribeBtn:hover{
+  background-color: #6fcfead0;
+  color: rgba(255, 255, 255, 0.429);
 }
 
 .note {

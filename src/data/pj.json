@@ -1,0 +1,774 @@
+[
+  {
+    "id": 1,
+    "slug": "food-security",
+    "title": "Nourishing Hope",
+    "subtitle": "From Seoul’s Streets to Vietnam’s Villages: No Child Should Go to Bed Hungry",
+    "tagline": "A Meal Today, A Dream Tomorrow",
+    "description": "In the bustling streets of Seoul, hidden behind the neon lights, are children and elderly who often go to bed hungry. Meanwhile, in the rural villages of Vietnam and the Philippines, families struggle to afford even a single meal a day. At NTHF, we believe no one should have to choose between food and hope. Our food security programs provide nutritious meals to orphanages in Seoul, support elderly nutrition in Japan, and deliver food parcels to families in Indonesia and Vietnam. Inspired by the resilience of communities like those in Cebu, Philippines, who rebuilt after Typhoon Rai, we are committed to ensuring every child and elderly person has the nourishment they need to thrive.",
+    "image": "/images/programs/food-security/child-smiling-with-meal.jpg",
+    "hero": {
+      "title": "Nourishing Hope Across Asia",
+      "heading": "Because No One Should Go Hungry",
+      "image": "/images/programs/food-security/elderly-receiving-meal-seoul.jpg",
+      "overlayText": "From Seoul’s orphanages to Vietnam’s villages, we’re turning hunger into hope, one meal at a time."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Feeding Dreams, One Meal at a Time",
+          "content": "NTHF’s food security initiatives are inspired by real stories—like 8-year-old Min-Ji in Seoul, who dreamed of becoming a teacher but struggled to focus in school due to hunger. Today, Min-Ji receives daily meals at her orphanage, thanks to our supporters. From Seoul to Jakarta, we provide orphanages with balanced meals, deliver food parcels to elderly in Osaka, and run community kitchens in Manila. Because food isn’t just sustenance; it’s the foundation of a brighter future.",
+          "cta": "Feed a Child Today"
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "The Reality of Hunger in Asia",
+          "stats": [
+            { "number": "1 in 5", "label": "Children in South Korea’s orphanages experience food insecurity (Korea Welfare Foundation, 2024)." },
+            { "number": "3.5M", "label": "Elderly in Japan live below the poverty line, often skipping meals (Japanese Ministry of Health, 2024)." },
+            { "number": "22%", "label": "Of children in rural Vietnam suffer from chronic malnutrition (UNICEF, 2024)." },
+            { "number": "10,000+", "label": "Meals served monthly by NTHF across Seoul, Osaka, Hanoi, and Manila." }
+          ]
+        }
+      },
+      {
+        "type": "initiatives",
+        "props": {
+          "title": "Our Food Security Programs",
+          "initiatives": [
+            {
+              "title": "Seoul Orphanage Meal Program",
+              "description": "Inspired by the story of the ‘Miracle Orphanage’ in Busan, where children thrived after receiving regular meals, NTHF provides daily nutritious meals to 15 orphanages in Seoul. Our meals include traditional Korean dishes like bibimbap and kimchi stew, ensuring children grow up healthy and strong.",
+              "image": "/images/programs/food-security/seoul-orphanage-meals.jpg",
+              "cta": "Sponsor a Meal"
+            },
+            {
+              "title": "Elderly Nutrition in Japan",
+              "description": "After the tragic story of an 80-year-old woman in Tokyo who passed away alone and malnourished, NTHF launched a program to deliver weekly food parcels to elderly individuals in Osaka and Kyoto. Each parcel includes nutritious, easy-to-prepare meals tailored to their dietary needs.",
+              "image": "/images/programs/food-security/japan-elderly-nutrition.jpg",
+              "cta": "Support an Elderly"
+            },
+            {
+              "title": "Rice for Rural Vietnam",
+              "description": "In the aftermath of the 2023 drought that devastated rice crops in the Mekong Delta, NTHF partnered with local farmers to distribute rice and essential food supplies to 5,000 families. Today, we continue to support these communities with monthly food parcels and farming resources.",
+              "image": "/images/programs/food-security/vietnam-rice-distribution.jpg",
+              "cta": "Donate Rice Parcels"
+            },
+            {
+              "title": "Community Kitchens in Manila",
+              "description": "Inspired by the resilience of Manila’s street children, NTHF opened three community kitchens in Tondo, serving hot meals to 200 children and families daily. Our kitchens also provide vocational training for mothers, teaching them culinary skills to secure future employment.",
+              "image": "/images/programs/food-security/manila-community-kitchen.jpg",
+              "cta": "Fund a Kitchen"
+            }
+          ]
+        }
+      },
+      {
+        "type": "story",
+        "props": {
+          "title": "Min-Ji’s Story: From Hunger to Hope",
+          "content": [
+            { "paragraph": "Min-Ji, an 8-year-old orphan in Seoul, often went to bed hungry. Her orphanage struggled to provide three meals a day, and Min-Ji’s grades suffered as a result. After NTHF’s meal program started at her orphanage, Min-Ji not only gained weight but also topped her class in math. ‘I want to be a teacher,’ she says, ‘so I can help other kids like me.’" },
+            { "paragraph": "Min-Ji’s story is just one of many. With your support, we can ensure no child in Seoul—or anywhere in Asia—has to face hunger alone." }
+          ],
+          "image": "/images/programs/food-security/min-ji-story.jpg"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/programs/food-security/seoul-orphanage-meals.jpg",
+            "/images/programs/food-security/japan-elderly-nutrition.jpg",
+            "/images/programs/food-security/vietnam-rice-distribution.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Turn Hunger into Hope",
+          "content": "Your donation provides meals to orphanages in Seoul, supports elderly nutrition in Japan, and delivers food parcels to families in Vietnam and the Philippines. Because no one should have to choose between food and their dreams.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "water-sanitation-hygiene",
+    "title": "Clean Water, Bright Futures",
+    "subtitle": "From Seoul’s Orphanages to Indonesia’s Villages: Water is Life",
+    "tagline": "Every Drop Counts",
+    "description": "Access to clean water is a basic human right, yet millions in Asia still lack it. In Seoul, some orphanages struggle with outdated plumbing, while in Indonesia, children walk miles to fetch contaminated water. NTHF is changing this. Inspired by the 2023 water crisis in Bali, where tourists had plenty but locals suffered, we’ve drilled wells in rural Indonesia, installed water filters in Seoul’s orphanages, and built sanitation facilities in Vietnam. Because clean water isn’t just a necessity—it’s a pathway to health, education, and dignity.",
+    "image": "/images/programs/wash/child-drinking-clean-water.jpg",
+    "hero": {
+      "title": "Clean Water for All",
+      "heading": "Because Every Child Deserves Safe Water",
+      "image": "/images/programs/wash/indonesia-water-well.jpg",
+      "overlayText": "From Seoul’s orphanages to Indonesia’s villages, we’re bringing clean water and hope to those who need it most."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Water Changes Everything",
+          "content": "Imagine a 10-year-old girl in Bali walking 3 hours a day to fetch water, missing school and childhood. Or an orphanage in Seoul where children bathe in cold, contaminated water. NTHF is transforming these realities. We’ve installed water purification systems in 20 Seoul orphanages, drilled wells in 15 Indonesian villages, and built sanitation facilities in Vietnamese schools. Because water isn’t just for drinking—it’s for living, learning, and thriving.",
+          "cta": "Give Clean Water"
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "The Water Crisis in Asia",
+          "stats": [
+            { "number": "40%", "label": "Of orphanages in South Korea have outdated or unsafe water systems (Korean Child Welfare, 2024)." },
+            { "number": "1 in 3", "label": "Children in rural Indonesia lack access to clean water (UNICEF, 2024)." },
+            { "number": "500M", "label": "People in Asia are affected by waterborne diseases annually (WHO, 2024)." },
+            { "number": "12,000+", "label": "People gained access to clean water through NTHF’s projects in 2024." }
+          ]
+        }
+      },
+      {
+        "type": "initiatives",
+        "props": {
+          "title": "Our WASH Programs",
+          "initiatives": [
+            {
+              "title": "Seoul Orphanage Water Filters",
+              "description": "After discovering that children in a Seoul orphanage were bathing in cold, contaminated water, NTHF installed water filtration and heating systems in 20 orphanages. Now, children like 7-year-old Ji-Hoon can enjoy warm showers and clean drinking water—simple luxuries that make a world of difference.",
+              "image": "/images/programs/wash/seoul-orphanage-water.jpg",
+              "cta": "Sponsor a Filter"
+            },
+            {
+              "title": "Indonesia Water Wells",
+              "description": "Inspired by the 2023 drought in East Nusa Tenggara, where families survived on less than 5 liters of water a day, NTHF drilled 10 deep wells in rural villages. Each well serves 200+ people, providing clean water for drinking, cooking, and farming.",
+              "image": "/images/programs/wash/indonesia-water-well.jpg",
+              "cta": "Build a Well"
+            },
+            {
+              "title": "Vietnam School Sanitation",
+              "description": "In Hanoi’s rural schools, girls often drop out due to lack of proper sanitation. NTHF built gender-segregated bathrooms and handwashing stations in 12 schools, ensuring girls like 13-year-old Lan can stay in school with dignity and safety.",
+              "image": "/images/programs/wash/vietnam-school-sanitation.jpg",
+              "cta": "Improve Sanitation"
+            },
+            {
+              "title": "Hygiene Education in the Philippines",
+              "description": "After Typhoon Rai devastated Cebu in 2021, waterborne diseases surged. NTHF launched hygiene workshops in 50 communities, teaching children and families how to purify water and prevent illness. Today, these communities have seen a 60% drop in water-related diseases.",
+              "image": "/images/programs/wash/philippines-hygiene-workshop.jpg",
+              "cta": "Teach Hygiene"
+            }
+          ]
+        }
+      },
+      {
+        "type": "story",
+        "props": {
+          "title": "Lan’s Story: Water Brings Dignity",
+          "content": [
+            { "paragraph": "Lan, a 13-year-old girl in rural Vietnam, used to skip school for a week every month due to the lack of proper sanitation. ‘I was embarrassed,’ she admits. After NTHF built new bathrooms at her school, Lan’s attendance improved, and she now dreams of becoming a doctor. ‘Clean water and toilets changed my life,’ she says." },
+            { "paragraph": "Lan’s story is a reminder of how something as simple as clean water and sanitation can transform lives. With your help, we can reach more girls like Lan." }
+          ],
+          "image": "/images/programs/wash/lan-story-vietnam.jpg"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/programs/wash/seoul-orphanage-water.jpg",
+            "/images/programs/wash/indonesia-water-well.jpg",
+            "/images/programs/wash/vietnam-school-sanitation.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Bring Clean Water to Asia",
+          "content": "Your donation provides water filters for Seoul’s orphanages, drills wells in Indonesia, builds sanitation facilities in Vietnam, and teaches hygiene in the Philippines. Because water isn’t just a resource—it’s a right.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "health",
+    "title": "Healing Hands, Healthy Futures",
+    "subtitle": "From Seoul’s Orphanages to Manila’s Slums: Healthcare for All",
+    "tagline": "Because Everyone Deserves a Chance to Thrive",
+    "description": "In the heart of Seoul, elderly individuals live in poverty, unable to afford basic healthcare. Meanwhile, in Manila’s slums, children die from preventable diseases. NTHF is bridging this gap. Inspired by the COVID-19 pandemic, which exposed the fragility of healthcare systems, we’ve expanded our health programs to provide free clinics in Seoul, mobile health units in Vietnam, and maternal care in Indonesia. Because health isn’t a privilege—it’s a right.",
+    "image": "/images/programs/health/elderly-health-check-seoul.jpg",
+    "hero": {
+      "title": "Healthcare for Asia’s Vulnerable",
+      "heading": "Healing Communities, One Life at a Time",
+      "image": "/images/programs/health/mobile-clinic-vietnam.jpg",
+      "overlayText": "From Seoul’s elderly to Manila’s children, we’re bringing healthcare to those who need it most."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Healthcare is a Human Right",
+          "content": "Meet Mr. Park, an 82-year-old in Seoul who hadn’t seen a doctor in 10 years due to cost. Or 5-year-old Maria in Manila, who nearly died from pneumonia because her family couldn’t afford treatment. NTHF’s healthcare programs provide free clinics for the elderly in Seoul, mobile health units in Vietnam, and maternal care in Indonesia. Because no one should suffer—or die—due to lack of healthcare.",
+          "cta": "Save a Life Today"
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "The Healthcare Gap in Asia",
+          "stats": [
+            { "number": "30%", "label": "Of elderly in South Korea cannot afford regular healthcare (Korean Health Ministry, 2024)." },
+            { "number": "1 in 4", "label": "Children in the Philippines die before age 5 from preventable diseases (UNICEF, 2024)." },
+            { "number": "50%", "label": "Of rural Vietnamese lack access to basic healthcare (WHO, 2024)." },
+            { "number": "8,000+", "label": "Patients treated annually by NTHF’s health programs across Asia." }
+          ]
+        }
+      },
+      {
+        "type": "initiatives",
+        "props": {
+          "title": "Our Healthcare Programs",
+          "initiatives": [
+            {
+              "title": "Seoul Elderly Free Clinics",
+              "description": "After the pandemic left many elderly in Seoul isolated and without care, NTHF opened three free clinics in low-income neighborhoods. Here, seniors like Mr. Park receive check-ups, medicines, and even physical therapy—all for free. ‘I feel like I matter again,’ says Mr. Park.",
+              "image": "/images/programs/health/seoul-elderly-clinic.jpg",
+              "cta": "Support a Clinic"
+            },
+            {
+              "title": "Mobile Health Units in Vietnam",
+              "description": "Inspired by the story of a mother who carried her sick child 10 km to the nearest clinic, NTHF launched mobile health units in rural Vietnam. These units travel to remote villages, providing check-ups, vaccinations, and emergency care to 500+ people monthly.",
+              "image": "/images/programs/health/vietnam-mobile-clinic.jpg",
+              "cta": "Fund a Mobile Unit"
+            },
+            {
+              "title": "Maternal Care in Indonesia",
+              "description": "In Java, Indonesia, maternal mortality rates are among the highest in Asia. NTHF’s maternal care program provides prenatal check-ups, safe delivery kits, and postnatal support to 1,000+ women annually. ‘Because of NTHF, my baby was born healthy,’ says Ibu Sari, a mother of three.",
+              "image": "/images/programs/health/indonesia-maternal-care.jpg",
+              "cta": "Save a Mother & Child"
+            },
+            {
+              "title": "Orphanage Health in the Philippines",
+              "description": "After a measles outbreak in a Manila orphanage left three children hospitalized, NTHF stepped in to provide vaccinations, health screenings, and hygiene education. Today, 15 orphanages in Metro Manila are part of our health program, ensuring children grow up healthy and strong.",
+              "image": "/images/programs/health/philippines-orphanage-health.jpg",
+              "cta": "Protect an Orphan"
+            }
+          ]
+        }
+      },
+      {
+        "type": "story",
+        "props": {
+          "title": "Ibu Sari’s Story: A Healthy Start",
+          "content": [
+            { "paragraph": "Ibu Sari, a 28-year-old mother in Java, Indonesia, nearly lost her second child due to complications during birth. With no clinic nearby, she relied on traditional birth attendants. After NTHF’s maternal care program reached her village, Ibu Sari received prenatal care and delivered her third child safely in a hospital. ‘My baby is alive because of NTHF,’ she says." },
+            { "paragraph": "Ibu Sari’s story is a testament to the power of accessible healthcare. With your support, we can reach more mothers and children like her." }
+          ],
+          "image": "/images/programs/health/ibu-sari-story.jpg"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/programs/health/seoul-elderly-clinic.jpg",
+            "/images/programs/health/vietnam-mobile-clinic.jpg",
+            "/images/programs/health/indonesia-maternal-care.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Bring Healthcare to Asia’s Vulnerable",
+          "content": "Your donation provides free clinics for the elderly in Seoul, mobile health units in Vietnam, maternal care in Indonesia, and orphanage health programs in the Philippines. Because healthcare is a right, not a privilege.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "shelter",
+    "title": "Safe Havens, Strong Futures",
+    "subtitle": "From Seoul’s Orphanages to Japan’s Elderly: A Home for Everyone",
+    "tagline": "Because Everyone Deserves a Place to Call Home",
+    "description": "In Seoul, orphanages struggle with crumbling infrastructure, while in Japan, elderly individuals live in homes unfit for winter. NTHF is changing this. Inspired by the 2024 earthquake in Ishikawa, Japan, which left thousands homeless, we’ve expanded our shelter programs to renovate orphanages in Seoul, build elderly homes in Osaka, and provide transitional housing in Manila. Because a home isn’t just a roof—it’s safety, warmth, and hope.",
+    "image": "/images/programs/shelter/orphanage-renovation-seoul.jpg",
+    "hero": {
+      "title": "Safe Shelter for Asia’s Vulnerable",
+      "heading": "Building Homes, Restoring Dignity",
+      "image": "/images/programs/shelter/elderly-home-osaka.jpg",
+      "overlayText": "From Seoul’s orphanages to Osaka’s elderly, we’re turning houses into homes."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "A Home is a Human Right",
+          "content": "Imagine a 10-year-old in Seoul sleeping in a room with no heat, or an 80-year-old in Osaka living in a home with no insulation. NTHF’s shelter programs renovate orphanages, build elderly homes, and provide transitional housing for homeless families. Because everyone deserves a safe, warm place to call home.",
+          "cta": "Build a Home Today"
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "The Shelter Crisis in Asia",
+          "stats": [
+            { "number": "40%", "label": "Of orphanages in South Korea operate in buildings over 50 years old (Korean Welfare, 2024)." },
+            { "number": "1 in 5", "label": "Elderly in Japan live in homes without proper heating (Japanese Ministry of Health, 2024)." },
+            { "number": "3M", "label": "People are homeless in the Philippines, many of them children (UN Habitat, 2024)." },
+            { "number": "1,200+", "label": "People housed annually through NTHF’s shelter programs." }
+          ]
+        }
+      },
+      {
+        "type": "initiatives",
+        "props": {
+          "title": "Our Shelter Programs",
+          "initiatives": [
+            {
+              "title": "Seoul Orphanage Renovations",
+              "description": "After visiting an orphanage in Seoul where children slept in unheated rooms, NTHF launched a renovation program. We’ve since upgraded 12 orphanages with proper heating, insulation, and modern facilities. ‘Now, our home feels like a home,’ says 14-year-old orphan Soo-Min.",
+              "image": "/images/programs/shelter/seoul-orphanage-renovation.jpg",
+              "cta": "Renovate an Orphanage"
+            },
+            {
+              "title": "Elderly Homes in Osaka",
+              "description": "Inspired by the story of an elderly woman in Osaka who froze to death in her unheated home, NTHF built 10 elderly homes with proper insulation and heating. Each home houses 5-6 seniors, providing them with safety, warmth, and community.",
+              "image": "/images/programs/shelter/osaka-elderly-home.jpg",
+              "cta": "Build an Elderly Home"
+            },
+            {
+              "title": "Transitional Housing in Manila",
+              "description": "After Typhoon Rai left thousands homeless in the Philippines, NTHF built transitional housing units in Cebu and Manila. These units provide temporary shelter while families rebuild their lives. ‘This is our first step to a new beginning,’ says Maria, a mother of three.",
+              "image": "/images/programs/shelter/manila-transitional-housing.jpg",
+              "cta": "Fund Transitional Housing"
+            },
+            {
+              "title": "Winterization in Japan",
+              "description": "Japan’s elderly are particularly vulnerable during winter. NTHF’s winterization program provides heating units, blankets, and insulation to 500+ elderly homes in Osaka and Kyoto. ‘For the first time in years, I’m not cold,’ says 78-year-old Mrs. Tanaka.",
+              "image": "/images/programs/shelter/japan-winterization.jpg",
+              "cta": "Provide Winter Warmth"
+            }
+          ]
+        }
+      },
+      {
+        "type": "story",
+        "props": {
+          "title": "Soo-Min’s Story: A Warm Home",
+          "content": [
+            { "paragraph": "Soo-Min, a 14-year-old orphan in Seoul, used to dread winter. ‘Our rooms were so cold, we’d sleep huddled together,’ she recalls. After NTHF renovated her orphanage, Soo-Min no longer fears the cold. ‘Now, I can study and dream of becoming a doctor,’ she says." },
+            { "paragraph": "Soo-Min’s story is a reminder of how a safe, warm home can change a child’s future. With your help, we can give more children like Soo-Min the home they deserve." }
+          ],
+          "image": "/images/programs/shelter/soo-min-story.jpg"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/programs/shelter/seoul-orphanage-renovation.jpg",
+            "/images/programs/shelter/osaka-elderly-home.jpg",
+            "/images/programs/shelter/manila-transitional-housing.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Give the Gift of Home",
+          "content": "Your donation renovates orphanages in Seoul, builds elderly homes in Osaka, provides transitional housing in Manila, and winterizes homes in Japan. Because everyone deserves a place to call home.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "child-protection",
+    "title": "Every Child Deserves Love",
+    "subtitle": "From Seoul’s Orphanages to Vietnam’s Streets: Protecting Asia’s Children",
+    "tagline": "Because Childhood Should Be Filled with Love, Not Fear",
+    "description": "In Seoul, orphanages struggle to provide emotional and educational support, while in Vietnam, children as young as 5 work on the streets to survive. NTHF is changing this. Inspired by the story of a 12-year-old girl in Hanoi who was trafficked but rescued, we’ve expanded our child protection programs to provide orphan care in Seoul, street children rehabilitation in Vietnam, and education for at-risk youth in the Philippines. Because every child deserves love, safety, and a future.",
+    "image": "/images/programs/child-protection/orphan-smiling-seoul.jpg",
+    "hero": {
+      "title": "Protecting Asia’s Children",
+      "heading": "Because Every Child Deserves a Childhood",
+      "image": "/images/programs/child-protection/vietnam-street-children.jpg",
+      "overlayText": "From Seoul’s orphanages to Hanoi’s streets, we’re giving children the love and safety they deserve."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Childhood is a Right, Not a Privilege",
+          "content": "Meet 10-year-old Linh in Hanoi, who was forced to sell flowers on the street to support her family. Or 8-year-old Ji-Hoon in Seoul, who lived in an orphanage with no books or toys. NTHF’s child protection programs provide orphan care in Seoul, street children rehabilitation in Vietnam, and education for at-risk youth in the Philippines. Because every child deserves love, safety, and the chance to dream.",
+          "cta": "Protect a Child Today"
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "The Child Protection Crisis in Asia",
+          "stats": [
+            { "number": "15,000", "label": "Children live in orphanages in South Korea, many with limited resources (Korean Child Welfare, 2024)." },
+            { "number": "1.2M", "label": "Street children in Vietnam, vulnerable to trafficking and abuse (UNICEF, 2024)." },
+            { "number": "30%", "label": "Of children in the Philippines experience abuse or neglect (UNICEF, 2024)." },
+            { "number": "5,000+", "label": "Children supported annually by NTHF’s child protection programs." }
+          ]
+        }
+      },
+      {
+        "type": "initiatives",
+        "props": {
+          "title": "Our Child Protection Programs",
+          "initiatives": [
+            {
+              "title": "Seoul Orphan Care",
+              "description": "After discovering that many Seoul orphanages lacked books, toys, and emotional support, NTHF launched a holistic care program. We provide educational resources, counseling, and extracurricular activities to 15 orphanages. ‘For the first time, I feel like I belong,’ says 9-year-old orphan Min-Ji.",
+              "image": "/images/programs/child-protection/seoul-orphan-care.jpg",
+              "cta": "Sponsor an Orphan"
+            },
+            {
+              "title": "Vietnam Street Children Rehabilitation",
+              "description": "Inspired by the rescue of a 12-year-old girl trafficked from Hanoi, NTHF opened a rehabilitation center for street children. Here, children receive education, vocational training, and counseling. ‘I thought my life was over,’ says Linh, now a seamstress. ‘But NTHF gave me a second chance.’",
+              "image": "/images/programs/child-protection/vietnam-street-children.jpg",
+              "cta": "Rehabilitate a Child"
+            },
+            {
+              "title": "Philippines Education for At-Risk Youth",
+              "description": "In Manila’s slums, many children drop out of school to work. NTHF’s education program provides school supplies, tutoring, and scholarships to 1,000+ at-risk youth. ‘I want to be a teacher,’ says 11-year-old Maria, who now attends school regularly thanks to NTHF.",
+              "image": "/images/programs/child-protection/philippines-education.jpg",
+              "cta": "Educate a Child"
+            },
+            {
+              "title": "Japan Foster Care Support",
+              "description": "Japan’s foster care system is overwhelmed, with many children placed in institutions. NTHF supports foster families with resources, training, and financial aid. ‘Foster care changed my life,’ says 16-year-old Yuki, who was placed with a loving family through NTHF’s program.",
+              "image": "/images/programs/child-protection/japan-foster-care.jpg",
+              "cta": "Support Foster Care"
+            }
+          ]
+        }
+      },
+      {
+        "type": "story",
+        "props": {
+          "title": "Linh’s Story: From the Streets to the Classroom",
+          "content": [
+            { "paragraph": "Linh, a 12-year-old girl in Hanoi, was trafficked and forced to work on the streets. After being rescued by local authorities, she was placed in NTHF’s rehabilitation center. Today, Linh attends school and dreams of becoming a social worker. ‘I want to help other kids like me,’ she says." },
+            { "paragraph": "Linh’s story is a powerful example of how child protection programs can transform lives. With your support, we can reach more children like Linh." }
+          ],
+          "image": "/images/programs/child-protection/linh-story.jpg"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/programs/child-protection/seoul-orphan-care.jpg",
+            "/images/programs/child-protection/vietnam-street-children.jpg",
+            "/images/programs/child-protection/philippines-education.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Protect Asia’s Children",
+          "content": "Your donation provides orphan care in Seoul, rehabilitates street children in Vietnam, educates at-risk youth in the Philippines, and supports foster care in Japan. Because every child deserves love, safety, and a future.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "education",
+    "title": "Education: The Key to a Brighter Future",
+    "subtitle": "From Seoul’s Orphanages to Indonesia’s Villages: Unlocking Potential",
+    "tagline": "Because Education Changes Everything",
+    "description": "In Seoul, orphans dream of becoming doctors and teachers but lack the resources to pursue their dreams. In Indonesia, girls drop out of school to help their families. NTHF is changing this. Inspired by the story of a 16-year-old orphan in Seoul who earned a scholarship to university, we’ve expanded our education programs to provide school supplies in Seoul, scholarships in Vietnam, vocational training in the Philippines, and teacher training in Indonesia. Because education isn’t just about learning—it’s about transforming lives.",
+    "image": "/images/programs/education/orphan-studying-seoul.jpg",
+    "hero": {
+      "title": "Education for Asia’s Youth",
+      "heading": "Unlocking Potential, One Child at a Time",
+      "image": "/images/programs/education/vietnam-girl-scholarship.jpg",
+      "overlayText": "From Seoul’s orphanages to Indonesia’s villages, we’re giving children the tools to build a brighter future."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Education is the Great Equalizer",
+          "content": "Meet 16-year-old Ji-Eun in Seoul, an orphan who dreamed of becoming a doctor but had no way to pay for university. Or 12-year-old Ani in Indonesia, who dropped out of school to work in a factory. NTHF’s education programs provide school supplies in Seoul, scholarships in Vietnam, vocational training in the Philippines, and teacher training in Indonesia. Because education isn’t just about books—it’s about breaking cycles of poverty and empowering dreams.",
+          "cta": "Educate a Child Today"
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "The Education Crisis in Asia",
+          "stats": [
+            { "number": "60%", "label": "Of orphans in South Korea do not attend university due to financial barriers (Korean Education Ministry, 2024)." },
+            { "number": "1 in 3", "label": "Girls in rural Indonesia drop out of school by age 12 (UNESCO, 2024)." },
+            { "number": "20%", "label": "Of youth in the Philippines lack access to vocational training (ILO, 2024)." },
+            { "number": "3,000+", "label": "Children and youth educated annually through NTHF’s programs." }
+          ]
+        }
+      },
+      {
+        "type": "initiatives",
+        "props": {
+          "title": "Our Education Programs",
+          "initiatives": [
+            {
+              "title": "Seoul Orphan Scholarships",
+              "description": "Inspired by Ji-Eun, a 16-year-old orphan in Seoul who earned a scholarship to study medicine, NTHF’s scholarship program provides tuition, books, and mentorship to 200+ orphans annually. ‘I want to heal others like NTHF healed me,’ says Ji-Eun.",
+              "image": "/images/programs/education/seoul-orphan-scholarship.jpg",
+              "cta": "Sponsor a Scholar"
+            },
+            {
+              "title": "Vietnam Girls’ Education",
+              "description": "In rural Vietnam, many girls drop out of school to work or marry young. NTHF’s girls’ education program provides scholarships, school supplies, and mentorship to 500+ girls. ‘I want to be a teacher,’ says 14-year-old An, who now attends school regularly thanks to NTHF.",
+              "image": "/images/programs/education/vietnam-girl-education.jpg",
+              "cta": "Educate a Girl"
+            },
+            {
+              "title": "Philippines Vocational Training",
+              "description": "In Manila’s slums, many youth lack job skills. NTHF’s vocational training program teaches carpentry, cooking, and IT skills to 300+ youth annually. ‘Now I can support my family,’ says 19-year-old Marco, who trained as a chef through NTHF’s program.",
+              "image": "/images/programs/education/philippines-vocational-training.jpg",
+              "cta": "Train a Youth"
+            },
+            {
+              "title": "Indonesia Teacher Training",
+              "description": "In rural Indonesia, many teachers lack training and resources. NTHF’s teacher training program provides workshops, materials, and mentorship to 200+ teachers. ‘My students are now excited to learn,’ says Ibu Lina, a teacher in Java.",
+              "image": "/images/programs/education/indonesia-teacher-training.jpg",
+              "cta": "Train a Teacher"
+            }
+          ]
+        }
+      },
+      {
+        "type": "story",
+        "props": {
+          "title": "Ji-Eun’s Story: From Orphan to Medical Student",
+          "content": [
+            { "paragraph": "Ji-Eun, a 16-year-old orphan in Seoul, dreamed of becoming a doctor but had no way to pay for university. After receiving an NTHF scholarship, she is now studying medicine at Korea University. ‘I want to heal others like NTHF healed me,’ she says." },
+            { "paragraph": "Ji-Eun’s story is a powerful reminder of how education can transform lives. With your support, we can help more children like Ji-Eun achieve their dreams." }
+          ],
+          "image": "/images/programs/education/ji-eun-story.jpg"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/programs/education/seoul-orphan-scholarship.jpg",
+            "/images/programs/education/vietnam-girl-education.jpg",
+            "/images/programs/education/philippines-vocational-training.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Invest in Asia’s Future",
+          "content": "Your donation provides scholarships in Seoul, educates girls in Vietnam, trains youth in the Philippines, and supports teachers in Indonesia. Because education is the key to breaking the cycle of poverty and unlocking potential.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "livelihoods-women-empowerment",
+    "title": "Empowering Women, Transforming Communities",
+    "subtitle": "From Seoul’s Single Mothers to Vietnam’s Entrepreneurs: Building Brighter Futures",
+    "tagline": "Because When Women Thrive, Communities Thrive",
+    "description": "In Seoul, single mothers struggle to make ends meet, while in Vietnam, women entrepreneurs lack access to capital. NTHF is changing this. Inspired by the story of a Seoul mother who started a bakery with NTHF’s help, we’ve expanded our livelihood programs to provide vocational training in Seoul, microloans in Vietnam, agricultural support in Indonesia, and business mentorship in the Philippines. Because empowering women isn’t just about jobs—it’s about transforming communities.",
+    "image": "/images/programs/livelihoods/seoul-mother-bakery.jpg",
+    "hero": {
+      "title": "Women’s Empowerment in Asia",
+      "heading": "Creating Opportunities, Changing Lives",
+      "image": "/images/programs/livelihoods/vietnam-woman-entrepreneur.jpg",
+      "overlayText": "From Seoul’s single mothers to Vietnam’s entrepreneurs, we’re empowering women to build brighter futures."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Empowering Women, Transforming Lives",
+          "content": "Meet Ji-Yeon, a single mother in Seoul who struggled to support her two children on a minimum-wage job. Or Thi, a woman in Vietnam who dreamed of starting a tailoring business but lacked capital. NTHF’s livelihood programs provide vocational training in Seoul, microloans in Vietnam, agricultural support in Indonesia, and business mentorship in the Philippines. Because when women thrive, their families and communities thrive too.",
+          "cta": "Empower a Woman Today"
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "The Gender Gap in Asia",
+          "stats": [
+            { "number": "60%", "label": "Of single mothers in South Korea live below the poverty line (Korean Women’s Development Institute, 2024)." },
+            { "number": "70%", "label": "Of women in Vietnam lack access to capital to start businesses (World Bank, 2024)." },
+            { "number": "1 in 3", "label": "Women in Indonesia work in unpaid or informal jobs (ILO, 2024)." },
+            { "number": "2,000+", "label": "Women empowered annually through NTHF’s livelihood programs." }
+          ]
+        }
+      },
+      {
+        "type": "initiatives",
+        "props": {
+          "title": "Our Women’s Empowerment Programs",
+          "initiatives": [
+            {
+              "title": "Seoul Single Mothers Vocational Training",
+              "description": "Inspired by Ji-Yeon, who started a bakery with NTHF’s help, our vocational training program teaches single mothers in Seoul skills like baking, IT, and beauty services. ‘This program gave me my dignity back,’ says Ji-Yeon, who now employs three other mothers.",
+              "image": "/images/programs/livelihoods/seoul-mother-bakery.jpg",
+              "cta": "Train a Mother"
+            },
+            {
+              "title": "Vietnam Women’s Microloans",
+              "description": "Thi, a woman in Hanoi, dreamed of starting a tailoring business but lacked capital. NTHF’s microloan program provided her with the funds to buy sewing machines and materials. Today, Thi employs five other women. ‘This loan changed my life,’ she says.",
+              "image": "/images/programs/livelihoods/vietnam-woman-tailoring.jpg",
+              "cta": "Fund a Microloan"
+            },
+            {
+              "title": "Indonesia Agricultural Support",
+              "description": "In rural Indonesia, women farmers struggle with low yields and lack of resources. NTHF’s agricultural program provides training, seeds, and equipment to 300+ women farmers. ‘Now, I can feed my family and sell my crops,’ says Ibu Lina, a farmer in Java.",
+              "image": "/images/programs/livelihoods/indonesia-woman-farmer.jpg",
+              "cta": "Support a Farmer"
+            },
+            {
+              "title": "Philippines Business Mentorship",
+              "description": "In Manila, many women lack the skills to start or grow their businesses. NTHF’s business mentorship program provides training, networking, and support to 200+ women entrepreneurs. ‘I never thought I could run my own shop,’ says Maria, who now owns a successful sari-sari store.",
+              "image": "/images/programs/livelihoods/philippines-woman-entrepreneur.jpg",
+              "cta": "Mentor a Woman"
+            }
+          ]
+        }
+      },
+      {
+        "type": "story",
+        "props": {
+          "title": "Ji-Yeon’s Story: From Struggle to Success",
+          "content": [
+            { "paragraph": "Ji-Yeon, a single mother in Seoul, struggled to support her two children on a minimum-wage job. After joining NTHF’s vocational training program, she learned baking and started her own business. ‘Now, I can provide for my children and even hire other mothers,’ she says." },
+            { "paragraph": "Ji-Yeon’s story is a powerful example of how empowering women can transform lives. With your support, we can help more women like Ji-Yeon achieve their dreams." }
+          ],
+          "image": "/images/programs/livelihoods/ji-yeon-story.jpg"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/programs/livelihoods/seoul-mother-bakery.jpg",
+            "/images/programs/livelihoods/vietnam-woman-tailoring.jpg",
+            "/images/programs/livelihoods/indonesia-woman-farmer.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Empower Women, Transform Communities",
+          "content": "Your donation provides vocational training in Seoul, microloans in Vietnam, agricultural support in Indonesia, and business mentorship in the Philippines. Because when women thrive, their families and communities thrive too.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "faith-based-giving",
+    "title": "Give with Faith, Change Lives",
+    "subtitle": "From Seoul’s Orphanages to Vietnam’s Villages: Sharing Blessings Across Asia",
+    "tagline": "Because Faith Without Action is Incomplete",
+    "description": "In Seoul, orphanages struggle to provide for children during holidays, while in Vietnam, families go without during Tet. NTHF’s faith-based giving programs ensure that everyone can celebrate with dignity. Inspired by the spirit of giving during Ramadan, Eid, and Lunar New Year, we provide food baskets in Seoul, Eid gifts in Indonesia, Tet support in Vietnam, and Thanksgiving meals in the Philippines. Because faith is about compassion, and compassion is about action.",
+    "image": "/images/programs/faith-based-giving/seoul-orphanage-eid.jpg",
+    "hero": {
+      "title": "Faith-Based Giving in Asia",
+      "heading": "Share Your Blessings, Change Lives",
+      "image": "/images/programs/faith-based-giving/vietnam-tet-support.jpg",
+      "overlayText": "From Seoul’s orphanages to Vietnam’s villages, we’re turning faith into action and blessings into hope."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Faith in Action",
+          "content": "Imagine an orphan in Seoul receiving their first Eid gift, or a family in Vietnam celebrating Tet with a proper meal. NTHF’s faith-based giving programs provide food baskets in Seoul, Eid gifts in Indonesia, Tet support in Vietnam, and Thanksgiving meals in the Philippines. Because faith is about more than words—it’s about making a difference in the lives of those in need.",
+          "cta": "Give with Faith Today"
+        }
+      },
+      {
+        "type": "initiatives",
+        "props": {
+          "title": "Our Faith-Based Giving Programs",
+          "initiatives": [
+            {
+              "title": "Seoul Orphanage Eid & Christmas",
+              "description": "Many orphans in Seoul have never celebrated Eid or Christmas with gifts or special meals. NTHF’s program provides food baskets, gifts, and festive meals to 15 orphanages during these holidays. ‘Last Eid was the first time I felt like a real child,’ says 10-year-old Min-Ji.",
+              "image": "/images/programs/faith-based-giving/seoul-orphanage-eid.jpg",
+              "cta": "Give an Eid Gift"
+            },
+            {
+              "title": "Indonesia Eid al-Fitr",
+              "description": "In Indonesia, many families struggle to celebrate Eid with dignity. NTHF’s Eid program provides food baskets, new clothes, and cash assistance to 500+ families. ‘This Eid, my children smiled for the first time in years,’ says Ibu Sari, a mother of three.",
+              "image": "/images/programs/faith-based-giving/indonesia-eid.jpg",
+              "cta": "Support Eid in Indonesia"
+            },
+            {
+              "title": "Vietnam Tet Support",
+              "description": "Tet is Vietnam’s most important holiday, yet many families cannot afford to celebrate. NTHF’s Tet program provides food baskets, new clothes, and cash assistance to 300+ families. ‘Because of NTHF, my children had a Tet to remember,’ says Thi, a single mother in Hanoi.",
+              "image": "/images/programs/faith-based-giving/vietnam-tet-support.jpg",
+              "cta": "Celebrate Tet with a Family"
+            },
+            {
+              "title": "Philippines Thanksgiving Meals",
+              "description": "In the Philippines, many families go without a proper meal during Thanksgiving. NTHF’s program provides festive meals to 200+ families in Manila and Cebu. ‘This was our first real Thanksgiving,’ says Maria, a mother of four.",
+              "image": "/images/programs/faith-based-giving/philippines-thanksgiving.jpg",
+              "cta": "Provide a Thanksgiving Meal"
+            }
+          ]
+        }
+      },
+      {
+        "type": "story",
+        "props": {
+          "title": "Min-Ji’s First Eid",
+          "content": [
+            { "paragraph": "Min-Ji, a 10-year-old orphan in Seoul, had never celebrated Eid with gifts or a special meal. Last year, NTHF’s Eid program changed that. ‘I felt so loved,’ she says. ‘For the first time, I felt like I belonged.’" },
+            { "paragraph": "Min-Ji’s story is a reminder of how faith-based giving can bring joy and dignity to those who need it most. With your support, we can create more moments like this for children and families across Asia." }
+          ],
+          "image": "/images/programs/faith-based-giving/min-ji-eid-story.jpg"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/programs/faith-based-giving/seoul-orphanage-eid.jpg",
+            "/images/programs/faith-based-giving/indonesia-eid.jpg",
+            "/images/programs/faith-based-giving/vietnam-tet-support.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Turn Faith into Action",
+          "content": "Your donation provides Eid gifts in Seoul, food baskets in Indonesia, Tet support in Vietnam, and Thanksgiving meals in the Philippines. Because faith is about compassion, and compassion is about action.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
+  }
+]

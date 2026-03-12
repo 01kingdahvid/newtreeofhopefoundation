@@ -1,0 +1,157 @@
+.container{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+display:flex;
+gap:60px;
+align-items:flex-start;
+}
+
+.containerSmall{
+max-width:1000px;
+margin:auto;
+padding:80px 20px;
+}
+
+.donateSection{
+background:#ffffff;
+}
+
+/* LEFT DONATE CARD */
+
+.donateCard{
+flex:1;
+/* background:#f8fbff;   */
+border-radius:10px;
+/* padding:35px; */
+/* box-shadow:0 10px 30px rgba(0,0,0,0.08); */
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.donateCard h3{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.input{
+padding:12px;
+border:1px solid #ddd;
+border-radius:6px;
+font-size:14px;
+}
+
+.textarea{
+padding:12px;
+border:1px solid #ddd;
+border-radius:6px;
+min-height:90px;
+resize:none;
+}
+
+.donateBtn{
+margin-top:10px;
+padding:14px;
+background:#00adef;
+color:white;
+border:none;
+border-radius:6px;
+font-weight:600;
+cursor:pointer;
+transition:.2s;
+}
+
+.donateBtn:hover{
+background:#0094cc;
+}
+
+/* RIGHT INFO */
+
+.donateInfo{
+flex:1;
+}
+
+.donateInfo h2{
+font-size:32px;
+margin-bottom:15px;
+}
+
+.donateInfo p{
+color:#555;
+margin-bottom:20px;
+}
+
+.donateInfo ol{
+padding-left:18px;
+display:flex;
+flex-direction:column;
+gap:18px;
+color:#444;
+line-height:1.6;
+}
+
+/* BITCOIN ADVANTAGES */
+
+.bitcoinAdvantages{
+background:#f5f5f5;
+}
+
+.bitcoinAdvantages h2{
+font-size:28px;
+margin-bottom:30px;
+}
+
+.advantageList{
+list-style:none;
+display:flex;
+flex-direction:column;
+gap:18px;
+color:#444;
+line-height:1.7;
+}
+
+.cryptoLink{
+margin-top:25px;
+}
+
+.cryptoLink span{
+color:#00adef;
+cursor:pointer;
+}
+
+.smallNote{
+margin-top:20px;
+font-size:13px;
+color:#777;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.container{
+flex-direction:column;
+}
+
+}
+
+@media(max-width:768px){
+
+.donateInfo h2{
+font-size:26px;
+}
+
+}
+
+@media(max-width:480px){
+
+.container{
+padding:60px 15px;
+}
+
+.containerSmall{
+padding:60px 15px;
+}
+
+}

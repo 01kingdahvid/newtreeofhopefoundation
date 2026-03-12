@@ -1,9 +1,18 @@
+import DonateNow from '@/components/donate/DonateNow/DonateNow'
+import PageHero from '@/components/shared/PageHero/PageHero'
 import React from 'react'
 
-const page = () => {
+const DonatePage = () => {
   return (
-    <div>page</div>
+    <main>
+      <PageHero
+        title='DONATE BITCOIN TO CHARITY'
+        image='/images/shared/kids-2.avif'
+      />
+
+      <DonateNow />
+    </main>
   )
 }
 
-export default page
+export default DonatePage

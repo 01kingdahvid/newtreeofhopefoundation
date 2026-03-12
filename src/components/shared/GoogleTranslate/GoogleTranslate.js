@@ -2,37 +2,77 @@
 
 import { useEffect } from 'react';
 
+// Set the googtrans cookie on BOTH the bare hostname and with a dot-prefixed domain
+// This must happen before the script loads to take effect on first visit
+function setKoreanCookie() {
+  const hostname = window.location.hostname;
+  const cookieValue = 'googtrans=/en/ko';
+
+  // Set for current domain
+  document.cookie = `${cookieValue}; path=/; domain=${hostname}`;
+  // Set for dot-prefixed domain (required by Google Translate to actually apply)
+  document.cookie = `${cookieValue}; path=/; domain=.${hostname}`;
+  // Also set without domain (catches localhost and edge cases)
+  document.cookie = `${cookieValue}; path=/`;
+}
+
+function forceKoreanTranslation() {
+  // Try using the Google Translate combo-box API to switch language
+  const trySwitch = () => {
+    const select = document.querySelector('.goog-te-combo');
+    if (select) {
+      select.value = 'ko';
+      select.dispatchEvent(new Event('change'));
+      return true;
+    }
+    return false;
+  };
+
+  // Retry a few times since the widget may not be ready immediately
+  let attempts = 0;
+  const interval = setInterval(() => {
+    if (trySwitch() || attempts > 20) clearInterval(interval);
+    attempts++;
+  }, 150);
+}
+
 export default function GoogleTranslateWidget() {
   useEffect(() => {
-    // Prevent duplicate script injection
-    if (document.getElementById('google-translate-script')) return;
+    // ✅ Set the cookie BEFORE script loads so Google picks it up on first visit
+    setKoreanCookie();
 
-    // Define the callback before the script loads
+    // Prevent duplicate script injection
+    if (document.getElementById('google-translate-script')) {
+      // Script already loaded — just force the language switch
+      forceKoreanTranslation();
+      return;
+    }
+
     window.googleTranslateElementInit = function () {
       new window.google.translate.TranslateElement(
         {
-          pageLanguage: 'en', // Your website's default language
-          includedLanguages: 'ko,en,ja,zh-CN,zh-TW,th,vi,id,ms,fil,hi,bn,ta,te,ur,ar,fr,es,de,pt,ru,it,nl,tr,pl,uk',
+          pageLanguage: 'en',
+          includedLanguages:
+            'ko,en,ja,zh-CN,zh-TW,th,vi,id,ms,fil,hi,bn,ta,te,ur,ar,fr,es,de,pt,ru,it,nl,tr,pl,uk',
           layout: window.google.translate.TranslateElement.InlineLayout.VERTICAL,
           autoDisplay: false,
         },
         'google_translate_element'
       );
 
-      // Force Korean as default translation via cookie
-      document.cookie = 'googtrans=/en/ko; path=/; domain=' + window.location.hostname;
+      // ✅ After widget is ready, programmatically switch to Korean
+      forceKoreanTranslation();
     };
 
-    // Load the Google Translate script
     const script = document.createElement('script');
     script.id = 'google-translate-script';
-    script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.src =
+      '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
 
     return () => {
-      // Cleanup on unmount
       const existingScript = document.getElementById('google-translate-script');
       if (existingScript) existingScript.remove();
       delete window.googleTranslateElementInit;
@@ -41,9 +81,7 @@ export default function GoogleTranslateWidget() {
 
   return (
     <>
-      {/* Inject style overrides to clean up Google's default widget UI */}
       <style>{`
-        /* Hide Google's top banner frame */
         .goog-te-banner-frame,
         #goog-gt-tt,
         .goog-te-balloon-frame {
@@ -54,7 +92,6 @@ export default function GoogleTranslateWidget() {
           top: 0 !important;
         }
 
-        /* Style the select dropdown */
         .goog-te-gadget-simple {
           background: transparent !important;
           border: none !important;
@@ -75,13 +112,11 @@ export default function GoogleTranslateWidget() {
           display: none !important;
         }
 
-        /* Arrow icon */
         .goog-te-gadget-simple .goog-te-menu-value span:last-child {
           color: #6b7280 !important;
         }
       `}</style>
 
-      {/* Floating widget container */}
       <div
         style={{
           position: 'fixed',
@@ -101,10 +136,8 @@ export default function GoogleTranslateWidget() {
           minWidth: '160px',
         }}
       >
-        {/* Globe icon */}
         <span style={{ fontSize: '16px', flexShrink: 0 }}>🌐</span>
 
-        {/* Label */}
         <span
           style={{
             fontSize: '12px',
@@ -118,7 +151,6 @@ export default function GoogleTranslateWidget() {
           Translate
         </span>
 
-        {/* Google Translate mount point */}
         <div id="google_translate_element" />
       </div>
     </>

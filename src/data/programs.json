@@ -1,71 +1,118 @@
 [
   {
     "id": 1,
-    "slug": "emergency-relief-disaster-response",
-    "title": "Emergency Relief & Disaster Response",
-    "subtitle": "Immediate aid in crisis",
-    "tagline": "Immediate Aid",
-    "description": "UHR provides immediate assistance to communities affected by conflict, natural disasters, and other crises. We deliver customized food parcels, clean water, shelter materials, medical supplies, and essential non-food items to help families survive and recover.",
+    "slug": "food-security",
+    "title": "Food Security",
+    "subtitle": "A Warm Meal, A Ray of Hope: Feeding Asia's Most Vulnerable",
+    "tagline": "Nourishing Communities in South Korea and Asia",
+    "description": "Amid rising food prices and the lingering effects of the pandemic, millions across Asia struggle to put meals on the table. NTHF brings nourishment to orphanages in Seoul, fishing villages in the Philippines hit by typhoons, and rural families in Vietnam. Your support delivers not just food, but the warmth of a caring community.",
     "image": "/images/shared/hero-section-give-kazat.jpg",
     "hero": {
-      "title": "Emergency Relief & Disaster Response",
-      "heading": "Immediate Aid",
-      "image": "/images/shared/hero-section-give-kazat.jpg",
-      "overlayText": "Providing lifesaving aid to families in crisis."
+      "title": "Food Security in Asia",
+      "heading": "Nourishing Communities, Building Hope",
+      "image": "/images/programs/food-security/asia-food-distribution.jpg",
+      "overlayText": "From the mountains of Nepal to the streets of Busan, every child deserves a full plate and a future full of promise."
     },
     "sections": [
       {
         "type": "impactCard",
         "props": {
-          "title": "Immediate Aid",
-          "content": "UHR provides immediate assistance to communities affected by conflict, natural disasters, and other crises. We deliver customized food parcels, clean water, shelter materials, medical supplies, and essential non-food items to help families survive and recover.",
+          "title": "Nourishing Communities in Asia",
+          "content": "NTHF provides food security through regular food distributions, nutritional support, and sustainable food programs for orphanages, low-income families, and vulnerable communities in South Korea and across Asia.",
           "cta": "Donate Now"
         }
       },
       {
-        "type": "textWithImage",
+        "type": "stats",
         "props": {
-          "title": "Bring Hope and Relief in The Face Of Disaster",
-          "content": [
-            { "paragraph": "After years of civil war, people continue to face significant challenges. Millions of people need humanitarian assistance. Many live in overcrowded camps where there is little food or clean water." },
-            { "paragraph": "Illness and other health risks can spread quickly in crisis conditions. People urgently need basic essentials to protect themselves and stay well during this critical time." },
-            { "paragraph": "Help us support vulnerable families so they don’t have to choose between having food to eat and staying safe. Provide a displaced family with a food parcel to help them eat well for a whole month." }
-          ],
-          "image": "/images/shared/hero-section-give-kazat.jpg",
-          "imagePosition": "right"
+          "title": "Food Insecurity in Asia",
+          "stats": [
+            {
+              "number": "490M",
+              "label": "People in Asia face chronic hunger and malnutrition (FAO, 2023)."
+            },
+            {
+              "number": "120M",
+              "label": "Children in Asia suffer from stunting due to poor nutrition."
+            },
+            {
+              "number": "60M",
+              "label": "People in South Korea live below the poverty line, struggling with food insecurity."
+            }
+          ]
         }
       },
       {
-        "type": "textWithImage",
+        "type": "initiatives",
         "props": {
-          "title": "Food Parcels Distribution for Palestinian Refugees",
-          "content": "Providing essential food parcels to Palestinian refugees affected by conflict and displacement.",
-          "image": "/images/shared/hero-section-give-kazat.jpg",
-          "imagePosition": "left"
+          "title": "Our Food Security Initiatives in Asia",
+          "initiatives": [
+            {
+              "title": "Orphanage Meal Programs (South Korea)",
+              "description": "NTHF provides daily nutritious meals to orphanages in South Korea, ensuring children receive balanced diets for healthy growth and development.",
+              "image": "/images/programs/food-security/orphanage-meals-korea.jpg",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Monthly Food Parcels (Asia-wide)",
+              "description": "We distribute essential food parcels to low-income families, elderly individuals, and orphanages in South Korea, Vietnam, Indonesia, and the Philippines.",
+              "image": "/images/programs/food-security/food-parcels-asia.jpg",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Community Kitchens (South Korea & Southeast Asia)",
+              "description": "NTHF operates community kitchens in urban and rural areas, providing free, hot meals to homeless individuals, orphanages, and families in need.",
+              "image": "/images/programs/food-security/community-kitchen-korea.jpg",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Nutritional Support for Elderly (South Korea)",
+              "description": "Many elderly in South Korea live in poverty. NTHF delivers nutritious food packages and hot meals to ensure their health and dignity.",
+              "image": "/images/programs/food-security/elderly-support-korea.jpg",
+              "cta": "Donate Now"
+            }
+          ]
         }
       },
       {
         "type": "simpleText",
         "props": {
-          "title": "Project Reports",
-          "content": "Engages in humanitarian projects both locally and internationally to assist those in dire need of assistance. It is our goal to empower individuals and families within their communities."
+          "title": "Why Food Security Matters in Asia",
+          "content": [
+            {
+              "point": "Child Development",
+              "description": "Proper nutrition is critical for the physical and cognitive development of children in orphanages."
+            },
+            {
+              "point": "Elderly Care",
+              "description": "Many elderly in South Korea and Asia face food poverty, especially those living alone."
+            },
+            {
+              "point": "Community Resilience",
+              "description": "Food security programs help communities recover from economic hardships and build self-sufficiency."
+            },
+            {
+              "point": "Education",
+              "description": "Children who receive regular meals perform better in school and have higher attendance rates."
+            }
+          ]
         }
       },
       {
         "type": "gallery",
         "props": {
           "images": [
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg"
+            "/images/programs/food-security/asia-food-distribution.jpg",
+            "/images/programs/food-security/orphanage-meals-korea.jpg",
+            "/images/programs/food-security/community-kitchen-korea.jpg"
           ]
         }
       },
       {
         "type": "cta",
         "props": {
-          "title": "Help Change Lives Today",
-          "content": "Your support allows UHR to deliver lifesaving aid and long-term solutions to communities in need.",
+          "title": "Help Nourish Asia",
+          "content": "Your support allows NTHF to provide lifesaving food aid and sustainable nutrition programs to orphanages, elderly, and vulnerable families in South Korea and across Asia.",
           "cta": "DONATE NOW"
         }
       }
@@ -73,65 +120,78 @@
   },
   {
     "id": 2,
-    "slug": "food-security",
-    "title": "Food Security",
-    "subtitle": "Hunger Relief",
-    "tagline": "Feeding Families In Need",
-    "description": "UHR combats hunger and malnutrition through regular food distributions and nutritional support for families. UHR promotes long-term food sustainability to strengthen community resilience.",
+    "slug": "water-sanitation-hygiene",
+    "title": "Water, Sanitation & Hygiene (WASH)",
+    "subtitle": "Turning on the Tap to a Brighter Future: Clean Water for Every Child in Asia",
+    "tagline": "Safe Water, Healthy Communities",
+    "description": "In remote villages of Cambodia and flood-prone areas of Bangladesh, clean water is a distant dream. NTHF drills wells, builds filtration systems, and teaches hygiene to prevent diseases. Your gift turns a distant dream into a daily reality, bringing health and dignity to families across Asia.",
     "image": "/images/shared/hero-section-give-kazat.jpg",
     "hero": {
-      "title": "Food Security",
-      "heading": "Feeding Families In Need",
-      "image": "/images/shared/hero-section-give-kazat.jpg",
-      "overlayText": "Ensuring every family has access to nutritious food and a healthier future."
+      "title": "Water & Sanitation in Asia",
+      "heading": "Bringing Clean Water to Every Community",
+      "image": "/images/programs/wash/clean-water-asia.jpg",
+      "overlayText": "Every drop of clean water is a promise of health, education, and hope—from the highlands of Laos to the shores of Indonesia."
     },
     "sections": [
       {
         "type": "impactCard",
         "props": {
-          "title": "Feeding Families In Need",
-          "content": "UHR combats hunger and malnutrition through regular food distributions and nutritional support for families. UHR promotes long-term food sustainability to strengthen community resilience.",
+          "title": "Clean Water for Asia",
+          "content": "NTHF provides access to safe water and sanitation in South Korea and across Asia. We build water wells, filtration systems, and hygiene facilities, and educate communities on waterborne disease prevention.",
           "cta": "Donate Now"
         }
       },
       {
         "type": "stats",
         "props": {
-          "title": "Our Impact in Numbers",
+          "title": "Water Crisis in Asia",
           "stats": [
-            { "number": "821M", "label": "People around the world face chronic malnutrition." },
-            { "number": "690M", "label": "People go to bed hungry every night." },
-            { "number": "135M", "label": "People face hunger due to crises and conflicts." }
+            {
+              "number": "500M",
+              "label": "People in Asia lack access to safely managed drinking water (UNICEF)."
+            },
+            {
+              "number": "1.5B",
+              "label": "People in Asia lack basic sanitation services."
+            },
+            {
+              "number": "200K",
+              "label": "Children die annually in Asia from water-related diseases."
+            },
+            {
+              "number": "30%",
+              "label": "Of rural communities in Southeast Asia rely on contaminated water sources."
+            }
           ]
         }
       },
       {
         "type": "initiatives",
         "props": {
-          "title": "Our Initiatives",
+          "title": "Our WASH Projects in Asia",
           "initiatives": [
             {
-              "title": "Baby Formula Program",
-              "description": "This initiative provides life-saving baby formula to infants who have lost access to breast milk or safe food due to displacement or conflict.",
-              "image": "/images/shared/hero-section-give-kazat.jpg",
+              "title": "Water Well Construction (Southeast Asia)",
+              "description": "NTHF builds and rehabilitates water wells in rural communities, providing safe drinking water to thousands of families.",
+              "image": "/images/programs/wash/water-well-asia.jpg",
               "cta": "Donate Now"
             },
             {
-              "title": "Monthly Food Parcels",
-              "description": "Our teams and partners deliver essential food parcels to families living in extreme poverty and refugee communities.",
-              "image": "/images/shared/hero-section-give-kazat.jpg",
+              "title": "School WASH Programs (South Korea & Asia)",
+              "description": "We install water purification systems and handwashing stations in schools and orphanages, ensuring children have access to clean water and hygiene education.",
+              "image": "/images/programs/wash/school-wash-korea.jpg",
               "cta": "Donate Now"
             },
             {
-              "title": "Fighting Hunger in Emergencies",
-              "description": "During humanitarian crises, we distribute emergency food packages including vegetable bags, flour bags, bread, and meat supplies to families affected by disasters, conflict, and displacement.",
-              "image": "/images/shared/hero-section-give-kazat.jpg",
+              "title": "Hygiene Education (Asia-wide)",
+              "description": "NTHF conducts hygiene workshops in communities, schools, and orphanages to prevent waterborne diseases and promote healthy practices.",
+              "image": "/images/programs/wash/hygiene-workshop-asia.jpg",
               "cta": "Donate Now"
             },
             {
-              "title": "Community Kitchens (Tikkiyat)",
-              "description": "Our community kitchens provide daily hot meals to displaced families. These kitchens operate in safe locations such as schools and shelters, delivering nutritious dishes including rice, beans, lentils, soups, chicken, and bulgur.",
-              "image": "/images/shared/hero-section-give-kazat.jpg",
+              "title": "Sanitation Facilities (Rural Asia)",
+              "description": "We build and maintain public bathrooms and sanitation facilities in underserved rural areas, improving health and dignity.",
+              "image": "/images/programs/wash/sanitation-facilities-asia.jpg",
               "cta": "Donate Now"
             }
           ]
@@ -140,25 +200,42 @@
       {
         "type": "simpleText",
         "props": {
-          "title": "Bringing Warm Meals and Hope",
-          "content": "Through six active community kitchens, thousands of displaced families receive warm meals every day. These kitchens have become an essential lifeline for families facing severe food insecurity."
+          "title": "Impact of Clean Water",
+          "content": [
+            {
+              "point": "Health",
+              "description": "Reduces waterborne diseases like cholera, diarrhea, and typhoid."
+            },
+            {
+              "point": "Education",
+              "description": "Children, especially girls, spend less time fetching water and more time in school."
+            },
+            {
+              "point": "Economic Empowerment",
+              "description": "Women and girls can pursue education and income-generating activities."
+            },
+            {
+              "point": "Community Development",
+              "description": "Clean water supports agriculture, livestock, and local businesses."
+            }
+          ]
         }
       },
       {
         "type": "gallery",
         "props": {
           "images": [
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg"
+            "/images/programs/wash/clean-water-asia.jpg",
+            "/images/programs/wash/water-well-asia.jpg",
+            "/images/programs/wash/school-wash-korea.jpg"
           ]
         }
       },
       {
         "type": "cta",
         "props": {
-          "title": "Help Change Lives Today",
-          "content": "Your support allows UHR to deliver lifesaving aid and long-term solutions to communities in need.",
+          "title": "Bring Clean Water to Asia",
+          "content": "Your support helps NTHF provide safe water, sanitation, and hygiene education to communities, schools, and orphanages in South Korea and across Asia.",
           "cta": "DONATE NOW"
         }
       }
@@ -166,76 +243,109 @@
   },
   {
     "id": 3,
-    "slug": "water-sanitation-hygiene",
-    "title": "Water, Sanitation & Hygiene (WASH)",
-    "subtitle": "Access to Clean Water & Hygiene",
-    "tagline": "Donate Clean Water Through our Water Aid Projects",
-    "description": "UHR ensures access to safe water and improved sanitation facilities. We conduct hygiene promotion campaigns to reduce the spread of waterborne diseases and improve community health.",
+    "slug": "health",
+    "title": "Healthcare Access",
+    "subtitle": "Healing Hands Across Borders: Bringing Healthcare to Asia's Forgotten Communities",
+    "tagline": "Healthy Communities, Brighter Futures",
+    "description": "As the world recovers from COVID-19, many rural clinics in Indonesia and Myanmar remain under-equipped. NTHF bridges the gap with mobile health units, medicine supplies, and preventive care—especially for orphans and the elderly. Your compassion becomes the healing touch they desperately need.",
     "image": "/images/shared/hero-section-give-kazat.jpg",
     "hero": {
-      "title": "Water, Sanitation & Hygiene (WASH)",
-      "heading": "Donate Clean Water Through our Water Aid Projects",
-      "image": "/images/shared/hero-section-give-kazat.jpg",
-      "overlayText": "Ensuring every family has access to clean water and dignified sanitation."
+      "title": "Healthcare in Asia",
+      "heading": "Ensuring Access to Medical Care for All",
+      "image": "/images/programs/health/healthcare-asia.jpg",
+      "overlayText": "From a child's first vaccination in Manila to an elderly woman's check-up in Seoul—healthcare is the heartbeat of a thriving community."
     },
     "sections": [
       {
         "type": "impactCard",
         "props": {
-          "title": "Donate Clean Water Through our Water Aid Projects",
-          "content": "UHR ensures access to safe water and improved sanitation facilities. We conduct hygiene promotion campaigns to reduce the spread of waterborne diseases and improve community health.",
+          "title": "Medical Care for Asia’s Vulnerable",
+          "content": "NTHF delivers medical supplies, health screenings, and preventive care to orphanages, elderly, and low-income families in South Korea and across Asia. We partner with local clinics and hospitals to ensure access to quality healthcare.",
           "cta": "Donate Now"
         }
       },
       {
         "type": "stats",
         "props": {
-          "title": "Our Impact in Numbers",
+          "title": "Health Challenges in Asia",
           "stats": [
-            { "number": "3.6M", "label": "An estimated 3.6 billion people lack access to clean drinking water (more than 35% of the world’s population)." },
-            { "number": "780M", "label": "Worldwide, 780 million people do not have access to an improved water source." },
-            { "number": "2 mins", "label": "Every 2 minutes a child dies from a water-related disease." },
-            { "number": "5 hrs", "label": "Children spend up to five hours a day fetching water, taking time away from school." }
-          ]
-        }
-      },
-      {
-        "type": "simpleText",
-        "props": {
-          "title": "Access to Clean Water Improves Life!",
-          "content": [
-            { "point": "Education", "description": "Children no longer spend hours each day collecting water—so they can return to school." },
-            { "point": "Food Security", "description": "Safe water supports crops, helps sustain livestock, and strengthens household stability." },
-            { "point": "Health", "description": "Clean water and hygiene go hand in hand. Safe water reduces disease risk and helps families stay well and productive." },
-            { "point": "Economic Resilience", "description": "With fewer illnesses and less time spent fetching water, families can work more consistently and move toward long-term stability." },
-            { "point": "Breaking the Cycle of Poverty", "description": "Reliable water access helps communities build safer, healthier futures." }
+            {
+              "number": "1.2B",
+              "label": "People in Asia lack access to essential health services (WHO)."
+            },
+            {
+              "number": "500K",
+              "label": "Children in Asia die annually from preventable diseases."
+            },
+            {
+              "number": "30%",
+              "label": "Of elderly in South Korea live in poverty, with limited access to healthcare."
+            },
+            {
+              "number": "20M",
+              "label": "People in Southeast Asia suffer from diabetes and hypertension due to lack of preventive care."
+            }
           ]
         }
       },
       {
         "type": "initiatives",
         "props": {
-          "title": "Our Projects",
+          "title": "Our Healthcare Initiatives",
           "initiatives": [
             {
-              "title": "Water Wells Construction",
-              "description": "UHR facilitates the digging of water wells in isolated communities affected by water crises. Each well provides over 16,000 people with access to safe clean water.",
+              "title": "Orphanage Health Clinics (South Korea)",
+              "description": "NTHF operates mobile health clinics in orphanages, providing regular check-ups, vaccinations, and dental care for children.",
+              "image": "/images/programs/health/orphanage-clinic-korea.jpg",
               "cta": "Donate Now"
             },
             {
-              "title": "Water Trucking in Gaza and East Africa",
-              "description": "This project delivers safe, clean water by truck to families in Gaza and East Africa who have lost access to reliable water sources due to conflict, drought, or damaged infrastructure.",
+              "title": "Elderly Care Programs (South Korea)",
+              "description": "We provide free health screenings, medicines, and home care visits for elderly individuals living in poverty.",
+              "image": "/images/programs/health/elderly-care-korea.jpg",
               "cta": "Donate Now"
             },
             {
-              "title": "Water Purification Units and Solar Panels",
-              "description": "Through UHR’s Build A Water Well program, you can provide safe clean water for vulnerable communities to drink, maintain their hygiene, irrigate their crops, and keep their livestock hydrated.",
+              "title": "Maternal & Child Health (Southeast Asia)",
+              "description": "NTHF supports prenatal care, safe deliveries, and postnatal support for mothers and infants in rural communities.",
+              "image": "/images/programs/health/maternal-health-asia.jpg",
               "cta": "Donate Now"
             },
             {
-              "title": "Sanitation Facilities Construction/Public Bathrooms in East Africa",
-              "description": "This project builds and maintains safe, dignified public bathrooms and sanitation facilities in underserved communities across East Africa.",
+              "title": "Medical Supply Distribution (Asia-wide)",
+              "description": "We distribute essential medicines, wheelchairs, and medical equipment to clinics and orphanages in underserved areas.",
+              "image": "/images/programs/health/medical-supplies-asia.jpg",
               "cta": "Donate Now"
+            },
+            {
+              "title": "Health Education Workshops",
+              "description": "NTHF conducts workshops on hygiene, nutrition, and disease prevention in schools, orphanages, and communities.",
+              "image": "/images/programs/health/health-workshop-asia.jpg",
+              "cta": "Donate Now"
+            }
+          ]
+        }
+      },
+      {
+        "type": "simpleText",
+        "props": {
+          "title": "Why Healthcare Matters",
+          "content": [
+            {
+              "point": "Child Health",
+              "description": "Regular check-ups and vaccinations protect children in orphanages from preventable diseases."
+            },
+            {
+              "point": "Elderly Support",
+              "description": "Many elderly in South Korea cannot afford medical care, leading to untreated chronic conditions."
+            },
+            {
+              "point": "Maternal Health",
+              "description": "Access to prenatal and postnatal care reduces maternal and infant mortality in rural Asia."
+            },
+            {
+              "point": "Community Well-being",
+              "description": "Healthy communities are more productive and resilient."
             }
           ]
         }
@@ -244,17 +354,17 @@
         "type": "gallery",
         "props": {
           "images": [
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg"
+            "/images/programs/health/healthcare-asia.jpg",
+            "/images/programs/health/orphanage-clinic-korea.jpg",
+            "/images/programs/health/elderly-care-korea.jpg"
           ]
         }
       },
       {
         "type": "cta",
         "props": {
-          "title": "Help Change Lives Today",
-          "content": "Your support allows UHR to deliver lifesaving aid and long-term solutions to communities in need.",
+          "title": "Support Healthcare in Asia",
+          "content": "Your donation helps NTHF provide medical care, health education, and essential supplies to orphanages, elderly, and vulnerable communities in South Korea and across Asia.",
           "cta": "DONATE NOW"
         }
       }
@@ -262,67 +372,521 @@
   },
   {
     "id": 4,
-    "slug": "health",
-    "title": "Health",
-    "subtitle": "Restoring Health & Medical Support",
-    "tagline": "Quality healthcare is vital to fight poverty",
-    "description": "UHR sends shipments of medical supplies to countries in crisis, ensuring that families in need can access essential treatment. UHR helps underserved communities receive healthcare and provides medical equipment to hospitals to strengthen local health services.",
+    "slug": "shelter",
+    "title": "Safe Shelter",
+    "subtitle": "Four Walls, Countless Dreams: Building Safe Havens for Asia's Orphans and Families",
+    "tagline": "A Home for Every Child",
+    "description": "After devastating floods in Pakistan and earthquakes in Indonesia, thousands are left homeless. NTHF rebuilds—not just structures, but lives. From renovating cramped orphanages in Seoul to constructing resilient homes in rural Nepal, we create spaces where families can heal and children can dream.",
     "image": "/images/shared/hero-section-give-kazat.jpg",
     "hero": {
-      "title": "Health",
-      "heading": "Quality Healthcare is Vital to Fight Poverty",
-      "image": "/images/shared/hero-section-give-kazat.jpg",
-      "overlayText": "Ensuring families in crisis can access essential medical treatment and healthcare services."
+      "title": "Safe Shelter in Asia",
+      "heading": "Building Homes, Restoring Dignity",
+      "image": "/images/programs/shelter/orphanage-korea.jpg",
+      "overlayText": "Every brick laid is a foundation of hope—for a child in Yangon, a grandmother in Tokyo, a family in Manila."
     },
     "sections": [
       {
         "type": "impactCard",
         "props": {
-          "title": "Quality Healthcare is Vital to Fight Poverty",
-          "content": "UHR sends shipments of medical supplies to countries in crisis, ensuring that families in need can access essential treatment. UHR helps underserved communities receive healthcare and provides medical equipment to hospitals to strengthen local health services.",
+          "title": "Safe Shelter for Asia’s Vulnerable",
+          "content": "NTHF builds and renovates orphanages, homes for the elderly, and shelters for homeless families in South Korea and across Asia. We ensure safe, warm, and dignified living conditions for those in need.",
+          "cta": "Donate Now"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Orphanage Renovation (South Korea)",
+          "content": [
+            {
+              "paragraph": "Many orphanages in South Korea operate in old, unsafe buildings. NTHF renovates these facilities to provide children with a safe, nurturing environment."
+            },
+            {
+              "paragraph": "Our renovations include modern kitchens, study rooms, play areas, and proper heating/cooling systems."
+            },
+            {
+              "paragraph": "Your support can transform an orphanage into a true home for children."
+            }
+          ],
+          "image": "/images/programs/shelter/orphanage-renovation-korea.jpg",
+          "imagePosition": "right"
+        }
+      },
+      {
+        "type": "list",
+        "props": {
+          "title": "Our Shelter Projects",
+          "description": "NTHF provides various shelter solutions to meet the needs of orphanages, elderly, and homeless families:",
+          "items": [
+            {
+              "title": "Orphanage Renovation",
+              "description": "Upgrading orphanages in South Korea to meet safety and comfort standards for children."
+            },
+            {
+              "title": "Elderly Housing",
+              "description": "Building and renovating homes for elderly individuals living in poverty."
+            },
+            {
+              "title": "Homeless Shelters",
+              "description": "Providing temporary and transitional housing for homeless families in urban areas."
+            },
+            {
+              "title": "Community Centers",
+              "description": "Constructing multi-purpose centers for education, vocational training, and community gatherings."
+            }
+          ],
+          "pastAchievements": [
+            {
+              "achievement": "Renovated 10 orphanages in South Korea, improving living conditions for 500+ children"
+            },
+            {
+              "achievement": "Built 5 homeless shelters in Seoul and Busan, housing 200+ families annually"
+            }
+          ]
+        }
+      },
+      {
+        "type": "projectCosts",
+        "props": {
+          "title": "Project Costs",
+          "description": "Your support can provide safe shelter for orphanages, elderly, and homeless families in South Korea and Asia.",
+          "cta": "Join us in building homes and restoring dignity.",
+          "costs": [
+            {
+              "item": "Renovating an orphanage (South Korea)",
+              "price": "$20,000 - $50,000"
+            },
+            { "item": "Building a home for elderly", "price": "$15,000" },
+            {
+              "item": "Providing shelter for a homeless family (6 months)",
+              "price": "$3,000"
+            },
+            { "item": "Constructing a community center", "price": "$100,000" }
+          ]
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/programs/shelter/orphanage-korea.jpg",
+            "/images/programs/shelter/orphanage-renovation-korea.jpg",
+            "/images/programs/shelter/elderly-housing-korea.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Provide Safe Shelter in Asia",
+          "content": "Your donation helps NTHF build and renovate orphanages, homes for the elderly, and shelters for homeless families in South Korea and across Asia.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "child-protection",
+    "title": "Child Protection & Orphan Care",
+    "subtitle": "Wrapping Love Around Every Child: Nurturing Asia's Orphans into a Bright Tomorrow",
+    "tagline": "Every Child Deserves Love and Safety",
+    "description": "In the aftermath of conflicts and natural disasters, children are often left alone. NTHF stands with them—in Thai border camps, Sri Lankan villages, and South Korean cities. We provide not only basics but also trauma care, education, and a sense of family. Your kindness wraps them in the love they deserve.",
+    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "hero": {
+      "title": "Orphan Care in Asia",
+      "heading": "Giving Children a Brighter Future",
+      "image": "/images/programs/child-protection/orphan-care-korea.jpg",
+      "overlayText": "A child's smile in Phnom Penh, a hug in Seoul—every gesture says 'you are not alone, you are loved.'"
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Orphan Care in Asia",
+          "content": "NTHF supports orphanages in South Korea and across Asia, providing children with food, education, healthcare, and psychosocial care. We ensure every child grows up in a safe, nurturing environment.",
           "cta": "Donate Now"
         }
       },
       {
         "type": "stats",
         "props": {
-          "title": "Our Impact in Numbers",
+          "title": "Orphans in Asia",
           "stats": [
-            { "number": "1M", "label": "Children die from preventable diseases every year" },
-            { "number": "49.7%", "label": "Cataract is the leading cause of blindness and visual impairment in the world (WHO)" },
-            { "number": "1M", "label": "Children suffer from TB and quarter a million die from it yearly" }
+            {
+              "number": "61M",
+              "label": "Orphans in Asia have lost one or both parents (UNICEF)."
+            },
+            {
+              "number": "15K",
+              "label": "Children live in orphanages in South Korea, many with limited resources."
+            },
+            {
+              "number": "30%",
+              "label": "Of orphans in Asia drop out of school due to poverty."
+            },
+            {
+              "number": "50%",
+              "label": "Of orphanages in Southeast Asia lack proper healthcare and nutrition."
+            }
+          ]
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Orphan Sponsorship Program (South Korea)",
+          "content": [
+            {
+              "paragraph": "For just $50 a month, you can sponsor an orphan in South Korea, providing food, education, healthcare, and a loving home."
+            },
+            {
+              "paragraph": "Sponsors receive updates on their child’s progress and can even visit the orphanage."
+            },
+            { "paragraph": "Your sponsorship changes a child’s life forever." }
+          ],
+          "image": "/images/programs/child-protection/orphan-sponsorship-korea.jpg",
+          "imagePosition": "right"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Education for Orphans (Asia-wide)",
+          "content": [
+            {
+              "paragraph": "NTHF provides school supplies, tutoring, and vocational training for orphans in South Korea, Vietnam, and the Philippines."
+            },
+            {
+              "paragraph": "We also offer scholarships for higher education, helping orphans break the cycle of poverty."
+            }
+          ],
+          "image": "/images/programs/child-protection/orphan-education-asia.jpg",
+          "imagePosition": "left"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Healthcare for Orphans",
+          "content": [
+            {
+              "paragraph": "Orphans often lack access to medical care. NTHF provides regular health check-ups, vaccinations, and emergency care for children in orphanages."
+            },
+            {
+              "paragraph": "We also offer mental health support to help children heal from trauma."
+            }
+          ],
+          "image": "/images/programs/child-protection/orphan-healthcare-asia.jpg",
+          "imagePosition": "right"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Nutrition Programs",
+          "content": [
+            {
+              "paragraph": "Many orphanages struggle to provide balanced meals. NTHF supplies nutritious food, vitamins, and clean water to orphanages in South Korea and Asia."
+            },
+            {
+              "paragraph": "We also teach children about healthy eating habits."
+            }
+          ],
+          "image": "/images/programs/child-protection/orphan-nutrition-asia.jpg",
+          "imagePosition": "left"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/programs/child-protection/orphan-care-korea.jpg",
+            "/images/programs/child-protection/orphan-sponsorship-korea.jpg",
+            "/images/programs/child-protection/orphan-education-asia.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Protect Asia’s Orphans",
+          "content": "Your support helps NTHF provide orphanages in South Korea and Asia with food, education, healthcare, and a loving home for every child.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "education",
+    "title": "Education & Vocational Training",
+    "subtitle": "Opening Doors to the Future: Educating Asia's Next Generation of Leaders",
+    "tagline": "Education for a Brighter Future",
+    "description": "From the slums of Dhaka to the highlands of Laos, children dream of becoming teachers, engineers, and artists. NTHF turns those dreams into reality with schools, scholarships, and vocational centers. After pandemic school closures, we're bridging the digital divide and giving youth the tools to thrive.",
+    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "hero": {
+      "title": "Education in Asia",
+      "heading": "Unlocking Potential Through Learning",
+      "image": "/images/programs/education/education-asia.jpg",
+      "overlayText": "A pen in a child's hand is a key to unlock a future of possibilities—from rural Cambodia to urban Seoul."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Education for Asia’s Vulnerable",
+          "content": "NTHF ensures access to education for orphans, low-income youth, and women in South Korea and across Asia. We build schools, provide scholarships, and offer vocational training to break the cycle of poverty.",
+          "cta": "Donate Now"
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "Education Challenges in Asia",
+          "stats": [
+            {
+              "number": "32M",
+              "label": "Children in Asia are out of primary school (UNESCO)."
+            },
+            {
+              "number": "60%",
+              "label": "Of orphans in South Korea do not attend college due to financial barriers."
+            },
+            {
+              "number": "70%",
+              "label": "Of rural girls in Southeast Asia drop out of school by age 12."
+            },
+            {
+              "number": "40%",
+              "label": "Of youth in Asia lack vocational skills for employment."
+            }
           ]
         }
       },
       {
         "type": "initiatives",
         "props": {
-          "title": "Our Initiatives",
+          "title": "Our Education Initiatives",
           "initiatives": [
             {
-              "title": "Emergency Medical Kits Shipments",
-              "description": "Each kit includes pain medication, gauze, surgical instruments, gloves, masks, sterilizers and more.",
+              "title": "Orphan Education (South Korea)",
+              "description": "NTHF provides school fees, uniforms, books, and tutoring for orphans in South Korea, ensuring they receive a quality education.",
+              "image": "/images/programs/education/orphan-education-korea.jpg",
               "cta": "Donate Now"
             },
             {
-              "title": "Cataract Eye Surgeries",
-              "description": "Medical missions facilitated to perform surgeries in East Africa, Jordan and Egypt.",
+              "title": "Vocational Training (Asia-wide)",
+              "description": "We offer courses in IT, tailoring, cooking, and mechanics to help youth and women gain employable skills.",
+              "image": "/images/programs/education/vocational-training-asia.jpg",
               "cta": "Donate Now"
             },
             {
-              "title": "ENT Surgeries for Children",
-              "description": "To facilitate early detection of sensory impairments, UHR arranges for vision & hearing screening days for children in need to identify any sensory difficulties early on in life.",
+              "title": "Scholarships for Higher Education",
+              "description": "NTHF awards scholarships to orphaned and low-income students in South Korea and Asia, enabling them to pursue college and university degrees.",
+              "image": "/images/programs/education/scholarships-asia.jpg",
               "cta": "Donate Now"
             },
             {
-              "title": "Cleft Lip Surgeries",
-              "description": "Cleft lip surgeries restore a child’s ability to eat, speak, and smile with confidence. Your support helps provide safe, life-changing operations that repair facial deformities, relieve pain and social stigma, and give children a brighter future.",
+              "title": "School Construction (Rural Asia)",
+              "description": "We build and renovate schools in rural communities, providing safe and modern learning environments for children.",
+              "image": "/images/programs/education/school-construction-asia.jpg",
               "cta": "Donate Now"
             },
             {
-              "title": "Medical Supplies & Equipment",
-              "description": "UHR delivers multiple shipments yearly and distributes millions of dollars worth of medicines for chronic conditions, hospital equipment, wheelchairs, over-the-counter drugs, and health care supplies in communities where they are not readily available.",
+              "title": "Digital Literacy Programs",
+              "description": "NTHF teaches computer skills to orphans and youth, preparing them for the modern workforce.",
+              "image": "/images/programs/education/digital-literacy-asia.jpg",
               "cta": "Donate Now"
+            }
+          ]
+        }
+      },
+      {
+        "type": "quote",
+        "props": {
+          "quote": "Education is the key to breaking the cycle of poverty. By investing in a child’s education, we invest in the future of Asia.",
+          "focusAreas": [
+            "Providing access to quality education for orphans and vulnerable children",
+            "Equipping youth and women with vocational skills for employment",
+            "Supporting teachers and educational infrastructure in rural areas",
+            "Promoting digital literacy and lifelong learning"
+          ]
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Back to School Campaign (South Korea)",
+          "content": [
+            {
+              "paragraph": "Every year, NTHF provides backpacks, school supplies, and uniforms to orphans and low-income children in South Korea."
+            },
+            {
+              "paragraph": "We also offer tutoring and mentorship to help students succeed academically."
+            }
+          ],
+          "image": "/images/programs/education/back-to-school-korea.jpg",
+          "imagePosition": "right"
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Women’s Empowerment Through Education",
+          "content": [
+            {
+              "paragraph": "NTHF provides literacy classes, vocational training, and business skills to women in South Korea and Asia."
+            },
+            {
+              "paragraph": "Educated women are more likely to earn higher incomes and invest in their children’s future."
+            }
+          ],
+          "image": "/images/programs/education/women-empowerment-asia.jpg",
+          "imagePosition": "left"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "images": [
+            "/images/programs/education/education-asia.jpg",
+            "/images/programs/education/orphan-education-korea.jpg",
+            "/images/programs/education/vocational-training-asia.jpg"
+          ]
+        }
+      },
+      {
+        "type": "cta",
+        "props": {
+          "title": "Empower Asia Through Education",
+          "content": "Your support helps NTHF provide orphans, youth, and women in South Korea and Asia with education, vocational training, and opportunities for a brighter future.",
+          "cta": "DONATE NOW"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "livelihoods-women-empowerment",
+    "title": "Livelihoods & Women’s Empowerment",
+    "subtitle": "Stitches of Hope, Seeds of Change: Empowering Women Across Asia",
+    "tagline": "Building Sustainable Futures",
+    "description": "In the wake of economic downturns, women are often the hardest hit. NTHF helps mothers in rural India start small businesses, provides sewing machines to widows in Sri Lanka, and teaches financial literacy in South Korea. When a woman thrives, her entire community blossoms.",
+    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "hero": {
+      "title": "Women’s Empowerment in Asia",
+      "heading": "Creating Opportunities, Changing Lives",
+      "image": "/images/programs/livelihoods/women-empowerment-asia.jpg",
+      "overlayText": "A woman with a skill and a dream can move mountains—for herself, her children, and her village."
+    },
+    "sections": [
+      {
+        "type": "impactCard",
+        "props": {
+          "title": "Empowering Women in Asia",
+          "content": "NTHF provides vocational training, small business grants, and financial literacy programs for women and vulnerable communities in South Korea and Asia. We help them build sustainable livelihoods and achieve economic independence.",
+          "cta": "Donate Now"
+        }
+      },
+      {
+        "type": "stats",
+        "props": {
+          "title": "Women’s Economic Challenges in Asia",
+          "stats": [
+            {
+              "number": "60%",
+              "label": "Of women in South Korea face employment discrimination."
+            },
+            {
+              "number": "70%",
+              "label": "Of women in Southeast Asia work in informal, low-paying jobs."
+            },
+            {
+              "number": "120M",
+              "label": "Women in Asia live in extreme poverty, struggling to support their families."
+            },
+            {
+              "number": "30%",
+              "label": "Of rural women in Asia lack access to financial services."
+            }
+          ]
+        }
+      },
+      {
+        "type": "initiatives",
+        "props": {
+          "title": "Our Livelihood Programs",
+          "initiatives": [
+            {
+              "title": "Vocational Training for Women (South Korea)",
+              "description": "NTHF offers courses in IT, baking, tailoring, and beauty services to help women gain employable skills.",
+              "image": "/images/programs/livelihoods/vocational-training-korea.jpg",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Small Business Grants (Asia-wide)",
+              "description": "We provide seed funding and mentorship for women to start their own businesses, such as cafes, tailoring shops, and daycare centers.",
+              "image": "/images/programs/livelihoods/small-business-asia.jpg",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Financial Literacy Workshops",
+              "description": "NTHF teaches women how to save, budget, and invest, helping them achieve financial stability.",
+              "image": "/images/programs/livelihoods/financial-literacy-asia.jpg",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Agricultural Livelihoods (Rural Asia)",
+              "description": "We support women farmers with training, seeds, and equipment to grow and sell crops, improving food security and income.",
+              "image": "/images/programs/livelihoods/agriculture-asia.jpg",
+              "cta": "Donate Now"
+            },
+            {
+              "title": "Handicraft Cooperatives",
+              "description": "NTHF helps women form cooperatives to produce and sell traditional handicrafts, preserving culture and generating income.",
+              "image": "/images/programs/livelihoods/handicraft-asia.jpg",
+              "cta": "Donate Now"
+            }
+          ]
+        }
+      },
+      {
+        "type": "textWithImage",
+        "props": {
+          "title": "Success Stories: Women Entrepreneurs",
+          "content": [
+            {
+              "paragraph": "Meet Ji-Yeon from Seoul, who started her own bakery with NTHF’s support. She now employs 5 other women and supports her family."
+            },
+            {
+              "paragraph": "Lina from Vietnam used her tailoring skills to open a small shop, doubling her family’s income in just one year."
+            }
+          ],
+          "image": "/images/programs/livelihoods/women-success-asia.jpg",
+          "imagePosition": "right"
+        }
+      },
+      {
+        "type": "simpleText",
+        "props": {
+          "title": "Why Women’s Empowerment Matters",
+          "content": [
+            {
+              "point": "Poverty Reduction",
+              "description": "When women earn income, they invest 90% of it back into their families."
+            },
+            {
+              "point": "Education",
+              "description": "Economically empowered women are more likely to educate their children."
+            },
+            {
+              "point": "Health",
+              "description": "Women with stable incomes can afford better healthcare for their families."
+            },
+            {
+              "point": "Community Development",
+              "description": "Women’s businesses create jobs and stimulate local economies."
             }
           ]
         }
@@ -331,279 +895,17 @@
         "type": "gallery",
         "props": {
           "images": [
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg"
+            "/images/programs/livelihoods/women-empowerment-asia.jpg",
+            "/images/programs/livelihoods/vocational-training-korea.jpg",
+            "/images/programs/livelihoods/small-business-asia.jpg"
           ]
         }
       },
       {
         "type": "cta",
         "props": {
-          "title": "Help Change Lives Today",
-          "content": "Your support allows UHR to deliver lifesaving medical aid and long-term healthcare solutions to communities in need.",
-          "cta": "DONATE NOW"
-        }
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "slug": "shelter",
-    "title": "Shelter",
-    "subtitle": "Providing Safe Durable Housing",
-    "tagline": "Shelter and Stability for Displaced Families",
-    "description": "UHR provides safe, dignified, and protective shelter for displaced families and vulnerable communities affected by conflict, disasters, and other crises.",
-    "image": "/images/shared/hero-section-give-kazat.jpg",
-    "hero": {
-      "title": "Shelter",
-      "heading": "Shelter and Stability for Displaced Families",
-      "image": "/images/shared/hero-section-give-kazat.jpg",
-      "overlayText": "Providing safe, dignified, and protective shelter for displaced families and vulnerable communities."
-    },
-    "sections": [
-      {
-        "type": "impactCard",
-        "props": {
-          "title": "Shelter and Stability for Displaced Families",
-          "content": "UHR provides safe, dignified, and protective shelter for displaced families and vulnerable communities affected by conflict, disasters, and other crises.",
-          "cta": "Donate Now"
-        }
-      },
-      {
-        "type": "textWithImage",
-        "props": {
-          "title": "A Safe Place to Start Again",
-          "content": [
-            { "paragraph": "This project will establish a 100-tent camp in Gaza, designed to provide safe, dignified, and durable shelter for families in need." },
-            { "paragraph": "Each tent will be installed on a concrete flooring layout and fully equipped with bedding, eating utensils, and cooking pots to meet essential daily needs." },
-            { "paragraph": "We invite you to support this life-saving shelter program. Your contribution will directly help families rebuild their lives and offer them a secure environment where they can begin again." }
-          ],
-          "image": "/images/shared/hero-section-give-kazat.jpg",
-          "imagePosition": "right"
-        }
-      },
-      {
-        "type": "list",
-        "props": {
-          "title": "Shelter Projects",
-          "description": "UHR provides various types of shelter solutions to meet the diverse needs of displaced families:",
-          "items": [
-            { "title": "Emergency Tents", "description": "Immediate shelter solutions for families in crisis situations." },
-            { "title": "Transitional Housing", "description": "Temporary housing solutions that bridge the gap between emergency shelter and permanent housing." },
-            { "title": "Repairs or Reconstruction", "description": "For damaged homes to help families regain stability, security, and a sense of normalcy." },
-            { "title": "Aid to IDPs", "description": "United Hands Relief delivers emergency assistance to the internally displaced. Assistance packages include winterization kits, non-food items (NFIs), and tents." }
-          ],
-          "pastAchievements": [
-            { "achievement": "Over 50 homes renovated in Gaza prior to the 2023 war, repairing damage from conflict or disaster" },
-            { "achievement": "500 weatherproof tents sent to Gaza to support displaced families" }
-          ]
-        }
-      },
-      {
-        "type": "projectCosts",
-        "props": {
-          "title": "Project Costs",
-          "description": "Your support can help another family find safety, warmth, and hope.",
-          "cta": "Join us in rebuilding lives—one home at a time.",
-          "costs": [
-            { "item": "Building a new durable home", "price": "$5,000" },
-            { "item": "Renovating an existing home", "price": "$1,500 - $4,500" },
-            { "item": "Providing a complete tent shelter (with tarps and waterproofing)", "price": "$350" }
-          ]
-        }
-      },
-      {
-        "type": "gallery",
-        "props": {
-          "images": [
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg"
-          ]
-        }
-      },
-      {
-        "type": "cta",
-        "props": {
-          "title": "Help Provide Shelter Today",
-          "content": "Your support allows UHR to deliver lifesaving shelter solutions and long-term housing stability to families in need.",
-          "cta": "DONATE NOW"
-        }
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "slug": "child-protection-widow-assistance",
-    "title": "Child Protection & Widow Family Assistance",
-    "subtitle": "Safeguarding Vulnerable Children",
-    "tagline": "Protecting Children, Empowering Families",
-    "description": "UHR supports orphaned and vulnerable children with education, healthcare, nutrition, and psychosocial care. UHR works to ensure every child grows in a safe and nurturing environment.",
-    "image": "/images/shared/hero-section-give-kazat.jpg",
-    "hero": {
-      "title": "Child Protection & Widow Family Assistance",
-      "heading": "Protecting Children, Empowering Families",
-      "image": "/images/shared/hero-section-give-kazat.jpg",
-      "overlayText": "Supporting orphaned and vulnerable children with education, healthcare, and psychosocial care."
-    },
-    "sections": [
-      {
-        "type": "impactCard",
-        "props": {
-          "title": "Protecting Children, Empowering Families",
-          "content": "UHR supports orphaned and vulnerable children with education, healthcare, nutrition, and psychosocial care. We work to ensure every child grows in a safe and nurturing environment.",
-          "cta": "Donate Now"
-        }
-      },
-      {
-        "type": "stats",
-        "props": {
-          "title": "Our Impact in Numbers",
-          "stats": [
-            { "number": "153M", "label": "An estimated 153 million children worldwide are orphans (UNICEF)" },
-            { "number": "15.1M", "label": "Of the 153 million orphans worldwide, 15.1 million children have lost both parents" },
-            { "number": "66M", "label": "66 million primary school-aged children attend classes hungry across the developing world (WHO)" }
-          ]
-        }
-      },
-      {
-        "type": "textWithImage",
-        "props": {
-          "title": "United Hands Relief Orphan Sponsorship",
-          "content": "In a split second, you can transform an orphan's life. Help children learn, be happy, and thrive.",
-          "image": "/images/programs/child-protection/orphan-sponsorship.jpg",
-          "imagePosition": "right"
-        }
-      },
-      {
-        "type": "textWithImage",
-        "props": {
-          "title": "Gaza Daily Kitchen",
-          "content": "Providing daily nutritious meals to orphaned children and vulnerable families in Gaza to ensure they have access to food security and proper nutrition.",
-          "image": "/images/programs/child-protection/gaza-kitchen.jpg",
-          "imagePosition": "left"
-        }
-      },
-      {
-        "type": "gallery",
-        "props": {
-          "images": [
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg"
-          ]
-        }
-      },
-      {
-        "type": "cta",
-        "props": {
-          "title": "Help Protect Children and Empower Families",
-          "content": "Your support allows UHR to provide comprehensive care and support to orphaned and vulnerable children, ensuring they grow up in safe and nurturing environments.",
-          "cta": "DONATE NOW"
-        }
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "slug": "education",
-    "title": "Education",
-    "subtitle": "Access to Learning and Self-Reliance",
-    "tagline": "UHR Education Program: Building Futures Through Learning",
-    "description": "UHR provides access to quality education, school supplies, and learning resources. UHR offers vocational training opportunities to equip youth and adults with the skills needed for self-reliance and success.",
-    "image": "/images/shared/hero-section-give-kazat.jpg",
-    "hero": {
-      "title": "Education",
-      "heading": "Building Futures Through Learning",
-      "image": "/images/shared/hero-section-give-kazat.jpg",
-      "overlayText": "Providing access to quality education and vocational training to empower youth and adults."
-    },
-    "sections": [
-      {
-        "type": "impactCard",
-        "props": {
-          "title": "Building Futures Through Learning",
-          "content": "UHR provides access to quality education, school supplies, and learning resources. We offer vocational training opportunities to equip youth and adults with the skills needed for self-reliance and success.",
-          "cta": "Donate Now"
-        }
-      },
-      {
-        "type": "list",
-        "props": {
-          "title": "Our Education Projects",
-          "items": [
-            { "title": "Shipments of Books", "description": "Providing educational books and learning materials to schools and communities in need." },
-            { "title": "School Supplies and Backpacks", "description": "Distributing essential school supplies and backpacks to children in vulnerable communities." },
-            { "title": "Teacher Training", "description": "Training and supporting teachers to improve the quality of education." },
-            { "title": "Established Schools", "description": "Built and established schools in Gaza to provide education to children in conflict zones." },
-            { "title": "Computer Centers", "description": "Established computer centers in Gaza and Bangladesh to provide digital literacy and technical skills training." }
-          ]
-        }
-      },
-      {
-        "type": "stats",
-        "props": {
-          "title": "Our Impact in Numbers",
-          "stats": [
-            { "number": "250M", "label": "Children aged 5-12 can't read, write, or count" },
-            { "number": "130M", "label": "Girls are out of school, globally" },
-            { "number": "171M", "label": "People could be lifted out of poverty through basic reading skills" }
-          ]
-        }
-      },
-      {
-        "type": "quote",
-        "props": {
-          "quote": "Education can be the catalyst needed to pull families and communities out of the cycle of poverty. Knowledge gives children the power to dream of a better future and the confidence needed to pursue a full education, which in turn will help generations to come.",
-          "focusAreas": [
-            "Providing access to quality education for all children",
-            "Equipping youth and adults with vocational skills",
-            "Supporting teachers and educational infrastructure",
-            "Promoting literacy and lifelong learning"
-          ]
-        }
-      },
-      {
-        "type": "textWithImage",
-        "props": {
-          "title": "Sponsor a Palestinian Student's Education",
-          "content": [
-            { "paragraph": "In partnership with local NGOs, UHR sponsors the tuition of Palestinian students in Gaza and the West Bank where young people are eager to further their education but face financial barriers." },
-            { "paragraph": "Access to education not only empowers youth but also opens doors to meaningful opportunities, helping them build a brighter future for themselves and their communities." },
-            { "paragraph": "Your support can help us offer the invaluable gift of education to students who are motivated and capable, yet unable to afford tuition on their own." }
-          ],
-          "image": "/images/shared/hero-section-give-kazat.jpg",
-          "imagePosition": "right"
-        }
-      },
-      {
-        "type": "textWithImage",
-        "props": {
-          "title": "Back to School Campaigns",
-          "content": [
-            { "paragraph": "For many children in vulnerable communities, returning to school is not guaranteed. Through the UHR Back to School Campaign, we provide school supplies, uniforms, and learning materials to help students start the year ready to learn." },
-            { "paragraph": "Your support ensures that children — especially girls, displaced students, and those in crisis-affected areas — have the tools they need to succeed." }
-          ],
-          "image": "/images/shared/hero-section-give-kazat.jpg",
-          "imagePosition": "left"
-        }
-      },
-      {
-        "type": "gallery",
-        "props": {
-          "images": [
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg"
-          ]
-        }
-      },
-      {
-        "type": "cta",
-        "props": {
-          "title": "Help Build Futures Through Education",
-          "content": "Your support allows UHR to provide quality education and vocational training to youth and adults, empowering them to build better futures for themselves and their communities.",
+          "title": "Empower Women in Asia",
+          "content": "Your support helps NTHF provide women in South Korea and Asia with vocational training, business grants, and financial literacy, empowering them to build brighter futures for themselves and their families.",
           "cta": "DONATE NOW"
         }
       }
@@ -612,242 +914,105 @@
   {
     "id": 8,
     "slug": "faith-based-giving",
-    "title": "Faith-based Giving",
-    "subtitle": "Bringing Relief & Joy",
-    "tagline": "Fulfill Your Sacred Duty. Share the Blessing.",
-    "description": "UHR provides seasonal support to bring relief and joy to families facing hardship. This includes Ramadan food baskets, Eid gifts, Qurbani meat distribution, and Thanksgiving assistance, helping communities celebrate these occasions even in difficult times.",
+    "title": "Faith-Based Giving",
+    "subtitle": "Your Kindness, Their Blessing: Sharing Faith and Love Across Asia",
+    "tagline": "Give with Compassion, Change Lives",
+    "description": "Through Zakat, Sadaqah, and seasonal gifts, your faith becomes a lifeline for families in need—from Rohingya refugee camps in Bangladesh to elderly homes in South Korea. NTHF ensures your donations are delivered with respect and urgency, turning your compassion into hope.",
     "image": "/images/shared/hero-section-give-kazat.jpg",
     "hero": {
-      "title": "Faith-based Giving",
-      "heading": "Fulfill Your Sacred Duty. Share the Blessing.",
-      "image": "/images/shared/hero-section-give-kazat.jpg",
-      "overlayText": "Providing seasonal support to help families celebrate important occasions with dignity and joy."
+      "title": "Faith-Based Giving in Asia",
+      "heading": "Fulfill Your Duty, Transform Lives",
+      "image": "/images/programs/faith-based-giving/faith-giving-asia.jpg",
+      "overlayText": "Your Zakat is not just charity—it's a bridge of mercy from your heart to a child in need, wherever they are in Asia."
     },
     "sections": [
       {
         "type": "impactCard",
-        "props": {
-          "title": "Fulfill Your Sacred Duty. Share the Blessing.",
-          "content": "UHR provides seasonal support to bring relief and joy to families facing hardship. This includes Ramadan food baskets, Eid gifts, Qurbani meat distribution, and Thanksgiving assistance, helping communities celebrate these occasions even in difficult times.",
-          "cta": "Donate Now"
-        }
-      },
-      {
-        "type": "textWithImage",
-        "props": {
-          "title": "Bring Hope, Share Qurbani: Join Hands with UHR",
-          "content": [
-            { "paragraph": "Qurbani, an act of worship, exemplifies the spirit of sacrifice and gratitude towards the blessings we enjoy." },
-            { "paragraph": "UHR is committed to empowering the most vulnerable communities through the spirit of unity and the strength of humanity." },
-            { "paragraph": "This Qurbani season, we are making a tangible difference in the lives of struggling families across 13 countries globally." }
-          ],
-          "image": "/images/shared/hero-section-give-kazat.jpg",
-          "imagePosition": "right"
-        }
-      },
-      {
-        "type": "textWithImage",
-        "props": {
-          "title": "Ramadan: Extend Your Hands to Transform Lives",
-          "content": [
-            { "paragraph": "United Hands Relief invites you to share the blessings of Ramadan by giving hope, healing, and dignity to those in need." },
-            { "paragraph": "Automate your donations through all 30 days of Ramadan to maximize your rewards." }
-          ],
-          "image": "/images/shared/hero-section-give-kazat.jpg",
-          "imagePosition": "left"
-        }
-      },
-      {
-        "type": "textWithImage",
-        "props": {
-          "title": "Eid: Make A Difference With An Eid Gift!",
-          "content": [
-            { "paragraph": "When you make a donation, you're doing much more than you might realize. You're not just giving $50; you're creating moments of joy, sparking smiles, and giving hope." },
-            { "paragraph": "Your Donation will make an impact with:" },
-            { "listItem": "New Clothes – Your contribution can help us purchase new outfits for kids who've had to make do with hand-me-downs." },
-            { "listItem": "Creating Memories – Your gift isn't just material. It's the joy a child feels when they are a part of the Eid celebrations." }
-          ],
-          "image": "/images/shared/hero-section-give-kazat.jpg",
-          "imagePosition": "right"
-        }
-      },
-      {
-        "type": "textWithImage",
-        "props": {
-          "title": "Qurbani (Udhiya): Fulfill Your Sacred Duty. Share the Blessing.",
-          "content": [
-            { "paragraph": "This Eid al-Adha, honor the Sunnah of Prophet Ibrahim (AS) by offering your Qurbani/Udhiya to families in need." }
-          ],
-          "image": "/images/shared/hero-section-give-kazat.jpg",
-          "imagePosition": "left"
-        }
-      },
-      {
-        "type": "textWithImage",
-        "props": {
-          "title": "Zakat: Purify Your Possessions",
-          "content": [
-            { "paragraph": "Pay your Zakat with UHR — Purify your possessions by setting aside a portion for the needy." },
-            { "paragraph": "Zakat is based on income and the value of possessions. The common minimum amount for those who qualify is 2.5%, or 1/40 of a Muslim's total savings and wealth." }
-          ],
-          "image": "/images/shared/hero-section-give-kazat.jpg",
-          "imagePosition": "right"
-        }
-      },
-      {
-        "type": "textWithImage",
-        "props": {
-          "title": "Thanksgiving: Sharing Blessings",
-          "content": [
-            { "paragraph": "UHR is committed to empowering the most vulnerable communities through the spirit of unity and the strength of humanity." },
-            { "paragraph": "This season, we are making a tangible difference in the lives of struggling families globally." }
-          ],
-          "image": "/images/shared/hero-section-give-kazat.jpg",
-          "imagePosition": "left"
-        }
-      },
-      {
-        "type": "gallery",
-        "props": {
-          "images": [
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg"
-          ]
-        }
-      },
-      {
-        "type": "cta",
         "props": {
           "title": "Fulfill Your Faith-Based Giving",
-          "content": "Your support allows UHR to provide seasonal relief and joy to families in need, helping them celebrate important occasions with dignity and hope.",
-          "cta": "DONATE NOW"
-        }
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "slug": "livelihoods-women-empowerment",
-    "title": "Livelihoods & Women Empowerment",
-    "subtitle": "Empowering Communities to Thrive",
-    "tagline": "Breaking the Cycle of Poverty",
-    "description": "UHR focuses on empowering vulnerable communities by helping individuals and families build sustainable livelihoods through vocational training, small business support, and sustainable farming initiatives.",
-    "image": "/images/shared/hero-section-give-kazat.jpg",
-    "hero": {
-      "title": "Livelihoods & Women Empowerment",
-      "heading": "Breaking the Cycle of Poverty",
-      "image": "/images/shared/hero-section-give-kazat.jpg",
-      "overlayText": "Empowering communities through sustainable livelihoods and women's economic independence."
-    },
-    "sections": [
-      {
-        "type": "impactCard",
-        "props": {
-          "title": "Breaking the Cycle of Poverty",
-          "content": "UHR focuses on empowering vulnerable communities by helping individuals and families build sustainable livelihoods through vocational training, small business support, and sustainable farming initiatives.",
+          "content": "NTHF ensures your Zakat and Sadaqah reach orphanages, elderly, and low-income families in South Korea and Asia. Your donations provide food, education, healthcare, and shelter, helping them live with dignity and hope.",
           "cta": "Donate Now"
         }
       },
       {
         "type": "textWithImage",
         "props": {
-          "title": "Rice Farm in Bangladesh",
+          "title": "Zakat: Purify Your Wealth",
           "content": [
-            { "paragraph": "Bangladesh is one of the world's top rice producers, with rice accounting for over 70% of the country's cropped area and providing the staple food for most of its population." },
-            { "paragraph": "UHR implements rice farming projects to help vulnerable families rebuild their livelihoods and achieve food security." }
+            {
+              "paragraph": "Pay your Zakat through NTHF to support orphanages, elderly care, and food programs in South Korea and Asia."
+            },
+            {
+              "paragraph": "Your Zakat provides lifesaving aid to those most in need, fulfilling your sacred duty."
+            }
           ],
-          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "image": "/images/programs/faith-based-giving/zakat-asia.jpg",
           "imagePosition": "right"
         }
       },
       {
         "type": "textWithImage",
         "props": {
-          "title": "Support Sustainable Fish Farms",
+          "title": "Sadaqah: Give with Compassion",
           "content": [
-            { "paragraph": "Fish farming in Bangladesh—locally known as 'pisciculture'—is a major component of the country's agricultural economy and food security system." },
-            { "listTitle": "Our fish farm projects provide:", "listItems": [
-              "Water Access – Inlet/outlet systems, pumps (if needed)",
-              "Fingerlings & Feed – Healthy stock and quality feed",
-              "Basic Equipment – Nets, feeders, water test kits",
-              "Training – For farm management and care",
-              "Licenses & Approvals – Land use and environmental clearance",
-              "Market Linkages – Buyers, transport, and cold storage if needed"
-            ] }
+            {
+              "paragraph": "Your Sadaqah supports ongoing programs like orphan education, women’s empowerment, and healthcare in South Korea and Asia."
+            },
+            {
+              "paragraph": "Even small donations create lasting change for vulnerable communities."
+            }
           ],
-          "image": "/images/shared/hero-section-give-kazat.jpg",
+          "image": "/images/programs/faith-based-giving/sadaqah-asia.jpg",
           "imagePosition": "left"
         }
       },
       {
-        "type": "stats",
+        "type": "textWithImage",
         "props": {
-          "title": "Our Impact in Numbers",
-          "stats": [
-            { "number": "1.6B", "label": "Workers were at risk of losing their livelihoods during the pandemic" },
-            { "number": "400M", "label": "Jobs lost in the second quarter of the pandemic" },
-            { "number": "220B", "label": "Income losses expected in developing countries due to the pandemic (UNDP)" }
-          ]
+          "title": "Seasonal Giving: Share the Joy",
+          "content": [
+            {
+              "paragraph": "Celebrate Eid, Ramadan, and other special occasions by giving to orphanages and elderly in South Korea and Asia."
+            },
+            {
+              "paragraph": "Your seasonal donations provide food baskets, gifts, and festive meals, bringing joy to those in need."
+            }
+          ],
+          "image": "/images/programs/faith-based-giving/seasonal-giving-asia.jpg",
+          "imagePosition": "right"
         }
       },
       {
-        "type": "initiatives",
+        "type": "textWithImage",
         "props": {
-          "title": "Our Priorities",
-          "sectors": [
+          "title": "Orphan Sponsorship: Change a Child’s Life",
+          "content": [
             {
-              "sector": "Agriculture & Food Production",
-              "initiatives": [
-                { "title": "Fruit & Vegetable Stands", "description": "Support for small-scale vendors to sell fresh produce, creating income opportunities and promoting healthy diets in local communities." },
-                { "title": "Fish Farming", "description": "Training and resources for aquaculture, enabling families to produce and sell fish, improving both nutrition and household income." },
-                { "title": "Rice Farming", "description": "Assistance for smallholder farmers to improve rice cultivation, boosting yields, incomes, and food security." },
-                { "title": "Chicken Farms", "description": "Provision of poultry, feed, and training to establish small chicken farms for egg and meat production." },
-                { "title": "Dairy Product Stores", "description": "Small shops offering milk, yogurt, and other dairy products, supporting family incomes and local nutrition." }
-              ]
+              "paragraph": "Sponsor an orphan in South Korea or Asia for just $50 a month, providing food, education, and healthcare."
             },
             {
-              "sector": "Retail & Small Business",
-              "initiatives": [
-                { "title": "Street Food Stands", "description": "Training and equipment for entrepreneurs to prepare and sell local street foods, boosting income while preserving cultural heritage." },
-                { "title": "Juice Bars", "description": "Set-up assistance for juice kiosks that provide fresh, nutritious beverages, supporting livelihoods and community health." },
-                { "title": "Mini Supermarkets", "description": "Micro-retail stores offering essential groceries, giving entrepreneurs steady income and communities convenient access to necessities." }
-              ]
-            },
-            {
-              "sector": "Skills Training & Employment",
-              "initiatives": [
-                { "title": "Sewing Machine Training Programs", "description": "Skills development and sewing machine provision for tailoring businesses, empowering women and youth toward economic independence." },
-                { "title": "Computer Training Centers", "description": "Facilities offering digital skills courses, increasing employment opportunities in IT and modern workplaces." },
-                { "title": "Hair Salons", "description": "Vocational training and start-up support for hairdressing businesses, empowering both men and women to gain financial stability." }
-              ]
-            },
-            {
-              "sector": "Transportation Services",
-              "initiatives": [
-                { "title": "Rickshaw Taxi Services", "description": "Support for purchasing and operating pedal or motorized rickshaws, providing affordable local transport and steady income." },
-                { "title": "Tuk Tuk Businesses", "description": "Assistance to launch tuk tuk transport services, creating stable employment and connecting communities to markets and services." }
-              ]
+              "paragraph": "Your sponsorship gives a child hope, love, and a brighter future."
             }
-          ]
+          ],
+          "image": "/images/programs/faith-based-giving/orphan-sponsorship-asia.jpg",
+          "imagePosition": "left"
         }
       },
       {
         "type": "gallery",
         "props": {
           "images": [
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg",
-            "/images/shared/hero-section-give-kazat.jpg"
+            "/images/programs/faith-based-giving/faith-giving-asia.jpg",
+            "/images/programs/faith-based-giving/zakat-asia.jpg",
+            "/images/programs/faith-based-giving/orphan-sponsorship-asia.jpg"
           ]
         }
       },
       {
         "type": "cta",
         "props": {
-          "title": "Help Empower Communities Through Livelihoods",
-          "content": "Your support allows UHR to create sustainable livelihoods and empower women, helping communities break the cycle of poverty and build brighter futures.",
+          "title": "Give with Faith, Change Lives in Asia",
+          "content": "Your Zakat, Sadaqah, and seasonal donations help NTHF provide lifesaving support to orphanages, elderly, and vulnerable families in South Korea and Asia. Fulfill your duty and transform lives today.",
           "cta": "DONATE NOW"
         }
       }
