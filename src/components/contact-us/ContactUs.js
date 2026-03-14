@@ -3,9 +3,12 @@
 import React, { useState } from 'react'
 import { MapPin, Mail, Phone } from 'lucide-react'
 import styles from './ContactUs.module.css'
+import { useEmail } from '@/hooks/useEmail'
 
 const ContactUs = () => {
   // Form state
+ const { sendEmail, isSending } = useEmail()
+
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -14,79 +17,44 @@ const ContactUs = () => {
     message: ''
   })
 
-  const [errors, setErrors] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
-  })
+  const [errors, setErrors] = useState({})
 
-  const validateEmail = email => {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
-  }
-
-  const validatePhone = phone => {
-    // Basic international phone format (allows spaces, dashes, plus)
-    return /^[\+]?[(]?[0-9]{1,4}[)]?[-\s\.]?[(]?[0-9]{1,4}[)]?[-\s\.]?[0-9]{1,9}$/.test(
-      phone
-    )
-  }
+  const validateEmail = email => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+  const validatePhone = phone => /^[\+]?[(]?[0-9]{1,4}[)]?[-\s\.]?[(]?[0-9]{1,4}[)]?[-\s\.]?[0-9]{1,9}$/.test(phone)
 
   const handleChange = e => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
-    // Clear error while typing
-    if (errors[name]) {
-      setErrors(prev => ({ ...prev, [name]: '' }))
-    }
+    if (errors[name]) setErrors(prev => ({ ...prev, [name]: '' }))
   }
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
-    const newErrors = {
-      fullName: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
-    }
-    let isValid = true
-
-    // Validation
-    if (!formData.fullName.trim()) {
-      newErrors.fullName = 'Full name is required'
-      isValid = false
-    }
-    if (!formData.email.trim()) {
-      newErrors.email = 'Email is required'
-      isValid = false
-    } else if (!validateEmail(formData.email)) {
-      newErrors.email = 'Please enter a valid email address'
-      isValid = false
-    }
-    if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone number is required'
-      isValid = false
-    } else if (!validatePhone(formData.phone)) {
-      newErrors.phone = 'Please enter a valid phone number'
-      isValid = false
-    }
-    if (!formData.subject.trim()) {
-      newErrors.subject = 'Subject is required'
-      isValid = false
-    }
-    if (!formData.message.trim()) {
-      newErrors.message = 'Message is required'
-      isValid = false
-    }
+    const newErrors = {}
+    if (!formData.fullName.trim()) newErrors.fullName = 'Full name is required'
+    if (!formData.email.trim()) newErrors.email = 'Email is required'
+    else if (!validateEmail(formData.email)) newErrors.email = 'Invalid email'
+    if (!formData.phone.trim()) newErrors.phone = 'Phone is required'
+    else if (!validatePhone(formData.phone)) newErrors.phone = 'Invalid phone number'
+    if (!formData.subject.trim()) newErrors.subject = 'Subject is required'
+    if (!formData.message.trim()) newErrors.message = 'Message is required'
 
     setErrors(newErrors)
+    if (Object.keys(newErrors).length > 0) return
 
-    if (isValid) {
-      // Handle form submission (e.g., send to API)
-      alert('Form submitted successfully!')
-      // Reset form
+    const success = await sendEmail({
+      formType: 'Contact Enquiry',
+      data: {
+        fullName: formData.fullName,
+        email: formData.email,
+        phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message
+      },
+      replyTo: formData.email
+    })
+
+    if (success) {
       setFormData({
         fullName: '',
         email: '',
@@ -256,7 +224,7 @@ const ContactUs = () => {
                 )}
               </div>
 
-              <button type='submit' className={styles.submitBtn}>
+              <button type='submit' className={styles.submitBtn} disabled={isSending}>
                 CONTACT US NOW
               </button>
             </form>

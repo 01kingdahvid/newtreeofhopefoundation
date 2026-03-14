@@ -28,7 +28,7 @@ export default function Error({ error, reset }) {
             key="back"
             type="primary"
             onClick={() => reset()}
-            style={{ backgroundColor: "#1aa2cc", borderColor: "#1aa2cc" }}
+            style={{ backgroundColor: "#1aa2cc", borderColor: "white" }}
           >
             Try Again
           </Button>,

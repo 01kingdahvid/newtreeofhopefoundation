@@ -1,17 +1,37 @@
 'use client' // Mark as Client Component for Next.js 13+
 
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Footer.module.css'
 import Link from 'next/link'
 import programs from '@/data/programs.json' // Import programs data
 import { useRouter } from 'next/navigation'
+import { useEmail } from '@/hooks/useEmail'
+import toast from 'react-hot-toast'
 
 const Footer = () => {
   const router = useRouter()
+  const { sendEmail, isSending } = useEmail()
+  const [subscribeEmail, setSubscribeEmail] = useState('')
 
-  // Function to navigate to /our-programs
-  const handleDonateClick = () => {
-    router.push('/donate')
+  const handleDonateClick = () => router.push('/donate')
+
+  const handleSubscribe = async e => {
+    e.preventDefault()
+    if (!subscribeEmail.trim() || !/^\S+@\S+\.\S+$/.test(subscribeEmail)) {
+      toast.error('Please enter a valid email')
+      return
+    }
+
+    const success = await sendEmail({
+      formType: 'Newsletter Subscription',
+      data: { email: subscribeEmail },
+      replyTo: subscribeEmail
+    })
+
+    if (success) {
+      setSubscribeEmail('')
+      toast.success('Subscribed! Check your inbox.')
+    }
   }
 
   return (
@@ -93,8 +113,23 @@ const Footer = () => {
         {/* COLUMN 5 */}
         <div className={styles.col}>
           <h3>JOIN OUR MAILING LIST</h3>
-          <input type='email' placeholder='Email' className={styles.input} />
-          <button className={styles.subscribeBtn}>SUBSCRIBE</button>
+          <form onSubmit={handleSubscribe}>
+            <input
+              type='email'
+              placeholder='Email'
+              className={styles.input}
+              value={subscribeEmail}
+              onChange={e => setSubscribeEmail(e.target.value)}
+              disabled={isSending}
+            />
+            <button
+              type='submit'
+              className={styles.subscribeBtn}
+              disabled={isSending}
+            >
+              {isSending ? 'SUBSCRIBING...' : 'SUBSCRIBE'}
+            </button>
+          </form>
           <p className={styles.note}>
             NTHF is a registered nonprofit humanitarian organization. Donations
             help support vulnerable communities worldwide.

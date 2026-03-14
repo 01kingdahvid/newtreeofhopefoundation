@@ -10,7 +10,7 @@ export default function LoadingWrapper({ children }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 4000); // 7 seconds
+    }, 1000); // 7 seconds
 
     return () => clearTimeout(timer);
   }, []);

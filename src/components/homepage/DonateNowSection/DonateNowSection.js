@@ -5,6 +5,7 @@ import styles from './DonateNowSection.module.css'
 import programsData from '@/data/programs.json'
 import { BankOutlined } from '@ant-design/icons'
 import countriesData from '@/data/countries.json'
+import { useEmail } from '@/hooks/useEmail'
 
 // ----------------------------------------------------------------------
 // Environment variables
@@ -82,6 +83,7 @@ const exchangeRates = {
 }
 
 const DonateNowSection = () => {
+   const { sendEmail, isSending } = useEmail()
   // ---------- Loading ----------
   const [loading, setLoading] = useState(true)
 
@@ -121,6 +123,47 @@ const DonateNowSection = () => {
 
   const copyTimeoutRef = useRef(null)
   const sectionRef = useRef(null)
+
+  // ---------- Function to handle final step and send email ----------
+  const goToThankYou = async () => {
+  // Base donation data
+  const donationData = {
+    amountUSD,
+    country,
+    program,
+    note,
+    coverFees,
+    selectedMethod,
+    ...(!anonymous && {
+      fullName: name,
+      email,
+      phone
+    })
+  }
+
+  // Add payment destination details based on selected method
+  if (selectedMethod === 'BANK') {
+    donationData.bank_name = bankName;
+    donationData.bank_account_name = bankAccountName;
+    donationData.bank_account_number = bankAccountNumber;
+  } else {
+    // Crypto
+    donationData.wallet_address = cryptoWallets[selectedMethod];
+    // Optionally include the network
+    donationData.payment_method = `${selectedMethod} (${network})`; // will appear in payment_method field
+  }
+
+  const formType = anonymous ? 'Anonymous Donation' : 'Donation Notification';
+  const replyTo = anonymous ? '' : email;
+
+  await sendEmail({
+    formType,
+    data: donationData,
+    replyTo
+  });
+
+  setStep(5);
+};
 
   // Scroll to section on step change
   useEffect(() => {
@@ -528,7 +571,7 @@ const DonateNowSection = () => {
               </p>
             </div>
 
-            <button className={styles.sentMoneyBtn} onClick={() => setStep(5)}>
+            <button className={styles.sentMoneyBtn} onClick={goToThankYou}>
               I&apos;ve sent the money
             </button>
           </div>
@@ -582,7 +625,7 @@ const DonateNowSection = () => {
             <p>{warningMessage}</p>
           </div>
 
-          <button className={styles.sentMoneyBtn} onClick={() => setStep(5)}>
+          <button className={styles.sentMoneyBtn} onClick={goToThankYou}>
             I&apos;ve sent the money
           </button>
         </div>
