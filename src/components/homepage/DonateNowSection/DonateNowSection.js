@@ -2,65 +2,106 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import styles from './DonateNowSection.module.css'
+import programsData from '@/data/programs.json'
+import { BankOutlined } from '@ant-design/icons'
+import countriesData from '@/data/countries.json'
 
 // ----------------------------------------------------------------------
-// MOCK DATA – in a real app, replace with fetch or import
+// Environment variables
 // ----------------------------------------------------------------------
-import programsData from '@/data/programs.json' // adjust path as needed
+const btcAddress = process.env.NEXT_PUBLIC_BTC_ADDRESS || ''
+const ethAddress = process.env.NEXT_PUBLIC_ETH_ADDRESS || ''
+const usdtAddress = process.env.NEXT_PUBLIC_USDT_ADDRESS || ''
+const bankName = process.env.NEXT_PUBLIC_KOREAN_BANK_NAME || 'Shinhan Bank'
+const bankAccountName = process.env.NEXT_PUBLIC_KOREAN_ACCOUNT_NAME || ''
+const bankAccountNumber = process.env.NEXT_PUBLIC_KOREAN_ACCOUNT_NUMBER || ''
 
-const cryptoAssets = [
-  { symbol: 'BTC', name: 'Bitcoin', icon: '₿', networks: ['Bitcoin'] },
+// ----------------------------------------------------------------------
+// Payment methods
+// ----------------------------------------------------------------------
+const paymentMethods = [
+  {
+    symbol: 'BTC',
+    name: 'Bitcoin',
+    type: 'crypto',
+    icon: (
+      <img
+        src='/images/logos/btc-logo.png'
+        alt='Bitcoin'
+        className={styles.cryptoIconImg}
+      />
+    ),
+    networks: ['Bitcoin']
+  },
   {
     symbol: 'ETH',
     name: 'Ethereum',
-    icon: 'Ξ',
-    networks: ['Ethereum', 'Base', 'Arbitrum']
+    type: 'crypto',
+    icon: (
+      <img
+        src='/images/logos/eth-logo.png'
+        alt='Ethereum'
+        className={styles.cryptoIconImg}
+      />
+    ),
+    networks: ['Ethereum']
   },
   {
-    symbol: 'USDC',
-    name: 'USD Coin',
-    icon: '●',
-    networks: ['Ethereum', 'Base', 'Solana']
+    symbol: 'USDT',
+    name: 'Tether (ERC20)',
+    type: 'crypto',
+    icon: (
+      <img
+        src='/images/logos/usdt-logo.png'
+        alt='Tether'
+        className={styles.cryptoIconImg}
+      />
+    ),
+    networks: ['Ethereum']
   },
-  { symbol: 'SOL', name: 'Solana', icon: '◎', networks: ['Solana'] },
-  { symbol: 'MATIC', name: 'Polygon', icon: 'Ⓜ', networks: ['Polygon'] }
+  {
+    symbol: 'BANK',
+    name: 'Korean Bank Transfer',
+    type: 'bank',
+    icon: <BankOutlined />
+  }
 ]
 
-// Mock wallet addresses (in production, these would come from your backend)
+// Wallet addresses (from env)
 const cryptoWallets = {
-  BTC: 'bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh',
-  ETH: '0x32Be343B94f860124dC4fEe278FDCBD38C102D88',
-  USDC: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
-  SOL: 'SoL11111111111111111111111111111111111111112',
-  MATIC: '0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0'
+  BTC: btcAddress,
+  ETH: ethAddress,
+  USDT: usdtAddress
 }
 
-// Mock exchange rates (USD per 1 crypto)
+// Exchange rates (USD per 1 unit)
 const exchangeRates = {
-  BTC: 67500, // ~ $10,000 = 0.148148 BTC
+  BTC: 67500,
   ETH: 3500,
-  USDC: 1,
-  SOL: 150,
-  MATIC: 0.9
+  USDT: 1
 }
 
-// ----------------------------------------------------------------------
-// MAIN COMPONENT
-// ----------------------------------------------------------------------
 const DonateNowSection = () => {
-  // ---------- Loading state ----------
+  // ---------- Loading ----------
   const [loading, setLoading] = useState(true)
 
   // ---------- Step ----------
-  const [step, setStep] = useState(1) // 1: donation form, 2: donor info, 3: crypto select, 4: payment, 5: thank you
+  const [step, setStep] = useState(1) // 1: donation form, 2: donor info, 3: payment method, 4: payment details, 5: thank you
 
   // ---------- Form data ----------
-  const [amountUSD, setAmountUSD] = useState('') // numeric USD value as string for input flexibility
+  const [amountUSD, setAmountUSD] = useState('')
   const [selectedAmountPreset, setSelectedAmountPreset] = useState(null)
   const [country, setCountry] = useState('')
+  const countries = countriesData.countries || []
+
+  const sortedCountries = [
+    countries.find(c => c.code === 'KR'),
+    ...countries.filter(c => c.code !== 'KR')
+  ]
+
   const [program, setProgram] = useState('')
   const [note, setNote] = useState('')
-  const [coverFees, setCoverFees] = useState(false)
+  const [coverFees, setCoverFees] = useState(true)
 
   // Donor info
   const [name, setName] = useState('')
@@ -68,45 +109,39 @@ const DonateNowSection = () => {
   const [phone, setPhone] = useState('')
   const [anonymous, setAnonymous] = useState(false)
 
-  // Crypto selection
-  const [selectedCrypto, setSelectedCrypto] = useState('BTC')
-  const [network, setNetwork] = useState('Bitcoin')
+  // Payment method selection
+  const [selectedMethod, setSelectedMethod] = useState('BTC')
+  const [network, setNetwork] = useState('Ethereum')
 
   // Payment step
-  const [walletAddress, setWalletAddress] = useState(cryptoWallets.BTC)
   const [copied, setCopied] = useState(false)
 
   // Validation errors
   const [errors, setErrors] = useState({})
 
-  // Ref for copy timeout
   const copyTimeoutRef = useRef(null)
-
   const sectionRef = useRef(null)
 
-  // Add this useEffect to handle scroll on step change
+  // Scroll to section on step change
   useEffect(() => {
     if (sectionRef.current) {
       sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
   }, [step])
 
-  // ---------- Load programs ----------
+  // Simulate loading
   useEffect(() => {
-    // Simulate async fetch (programsData is imported)
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 1600) // show loading state for demo
+    const timer = setTimeout(() => setLoading(false), 1600)
     return () => clearTimeout(timer)
   }, [])
 
-  // Update wallet address when crypto changes
+  // Update network when crypto changes (only for crypto methods)
   useEffect(() => {
-    setWalletAddress(cryptoWallets[selectedCrypto] || '')
-    // set default network
-    const asset = cryptoAssets.find(c => c.symbol === selectedCrypto)
-    if (asset && asset.networks.length > 0) setNetwork(asset.networks[0])
-  }, [selectedCrypto])
+    const method = paymentMethods.find(m => m.symbol === selectedMethod)
+    if (method?.type === 'crypto' && method.networks.length > 0) {
+      setNetwork(method.networks[0])
+    }
+  }, [selectedMethod])
 
   // Cleanup copy timeout
   useEffect(() => {
@@ -133,26 +168,29 @@ const DonateNowSection = () => {
     }
   }
 
-  // Copy address with feedback
   const copyAddress = () => {
-    navigator.clipboard.writeText(walletAddress)
-    setCopied(true)
-    if (copyTimeoutRef.current) clearTimeout(copyTimeoutRef.current)
-    copyTimeoutRef.current = setTimeout(() => setCopied(false), 2000)
+    const address = cryptoWallets[selectedMethod]
+    if (address) {
+      navigator.clipboard.writeText(address)
+      setCopied(true)
+      if (copyTimeoutRef.current) clearTimeout(copyTimeoutRef.current)
+      copyTimeoutRef.current = setTimeout(() => setCopied(false), 2000)
+    }
   }
 
-  // Calculate crypto amount based on USD
+  // Calculate crypto amount (only for crypto)
   const getCryptoAmount = () => {
+    if (selectedMethod === 'BANK') return 0
     const usd = parseFloat(amountUSD)
     if (isNaN(usd) || usd <= 0) return 0
-    const rate = exchangeRates[selectedCrypto] || 1
+    const rate = exchangeRates[selectedMethod] || 1
     return usd / rate
   }
 
   const cryptoAmountFormatted = () => {
     const val = getCryptoAmount()
     if (val === 0) return '0'
-    return val.toFixed(8) // show sufficient decimals
+    return val.toFixed(8)
   }
 
   // Step validation
@@ -178,11 +216,6 @@ const DonateNowSection = () => {
     return Object.keys(newErrors).length === 0
   }
 
-  // Step 3 validation: just ensure crypto selected (always true)
-  const handleProceedToPayment = () => {
-    setStep(4)
-  }
-
   // ---------- Render loading ----------
   if (loading) {
     return (
@@ -203,7 +236,6 @@ const DonateNowSection = () => {
       <span className={styles.badge}>GIVE NOW</span>
       <h1 className={styles.title}>CHANGE LIVES INSTANTLY</h1>
 
-      {/* Amount */}
       <div className={styles.amountRow}>
         {[50, 100, 250, 500, 1000].map(val => (
           <button
@@ -226,24 +258,22 @@ const DonateNowSection = () => {
       </div>
       {errors.amount && <div className={styles.errorText}>{errors.amount}</div>}
 
-      {/* Country */}
       <select
         className={styles.select}
         value={country}
         onChange={e => setCountry(e.target.value)}
       >
         <option value=''>Select Country</option>
-        <option value='USA'>USA</option>
-        <option value='Canada'>Canada</option>
-        <option value='UK'>United Kingdom</option>
-        <option value='Australia'>Australia</option>
-        <option value='Other'>Other</option>
+        {sortedCountries.map(country => (
+          <option key={country.code} value={country.name}>
+            {country.name}
+          </option>
+        ))}
       </select>
       {errors.country && (
         <div className={styles.errorText}>{errors.country}</div>
       )}
 
-      {/* Program from JSON */}
       <select
         className={styles.select}
         value={program}
@@ -260,7 +290,6 @@ const DonateNowSection = () => {
         <div className={styles.errorText}>{errors.program}</div>
       )}
 
-      {/* Note */}
       <textarea
         className={styles.textarea}
         placeholder='Add a note to your donation (optional)'
@@ -268,7 +297,6 @@ const DonateNowSection = () => {
         onChange={e => setNote(e.target.value)}
       />
 
-      {/* Cover fees checkbox */}
       <label className={styles.checkbox}>
         <input
           type='checkbox'
@@ -350,10 +378,9 @@ const DonateNowSection = () => {
     </div>
   )
 
-  // ---------- Step 3: Crypto Selection (exactly like second image) ----------
+  // ---------- Step 3: Payment Method Selection ----------
   const renderStep3 = () => {
-    const quickCryptos = ['BTC', 'ETH', 'USDC']
-    // const otherCryptos = cryptoAssets.filter((c) => !quickCryptos.includes(c.symbol)); // not used, but kept for reference
+    const quickMethods = ['BTC', 'ETH', 'USDT', 'BANK']
 
     return (
       <div className={styles.card}>
@@ -364,79 +391,155 @@ const DonateNowSection = () => {
           <h2 className={styles.title}>Make a Donation</h2>
         </div>
 
-        {/* Quick action buttons */}
+        {/* Quick buttons */}
         <div className={styles.quickCryptoRow}>
-          {quickCryptos.map(sym => {
-            const asset = cryptoAssets.find(c => c.symbol === sym)
+          {quickMethods.map(sym => {
+            const method = paymentMethods.find(m => m.symbol === sym)
             return (
               <button
                 key={sym}
                 className={`${styles.cryptoQuickBtn} ${
-                  selectedCrypto === sym ? styles.active : ''
+                  selectedMethod === sym ? styles.active : ''
                 }`}
-                onClick={() => setSelectedCrypto(sym)}
+                onClick={() => setSelectedMethod(sym)}
               >
-                <span className={styles.cryptoIcon}>{asset.icon}</span> {sym}
+                <span className={styles.cryptoIcon}>{method.icon}</span>{' '}
+                {sym === 'BANK' ? 'Bank' : sym}
               </button>
             )
           })}
         </div>
 
-        {/* Full select + network */}
+        {/* Full select + network (network only for crypto) */}
         <div className={styles.fullSelectRow}>
           <div className={styles.cryptoSelectWrapper}>
             <select
               className={styles.cryptoSelect}
-              value={selectedCrypto}
-              onChange={e => setSelectedCrypto(e.target.value)}
+              value={selectedMethod}
+              onChange={e => setSelectedMethod(e.target.value)}
             >
-              {cryptoAssets.map(asset => (
-                <option key={asset.symbol} value={asset.symbol}>
-                  {asset.name} ({asset.symbol})
+              {paymentMethods.map(method => (
+                <option key={method.symbol} value={method.symbol}>
+                  {method.name}{' '}
+                  {method.symbol !== 'BANK' ? `(${method.symbol})` : ''}
                 </option>
               ))}
             </select>
           </div>
-          {cryptoAssets.find(c => c.symbol === selectedCrypto)?.networks
-            .length ? (
+          {selectedMethod !== 'BANK' && (
             <select
               className={styles.networkSelect}
               value={network}
               onChange={e => setNetwork(e.target.value)}
             >
-              {cryptoAssets
-                .find(c => c.symbol === selectedCrypto)
-                .networks.map(net => (
+              {paymentMethods
+                .find(m => m.symbol === selectedMethod)
+                ?.networks.map(net => (
                   <option key={net} value={net}>
                     {net}
                   </option>
                 ))}
             </select>
-          ) : null}
+          )}
         </div>
 
-        {/* Total crypto amount (non-editable) */}
+        {/* Amount display */}
         <div className={styles.totalCryptoBox}>
-          <span className={styles.cryptoTotalValue}>
-            {cryptoAmountFormatted()}{' '}
-            <span className={styles.cryptoSymbolSmall}>{selectedCrypto}</span>
-          </span>
-          <span className={styles.usdEquivalent}>
-            ≈ ${parseFloat(amountUSD || 0).toFixed(2)} USD
-          </span>
+          {selectedMethod === 'BANK' ? (
+            <>
+              <span className={styles.cryptoTotalValue}>
+                ${parseFloat(amountUSD || 0).toFixed(2)} USD
+              </span>
+              <span className={styles.usdEquivalent}>Bank Transfer</span>
+            </>
+          ) : (
+            <>
+              <span className={styles.cryptoTotalValue}>
+                {cryptoAmountFormatted()}{' '}
+                <span className={styles.cryptoSymbolSmall}>
+                  {selectedMethod}
+                </span>
+              </span>
+              <span className={styles.usdEquivalent}>
+                ≈ ${parseFloat(amountUSD || 0).toFixed(2)} USD
+              </span>
+            </>
+          )}
         </div>
 
-        <button className={styles.primaryBtn} onClick={handleProceedToPayment}>
-          Donate {selectedCrypto}
+        <button className={styles.primaryBtn} onClick={() => setStep(4)}>
+          {selectedMethod === 'BANK'
+            ? 'Continue with Bank Transfer'
+            : `Donate ${selectedMethod}`}
         </button>
       </div>
     )
   }
 
-  // ---------- Step 4: Payment (exactly like first image) ----------
+  // ---------- Step 4: Payment Details ----------
   const renderStep4 = () => {
-    const asset = cryptoAssets.find(c => c.symbol === selectedCrypto)
-    const warningMessage = `Send only ${selectedCrypto} to this address using the following supported networks: ${asset.networks.join(
+    if (selectedMethod === 'BANK') {
+      // Bank transfer details
+      return (
+        <div className={styles.card}>
+          <div className={styles.paymentContainer}>
+            <div className={styles.paymentHeader}>
+              <button className={styles.backButton} onClick={() => setStep(3)}>
+                ←
+              </button>
+              <div className={styles.paymentAmount}>
+                <span className={styles.bigNumber}>
+                  ${parseFloat(amountUSD || 0).toFixed(2)}
+                </span>
+                <span className={styles.asset}>USD</span>
+              </div>
+              <div style={{ width: '24px' }} />
+            </div>
+
+            <p style={{ color: '#334155', margin: '0.5rem 0 0' }}>
+              Transfer the amount to the Korean bank account below.
+            </p>
+
+            {/* QR Code for bank (static image) */}
+            <div className={styles.qrCode}>
+              <img
+                src='/images/logos/Shinhan-Bank-logo.png'
+                alt='Shinhan Bank logo'
+              />
+            </div>
+
+            <div className={styles.bankDetailsBox}>
+              <p>
+                <strong>Bank:</strong> {bankName}
+              </p>
+              <p>
+                <strong>Account Name:</strong> {bankAccountName}
+              </p>
+              <p>
+                <strong>Account Number:</strong> {bankAccountNumber}
+              </p>
+            </div>
+
+            <div className={styles.warningBox}>
+              <strong>⚠️ Warning</strong>
+              <p>
+                The Korean bank option is only for use within South Korea.
+                International transfers may not be accepted.
+              </p>
+            </div>
+
+            <button className={styles.sentMoneyBtn} onClick={() => setStep(5)}>
+              I&apos;ve sent the money
+            </button>
+          </div>
+        </div>
+      )
+    }
+
+    // Crypto payment
+    const method = paymentMethods.find(m => m.symbol === selectedMethod)
+    const walletAddress = cryptoWallets[selectedMethod] || ''
+    const warningMessage = `Send only ${selectedMethod} to this address using the following supported networks: ${method.networks.join(
       ', '
     )}. Sending unsupported tokens or NFTs to this address may result in the loss of your donation. The address will expire after 180 days if unused.`
 
@@ -451,9 +554,9 @@ const DonateNowSection = () => {
               <span className={styles.bigNumber}>
                 {cryptoAmountFormatted()}
               </span>
-              <span className={styles.asset}>{selectedCrypto}</span>
+              <span className={styles.asset}>{selectedMethod}</span>
             </div>
-            <div style={{ width: '24px' }} /> {/* spacer for alignment */}
+            <div style={{ width: '24px' }} />
           </div>
 
           <p style={{ color: '#334155', margin: '0.5rem 0 0' }}>
@@ -499,7 +602,6 @@ const DonateNowSection = () => {
           className={styles.startOverBtn}
           onClick={() => {
             setStep(1)
-            // optionally reset form
             setAmountUSD('')
             setSelectedAmountPreset(null)
             setCountry('')
@@ -510,7 +612,7 @@ const DonateNowSection = () => {
             setEmail('')
             setPhone('')
             setAnonymous(false)
-            setSelectedCrypto('BTC')
+            setSelectedMethod('BTC')
           }}
         >
           Start Over
@@ -519,7 +621,6 @@ const DonateNowSection = () => {
     </div>
   )
 
-  // ---------- Render current step ----------
   return (
     <section className={styles.section} ref={sectionRef}>
       {step === 1 && renderStep1()}

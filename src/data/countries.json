@@ -1,0 +1,31 @@
+{
+  "countries": [
+    { "code": "KR", "name": "South Korea" },
+    { "code": "AF", "name": "Afghanistan" },
+    { "code": "BD", "name": "Bangladesh" },
+    { "code": "BT", "name": "Bhutan" },
+    { "code": "BN", "name": "Brunei" },
+    { "code": "KH", "name": "Cambodia" },
+    { "code": "CN", "name": "China" },
+    { "code": "TL", "name": "East Timor" },
+    { "code": "IN", "name": "India" },
+    { "code": "ID", "name": "Indonesia" },
+    { "code": "JP", "name": "Japan" },
+    { "code": "KZ", "name": "Kazakhstan" },
+    { "code": "KG", "name": "Kyrgyzstan" },
+    { "code": "LA", "name": "Laos" },
+    { "code": "MY", "name": "Malaysia" },
+    { "code": "MV", "name": "Maldives" },
+    { "code": "MN", "name": "Mongolia" },
+    { "code": "MM", "name": "Myanmar" },
+    { "code": "NP", "name": "Nepal" },
+    { "code": "PK", "name": "Pakistan" },
+    { "code": "PH", "name": "Philippines" },
+    { "code": "SG", "name": "Singapore" },
+    { "code": "LK", "name": "Sri Lanka" },
+    { "code": "TW", "name": "Taiwan" },
+    { "code": "TJ", "name": "Tajikistan" },
+    { "code": "TH", "name": "Thailand" },
+    { "code": "VN", "name": "Vietnam" }
+  ]
+}

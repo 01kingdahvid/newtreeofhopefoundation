@@ -527,3 +527,34 @@
     height: 160px;
   }
 }
+
+
+.bankDetailsBox {
+  background: #f1f5f9;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 100%;
+  margin: 1.5rem 0;
+  border: 1px solid #e2e8f0;
+  color: #0f172a;
+  text-align: left;
+}
+
+.bankDetailsBox p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.bankDetailsBox strong {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.cryptoIconImg {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
