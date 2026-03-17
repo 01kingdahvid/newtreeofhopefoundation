@@ -67,7 +67,7 @@ export default function ProgramDetailPage({ params }) {
       <PageHero
         title={program.title}
         subtitle={program.subtitle}
-        image={program.hero?.image || program.image}
+        image={program?.image || program.image}
       />
 
       <div className={styles.programDetail}>

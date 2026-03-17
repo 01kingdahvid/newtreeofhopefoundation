@@ -227,6 +227,18 @@
 }
 
 /* ===== TextWithImage ===== */
+/* When NO image exists */
+.noImage {
+  grid-template-columns: 1fr !important;
+}
+
+/* Optional: center content better */
+.noImage .content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .textWithImage {
   padding: 4rem 0;
   background: #f9f9f9;

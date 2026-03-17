@@ -6,7 +6,7 @@ export default function OurProgramsPage () {
     <main>
       <PageHero
         title='OUR PROGRAMS'
-        image='/images/shared/kids-2.avif'
+        image='/images/our-program/our-program1.jpg'
       />
       <Programs />
     </main>

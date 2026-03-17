@@ -7,7 +7,7 @@ const WhereWeWorkPage = () => {
   return (
     <>
       <main>
-        <PageHero title='WHERE WE WORK' image='/images/shared/kids-2.avif' />
+        <PageHero title='WHERE WE WORK' image='/images/our-program/shelter.jpg' />
 
         <NGOLeafletMap />
 

@@ -9,7 +9,7 @@ const ContactUsPage = () => {
         <PageHero
           title='CONTACT US'
           subtitle='GET IN TOUCH'
-          image='/images/shared/kids-2.avif'
+          image='/images/our-program/school7.jpg' 
         />
 
         <ContactUsSection />

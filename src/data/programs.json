@@ -6,7 +6,7 @@
     "subtitle": "A Warm Meal, A Ray of Hope: Feeding Asia's Most Vulnerable",
     "tagline": "Nourishing Communities in South Korea and Asia",
     "description": "Amid rising food prices and the lingering effects of the pandemic, millions across Asia struggle to put meals on the table. NTHF brings nourishment to orphanages in Seoul, fishing villages in the Philippines hit by typhoons, and rural families in Vietnam. Your support delivers not just food, but the warmth of a caring community.",
-    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "image": "/images/our-program/food-security-hd.jpg",
     "hero": {
       "title": "Food Security in Asia",
       "heading": "Nourishing Communities, Building Hope",
@@ -50,25 +50,25 @@
             {
               "title": "Orphanage Meal Programs (South Korea)",
               "description": "NTHF provides daily nutritious meals to orphanages in South Korea, ensuring children receive balanced diets for healthy growth and development.",
-              "image": "/images/programs/food-security/orphanage-meals-korea.jpg",
+              "image": "/images/our-program/food-security3.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Monthly Food Parcels (Asia-wide)",
               "description": "We distribute essential food parcels to low-income families, elderly individuals, and orphanages in South Korea, Vietnam, Indonesia, and the Philippines.",
-              "image": "/images/programs/food-security/food-parcels-asia.jpg",
+              "image": "/images/our-program/food-security4.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Community Kitchens (South Korea & Southeast Asia)",
               "description": "NTHF operates community kitchens in urban and rural areas, providing free, hot meals to homeless individuals, orphanages, and families in need.",
-              "image": "/images/programs/food-security/community-kitchen-korea.jpg",
+              "image": "/images/our-program/food-security6.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Nutritional Support for Elderly (South Korea)",
               "description": "Many elderly in South Korea live in poverty. NTHF delivers nutritious food packages and hot meals to ensure their health and dignity.",
-              "image": "/images/programs/food-security/elderly-support-korea.jpg",
+              "image": "/images/our-program/food-security7.jpg",
               "cta": "Donate Now"
             }
           ]
@@ -102,9 +102,9 @@
         "type": "gallery",
         "props": {
           "images": [
-            "/images/programs/food-security/asia-food-distribution.jpg",
-            "/images/programs/food-security/orphanage-meals-korea.jpg",
-            "/images/programs/food-security/community-kitchen-korea.jpg"
+            "/images/our-program/food-security11.jpg",
+            "/images/our-program/food-security12.jpg",
+            "/images/our-program/food-security10.jpg"
           ]
         }
       },
@@ -125,7 +125,7 @@
     "subtitle": "Turning on the Tap to a Brighter Future: Clean Water for Every Child in Asia",
     "tagline": "Safe Water, Healthy Communities",
     "description": "In remote villages of Cambodia and flood-prone areas of Bangladesh, clean water is a distant dream. NTHF drills wells, builds filtration systems, and teaches hygiene to prevent diseases. Your gift turns a distant dream into a daily reality, bringing health and dignity to families across Asia.",
-    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "image": "/images/our-program/water-hd.jpg",
     "hero": {
       "title": "Water & Sanitation in Asia",
       "heading": "Bringing Clean Water to Every Community",
@@ -173,25 +173,25 @@
             {
               "title": "Water Well Construction (Southeast Asia)",
               "description": "NTHF builds and rehabilitates water wells in rural communities, providing safe drinking water to thousands of families.",
-              "image": "/images/programs/wash/water-well-asia.jpg",
+              "image": "/images/our-program/water1.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "School WASH Programs (South Korea & Asia)",
               "description": "We install water purification systems and handwashing stations in schools and orphanages, ensuring children have access to clean water and hygiene education.",
-              "image": "/images/programs/wash/school-wash-korea.jpg",
+              "image": "/images/our-program/water2.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Hygiene Education (Asia-wide)",
               "description": "NTHF conducts hygiene workshops in communities, schools, and orphanages to prevent waterborne diseases and promote healthy practices.",
-              "image": "/images/programs/wash/hygiene-workshop-asia.jpg",
+              "image": "/images/our-program/hygiene.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Sanitation Facilities (Rural Asia)",
               "description": "We build and maintain public bathrooms and sanitation facilities in underserved rural areas, improving health and dignity.",
-              "image": "/images/programs/wash/sanitation-facilities-asia.jpg",
+              "image": "/images/our-program/bathroom.jpg",
               "cta": "Donate Now"
             }
           ]
@@ -225,9 +225,11 @@
         "type": "gallery",
         "props": {
           "images": [
-            "/images/programs/wash/clean-water-asia.jpg",
-            "/images/programs/wash/water-well-asia.jpg",
-            "/images/programs/wash/school-wash-korea.jpg"
+            "/images/our-program/water5.jpg",
+            "/images/our-program/clean1.jpg",
+            "/images/our-program/cleanwater.jpg",
+            "/images/our-program/clean2.jpg",
+            "/images/our-program/water4.jpg"
           ]
         }
       },
@@ -248,7 +250,7 @@
     "subtitle": "Healing Hands Across Borders: Bringing Healthcare to Asia's Forgotten Communities",
     "tagline": "Healthy Communities, Brighter Futures",
     "description": "As the world recovers from COVID-19, many rural clinics in Indonesia and Myanmar remain under-equipped. NTHF bridges the gap with mobile health units, medicine supplies, and preventive care—especially for orphans and the elderly. Your compassion becomes the healing touch they desperately need.",
-    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "image": "/images/our-program/health.jpg",
     "hero": {
       "title": "Healthcare in Asia",
       "heading": "Ensuring Access to Medical Care for All",
@@ -296,31 +298,31 @@
             {
               "title": "Orphanage Health Clinics (South Korea)",
               "description": "NTHF operates mobile health clinics in orphanages, providing regular check-ups, vaccinations, and dental care for children.",
-              "image": "/images/programs/health/orphanage-clinic-korea.jpg",
+              "image": "/images/our-program/health5.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Elderly Care Programs (South Korea)",
               "description": "We provide free health screenings, medicines, and home care visits for elderly individuals living in poverty.",
-              "image": "/images/programs/health/elderly-care-korea.jpg",
+              "image": "/images/our-program/health6.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Maternal & Child Health (Southeast Asia)",
               "description": "NTHF supports prenatal care, safe deliveries, and postnatal support for mothers and infants in rural communities.",
-              "image": "/images/programs/health/maternal-health-asia.jpg",
+              "image": "/images/our-program/health2.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Medical Supply Distribution (Asia-wide)",
               "description": "We distribute essential medicines, wheelchairs, and medical equipment to clinics and orphanages in underserved areas.",
-              "image": "/images/programs/health/medical-supplies-asia.jpg",
+              "image": "/images/our-program/med-supply.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Health Education Workshops",
               "description": "NTHF conducts workshops on hygiene, nutrition, and disease prevention in schools, orphanages, and communities.",
-              "image": "/images/programs/health/health-workshop-asia.jpg",
+              "image": "/images/our-program/health9.jpg",
               "cta": "Donate Now"
             }
           ]
@@ -354,9 +356,9 @@
         "type": "gallery",
         "props": {
           "images": [
-            "/images/programs/health/healthcare-asia.jpg",
-            "/images/programs/health/orphanage-clinic-korea.jpg",
-            "/images/programs/health/elderly-care-korea.jpg"
+            "/images/our-program/health3.jpg",
+            "/images/our-program/health-hd.jpg",
+            "/images/our-program/med-supply.jpg"
           ]
         }
       },
@@ -377,7 +379,7 @@
     "subtitle": "Four Walls, Countless Dreams: Building Safe Havens for Asia's Orphans and Families",
     "tagline": "A Home for Every Child",
     "description": "After devastating floods in Pakistan and earthquakes in Indonesia, thousands are left homeless. NTHF rebuilds—not just structures, but lives. From renovating cramped orphanages in Seoul to constructing resilient homes in rural Nepal, we create spaces where families can heal and children can dream.",
-    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "image": "/images/our-program/shelter-hd.jpg",
     "hero": {
       "title": "Safe Shelter in Asia",
       "heading": "Building Homes, Restoring Dignity",
@@ -408,7 +410,7 @@
               "paragraph": "Your support can transform an orphanage into a true home for children."
             }
           ],
-          "image": "/images/programs/shelter/orphanage-renovation-korea.jpg",
+          "image": "/images/our-program/shelter7.jpg",
           "imagePosition": "right"
         }
       },
@@ -469,9 +471,10 @@
         "type": "gallery",
         "props": {
           "images": [
-            "/images/programs/shelter/orphanage-korea.jpg",
-            "/images/programs/shelter/orphanage-renovation-korea.jpg",
-            "/images/programs/shelter/elderly-housing-korea.jpg"
+            "/images/our-program/shelter2.jpg",
+            "/images/our-program/shelter4.jpg",
+            "/images/our-program/shelter5.jpg",
+            "/images/our-program/shelter.jpg"
           ]
         }
       },
@@ -492,7 +495,7 @@
     "subtitle": "Wrapping Love Around Every Child: Nurturing Asia's Orphans into a Bright Tomorrow",
     "tagline": "Every Child Deserves Love and Safety",
     "description": "In the aftermath of conflicts and natural disasters, children are often left alone. NTHF stands with them—in Thai border camps, Sri Lankan villages, and South Korean cities. We provide not only basics but also trauma care, education, and a sense of family. Your kindness wraps them in the love they deserve.",
-    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "image": "/images/our-program/orphan-hd.jpg",
     "hero": {
       "title": "Orphan Care in Asia",
       "heading": "Giving Children a Brighter Future",
@@ -545,7 +548,7 @@
             },
             { "paragraph": "Your sponsorship changes a child’s life forever." }
           ],
-          "image": "/images/programs/child-protection/orphan-sponsorship-korea.jpg",
+          "image": "/images/our-program/orphan2.jpg",
           "imagePosition": "right"
         }
       },
@@ -561,7 +564,7 @@
               "paragraph": "We also offer scholarships for higher education, helping orphans break the cycle of poverty."
             }
           ],
-          "image": "/images/programs/child-protection/orphan-education-asia.jpg",
+          "image": "/images/our-program/school.png",
           "imagePosition": "left"
         }
       },
@@ -577,7 +580,7 @@
               "paragraph": "We also offer mental health support to help children heal from trauma."
             }
           ],
-          "image": "/images/programs/child-protection/orphan-healthcare-asia.jpg",
+          "image": "/images/our-program/health1.jpg",
           "imagePosition": "right"
         }
       },
@@ -593,7 +596,7 @@
               "paragraph": "We also teach children about healthy eating habits."
             }
           ],
-          "image": "/images/programs/child-protection/orphan-nutrition-asia.jpg",
+          "image": "/images/our-program/water3.jpg",
           "imagePosition": "left"
         }
       },
@@ -601,9 +604,11 @@
         "type": "gallery",
         "props": {
           "images": [
-            "/images/programs/child-protection/orphan-care-korea.jpg",
-            "/images/programs/child-protection/orphan-sponsorship-korea.jpg",
-            "/images/programs/child-protection/orphan-education-asia.jpg"
+            "/images/our-program/orphan10.jpg",
+            "/images/our-program/orphan9.jpg",
+            "/images/our-program/orphan3.jpg",
+            "/images/our-program/orphan-ty.jpg"
+           
           ]
         }
       },
@@ -624,7 +629,7 @@
     "subtitle": "Opening Doors to the Future: Educating Asia's Next Generation of Leaders",
     "tagline": "Education for a Brighter Future",
     "description": "From the slums of Dhaka to the highlands of Laos, children dream of becoming teachers, engineers, and artists. NTHF turns those dreams into reality with schools, scholarships, and vocational centers. After pandemic school closures, we're bridging the digital divide and giving youth the tools to thrive.",
-    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "image": "/images/our-program/school2.jpg",
     "hero": {
       "title": "Education in Asia",
       "heading": "Unlocking Potential Through Learning",
@@ -672,31 +677,31 @@
             {
               "title": "Orphan Education (South Korea)",
               "description": "NTHF provides school fees, uniforms, books, and tutoring for orphans in South Korea, ensuring they receive a quality education.",
-              "image": "/images/programs/education/orphan-education-korea.jpg",
+              "image": "/images/our-program/school6.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Vocational Training (Asia-wide)",
               "description": "We offer courses in IT, tailoring, cooking, and mechanics to help youth and women gain employable skills.",
-              "image": "/images/programs/education/vocational-training-asia.jpg",
+              "image": "/images/our-program/school-voca1.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Scholarships for Higher Education",
               "description": "NTHF awards scholarships to orphaned and low-income students in South Korea and Asia, enabling them to pursue college and university degrees.",
-              "image": "/images/programs/education/scholarships-asia.jpg",
+              "image": "/images/our-program/school101.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "School Construction (Rural Asia)",
               "description": "We build and renovate schools in rural communities, providing safe and modern learning environments for children.",
-              "image": "/images/programs/education/school-construction-asia.jpg",
+              "image": "/images/our-program/school-class.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Digital Literacy Programs",
               "description": "NTHF teaches computer skills to orphans and youth, preparing them for the modern workforce.",
-              "image": "/images/programs/education/digital-literacy-asia.jpg",
+              "image": "/images/our-program/school-tech.jpg",
               "cta": "Donate Now"
             }
           ]
@@ -726,7 +731,7 @@
               "paragraph": "We also offer tutoring and mentorship to help students succeed academically."
             }
           ],
-          "image": "/images/programs/education/back-to-school-korea.jpg",
+          "image": "/images/our-program/school103.jpg",
           "imagePosition": "right"
         }
       },
@@ -742,7 +747,7 @@
               "paragraph": "Educated women are more likely to earn higher incomes and invest in their children’s future."
             }
           ],
-          "image": "/images/programs/education/women-empowerment-asia.jpg",
+          "image": "/images/our-program/women6.jpg",
           "imagePosition": "left"
         }
       },
@@ -750,9 +755,9 @@
         "type": "gallery",
         "props": {
           "images": [
-            "/images/programs/education/education-asia.jpg",
-            "/images/programs/education/orphan-education-korea.jpg",
-            "/images/programs/education/vocational-training-asia.jpg"
+            "/images/our-program/school-tech1.jpg",
+            "/images/our-program/school-scholar2.jpg",
+            "/images/our-program/school-scholar3.jpg"
           ]
         }
       },
@@ -773,7 +778,7 @@
     "subtitle": "Stitches of Hope, Seeds of Change: Empowering Women Across Asia",
     "tagline": "Building Sustainable Futures",
     "description": "In the wake of economic downturns, women are often the hardest hit. NTHF helps mothers in rural India start small businesses, provides sewing machines to widows in Sri Lanka, and teaches financial literacy in South Korea. When a woman thrives, her entire community blossoms.",
-    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "image": "/images/our-program/women1.jpg",
     "hero": {
       "title": "Women’s Empowerment in Asia",
       "heading": "Creating Opportunities, Changing Lives",
@@ -821,72 +826,32 @@
             {
               "title": "Vocational Training for Women (South Korea)",
               "description": "NTHF offers courses in IT, baking, tailoring, and beauty services to help women gain employable skills.",
-              "image": "/images/programs/livelihoods/vocational-training-korea.jpg",
+              "image": "/images/our-program/women-craft3.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Small Business Grants (Asia-wide)",
               "description": "We provide seed funding and mentorship for women to start their own businesses, such as cafes, tailoring shops, and daycare centers.",
-              "image": "/images/programs/livelihoods/small-business-asia.jpg",
+              "image": "/images/our-program/women-group2.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Financial Literacy Workshops",
               "description": "NTHF teaches women how to save, budget, and invest, helping them achieve financial stability.",
-              "image": "/images/programs/livelihoods/financial-literacy-asia.jpg",
+              "image": "/images/our-program/women-emp3.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Agricultural Livelihoods (Rural Asia)",
               "description": "We support women farmers with training, seeds, and equipment to grow and sell crops, improving food security and income.",
-              "image": "/images/programs/livelihoods/agriculture-asia.jpg",
+              "image": "/images/our-program/women-farm.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Handicraft Cooperatives",
               "description": "NTHF helps women form cooperatives to produce and sell traditional handicrafts, preserving culture and generating income.",
-              "image": "/images/programs/livelihoods/handicraft-asia.jpg",
+              "image": "/images/our-program/women-craft7.jpg",
               "cta": "Donate Now"
-            }
-          ]
-        }
-      },
-      {
-        "type": "textWithImage",
-        "props": {
-          "title": "Success Stories: Women Entrepreneurs",
-          "content": [
-            {
-              "paragraph": "Meet Ji-Yeon from Seoul, who started her own bakery with NTHF’s support. She now employs 5 other women and supports her family."
-            },
-            {
-              "paragraph": "Lina from Vietnam used her tailoring skills to open a small shop, doubling her family’s income in just one year."
-            }
-          ],
-          "image": "/images/programs/livelihoods/women-success-asia.jpg",
-          "imagePosition": "right"
-        }
-      },
-      {
-        "type": "simpleText",
-        "props": {
-          "title": "Why Women’s Empowerment Matters",
-          "content": [
-            {
-              "point": "Poverty Reduction",
-              "description": "When women earn income, they invest 90% of it back into their families."
-            },
-            {
-              "point": "Education",
-              "description": "Economically empowered women are more likely to educate their children."
-            },
-            {
-              "point": "Health",
-              "description": "Women with stable incomes can afford better healthcare for their families."
-            },
-            {
-              "point": "Community Development",
-              "description": "Women’s businesses create jobs and stimulate local economies."
             }
           ]
         }
@@ -895,9 +860,11 @@
         "type": "gallery",
         "props": {
           "images": [
-            "/images/programs/livelihoods/women-empowerment-asia.jpg",
-            "/images/programs/livelihoods/vocational-training-korea.jpg",
-            "/images/programs/livelihoods/small-business-asia.jpg"
+            "/images/our-program/women3.jpg",
+            "/images/our-program/women7.jpg",
+            "/images/our-program/women-craft5.jpg",
+            "/images/our-program/women-farm2.jpg",
+            "/images/our-program/women-group1.jpg"
           ]
         }
       },
@@ -918,7 +885,7 @@
     "subtitle": "Your Kindness, Their Blessing: Sharing Faith and Love Across Asia",
     "tagline": "Give with Compassion, Change Lives",
     "description": "Through Zakat, Sadaqah, and seasonal gifts, your faith becomes a lifeline for families in need—from Rohingya refugee camps in Bangladesh to elderly homes in South Korea. NTHF ensures your donations are delivered with respect and urgency, turning your compassion into hope.",
-    "image": "/images/shared/hero-section-give-kazat.jpg",
+    "image": "/images/our-program/faith.jpg",
     "hero": {
       "title": "Faith-Based Giving in Asia",
       "heading": "Fulfill Your Duty, Transform Lives",
@@ -946,7 +913,7 @@
               "paragraph": "Your Zakat provides lifesaving aid to those most in need, fulfilling your sacred duty."
             }
           ],
-          "image": "/images/programs/faith-based-giving/zakat-asia.jpg",
+          
           "imagePosition": "right"
         }
       },
@@ -962,7 +929,7 @@
               "paragraph": "Even small donations create lasting change for vulnerable communities."
             }
           ],
-          "image": "/images/programs/faith-based-giving/sadaqah-asia.jpg",
+          
           "imagePosition": "left"
         }
       },
@@ -978,7 +945,7 @@
               "paragraph": "Your seasonal donations provide food baskets, gifts, and festive meals, bringing joy to those in need."
             }
           ],
-          "image": "/images/programs/faith-based-giving/seasonal-giving-asia.jpg",
+          
           "imagePosition": "right"
         }
       },
@@ -994,20 +961,11 @@
               "paragraph": "Your sponsorship gives a child hope, love, and a brighter future."
             }
           ],
-          "image": "/images/programs/faith-based-giving/orphan-sponsorship-asia.jpg",
+          
           "imagePosition": "left"
         }
       },
-      {
-        "type": "gallery",
-        "props": {
-          "images": [
-            "/images/programs/faith-based-giving/faith-giving-asia.jpg",
-            "/images/programs/faith-based-giving/zakat-asia.jpg",
-            "/images/programs/faith-based-giving/orphan-sponsorship-asia.jpg"
-          ]
-        }
-      },
+      
       {
         "type": "cta",
         "props": {

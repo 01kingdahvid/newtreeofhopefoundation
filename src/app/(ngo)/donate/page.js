@@ -6,8 +6,8 @@ const DonatePage = () => {
   return (
     <main>
       <PageHero
-        title='DONATE BITCOIN TO CHARITY'
-        image='/images/shared/kids-2.avif'
+        title='DONATE TO CHARITY'
+        image='/images/our-program/orphan7.jpg' 
       />
 
       <DonateNow />

@@ -17,7 +17,7 @@ export default async function ProgramDonationPage({ searchParams }) {
     redirect('/our-program');
   }
 
-  const imageUrl = program.hero?.image || program.image || '/images/shared/kids-2.avif';
+  const imageUrl = program?.image || program.image || '/images/shared/kids-2.avif';
 
   return (
     <main>
