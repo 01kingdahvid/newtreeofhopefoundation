@@ -73,6 +73,7 @@
   align-items: center;
   text-align: center;
   opacity: 0;
+    font-family: Figtree, sans-serif;
   transition: 0.35s;
 }
 

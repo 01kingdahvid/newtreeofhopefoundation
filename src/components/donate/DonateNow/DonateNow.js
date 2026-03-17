@@ -59,7 +59,7 @@ export default function DonateNow () {
               transfers may result in loss of funds.
             </p>
           </div>
-          
+
         </div>
       </section>
 
@@ -80,8 +80,7 @@ export default function DonateNow () {
 
             <li>
               <strong>Remain anonymous if you wish:</strong> We accept anonymous
-              donations. As an anonymous donor, you can receive a tax receipt if
-              you provide an email address.
+              donations. 
             </li>
 
             <li>
@@ -97,10 +96,7 @@ export default function DonateNow () {
             </li>
           </ol>
 
-          <p className={styles.cryptoLink}>
-            To donate Ethereum, USDC, or other cryptocurrencies, visit our{' '}
-            <span>Donate Cryptocurrency</span> page.
-          </p>
+         
 
           <p className={styles.smallNote}>
             *Subject to change. Please consult your tax advisor.

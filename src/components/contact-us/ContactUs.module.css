@@ -26,8 +26,9 @@
 
 .subheading {
   font-size: 1rem;
+  font-family: "Barlow Condensed", sans-serif;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: -0.4px;
   text-transform: uppercase;
   margin: 0;
   opacity: 0.9;
@@ -35,13 +36,18 @@
 
 .heading {
   font-size: 2.2rem;
+  font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
+  color: white;
+  text-transform: uppercase;
   margin: 0;
-  line-height: 1.2;
 }
 
 .description {
+  font-family: Figtree, sans-serif;
   font-size: 1.1rem;
+  font-weight: 400;
+  color: white;
   margin: 0 0 1rem 0;
   opacity: 0.9;
 }
@@ -59,8 +65,10 @@
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
+  font-family: Figtree, sans-serif;
   font-size: 1rem;
-  line-height: 1.5;
+  font-weight: 400;
+  color: white;
 }
 
 .icon {
@@ -97,19 +105,28 @@
 
 .formText .subheading {
   color: #00adef;
+  font-size: 1rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
   margin-bottom: 0.5rem;
-  text-transform: capitalize;
 }
 
 .formText .heading {
   color: black;
   font-size: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
 .formText .description {
   color: #4a5568;
   font-size: 1.1rem;
+  font-family: Figtree, sans-serif;
+  font-weight: 400;
 }
 
 .form {
@@ -145,6 +162,8 @@
   background: white;
   width: 100%;
   box-sizing: border-box;
+  font-family: Figtree, sans-serif;
+  font-weight: 400;
 }
 
 .floatingInput:focus,
@@ -161,6 +180,8 @@
   /* transform: translateY(-1.25rem); */
   font-size: 0.85rem;
   color: #00adef;
+  font-family: Figtree, sans-serif;
+  font-weight: 400;
 }
 
 .floatingLabel {
@@ -172,6 +193,8 @@
   color: #718096;
   pointer-events: none;
   font-weight: 500;
+  font-family: Figtree, sans-serif;
+  font-weight: 400;
   background: white;
   /* padding: 0 0.25rem; */
   margin: 0 0.5rem;
@@ -186,11 +209,11 @@
   color: #718096;
   pointer-events: none;
   font-weight: 500;
+  font-family: Figtree, sans-serif;
   background: white;
   padding: 0 0.25rem;
   margin: 0 0.5rem;
 }
-
 
 .floatingTextarea {
   min-height: 120px;
@@ -201,6 +224,8 @@
 .errorMessage {
   color: #e53e3e;
   font-size: 0.85rem;
+  font-family: Figtree, sans-serif;
+  font-weight: 400;
   margin-top: 0.4rem;
   display: block;
 }
@@ -224,6 +249,7 @@
   padding: 1rem 2rem;
   font-size: 1.1rem;
   font-weight: 600;
+    font-family: Figtree, sans-serif;
   border-radius: 50px;
   cursor: pointer;
   transition:
