@@ -47,7 +47,7 @@
 
 .logoText small {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 7px;
   font-weight: 400;
   line-height: normal;
   color: rgb(255, 255, 255);
@@ -107,6 +107,31 @@
 
 .col ul li:hover {
   color: #6fd0ea;
+}
+
+.copyItem {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.copyItem:hover {
+  color: #03a1de;
+  transform: translateX(4px);
+}
+
+/* optional hint */
+.copyItem::after {
+  content: "Click to copy";
+  font-size: 0.7rem;
+  color: white;
+  margin-left: 8px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.copyItem:hover::after {
+  opacity: 1;
 }
 
 .subheading {

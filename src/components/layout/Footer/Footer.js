@@ -12,6 +12,10 @@ const Footer = () => {
   const router = useRouter()
   const { sendEmail, isSending } = useEmail()
   const [subscribeEmail, setSubscribeEmail] = useState('')
+  const BTC = process.env.NEXT_PUBLIC_BTC_ADDRESS
+  const ETH = process.env.NEXT_PUBLIC_ETH_ADDRESS
+  const USDT = process.env.NEXT_PUBLIC_USDT_ADDRESS
+  const shorten = addr => `${addr.slice(0, 6)}...${addr.slice(-4)}`
 
   const handleDonateClick = () => router.push('/donate')
 
@@ -31,6 +35,15 @@ const Footer = () => {
     if (success) {
       setSubscribeEmail('')
       // toast.success('Subscribed! Check your inbox.')
+    }
+  }
+
+  const copyToClipboard = async (address, label) => {
+    try {
+      await navigator.clipboard.writeText(address)
+      toast.success(`${label} address copied!`)
+    } catch (err) {
+      toast.error('Failed to copy address')
     }
   }
 
@@ -64,9 +77,26 @@ const Footer = () => {
         <div className={styles.col}>
           <h3>OTHER WAYS TO DONATE</h3>
           <ul>
-            <li>BTC: donate@nthf.org</li>
-            <li>ETH: donate@nthf.org</li>
-            <li>SOL: sgshssheyye</li>
+            <li
+              onClick={() => copyToClipboard(BTC, 'BTC')}
+              className={styles.copyItem}
+            >
+              BTC: {shorten(BTC)}
+            </li>
+
+            <li
+              onClick={() => copyToClipboard(ETH, 'ETH')}
+              className={styles.copyItem}
+            >
+              ETH: {shorten(ETH)}
+            </li>
+
+            <li
+              onClick={() => copyToClipboard(USDT, 'USDT')}
+              className={styles.copyItem}
+            >
+              USDT: {shorten (USDT)} (ETH Network)
+            </li>
           </ul>
 
           <button className={styles.donateBtn} onClick={handleDonateClick}>
