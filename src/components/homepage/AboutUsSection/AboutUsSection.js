@@ -17,7 +17,7 @@ const AboutUsSection = () => {
       <div className={styles.container}>
         <div className={styles.imageWrap}>
           <img
-            src='/images/shared/hero-section-give-kazat.jpg'
+            src='/images/shared/abt-kids.jpg'
             alt='New Tree of Hope Foundation helping children'
             className={styles.image}
           />

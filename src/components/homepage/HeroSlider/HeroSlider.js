@@ -9,28 +9,28 @@ const slides = [
     title: 'SUPPORT ORPHANAGES IN SOUTH KOREA',
     text: 'HELP PROVIDE A SAFE HOME, EDUCATION, AND HOPE FOR ORPHANED CHILDREN IN SOUTH KOREA.',
     button: 'DONATE NOW',
-    image: '/images/shared/hero-section-give-kazat.jpg',
+    image: '/images/shared/hero-orphan-g1.jpg',
     link: '/our-programs/donate?slug=shelter' // goes to donate page with shelter pre-selected
   },
   {
     title: 'EDUCATION FOR ORPHANS IN ASIA',
     text: 'EMPOWER ORPHANED CHILDREN WITH QUALITY EDUCATION AND SKILLS FOR A BRIGHTER FUTURE.',
     button: 'Learn More',
-    image: '/images/shared/hero-section-give-kazat.jpg',
+    image: '/images/shared/hero-edu.jpg',
     link: '/our-programs/education' // program detail page for education
   },
   {
     title: 'HEALTHCARE FOR VULNERABLE CHILDREN',
     text: 'ENSURE ORPHANS AND UNDERPRIVILEGED CHILDREN RECEIVE ESSENTIAL MEDICAL CARE AND NUTRITION.',
     button: 'Learn More',
-    image: '/images/shared/hero-section-give-kazat.jpg',
+    image: '/images/shared/hero-healthcare.jpg',
     link: '/our-programs/health' // program detail page for health
   },
   {
     title: 'SPONSOR AN ORPHAN IN SOUTH KOREA',
     text: "CHANGE A CHILD'S LIFE WITH MONTHLY SUPPORT FOR FOOD, EDUCATION, AND CARE.",
     button: 'Sponsor Now',
-    image: '/images/shared/hero-section-give-kazat.jpg',
+    image: '/images/shared/hero-orphan-g2.jpg',
     link: '/donate#donation-section' // main donate page, scroll to donation section
   }
 ]

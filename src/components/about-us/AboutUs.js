@@ -16,7 +16,7 @@ const AboutUs = () => {
 
         <div className={styles.row}>
           <img
-            src='/images/shared/hero-section-give-kazat.jpg'
+            src='/images/shared/abt-kids.jpg'
             className={styles.image}
           />
 
@@ -125,7 +125,7 @@ const AboutUs = () => {
           </div>
 
           <img
-            src='/images/shared/hero-section-give-kazat.jpg'
+            src='/images/shared/abt-donation.jpg'
             className={styles.image}
           />
         </div>
