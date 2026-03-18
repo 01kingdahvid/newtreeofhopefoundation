@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from 'next/navigation'
+import { useEffect, useRef, useState } from "react";
 import styles from './FeaturedLocalProject.module.css'
 
 const projects = [
@@ -47,43 +48,65 @@ const projects = [
 ]
 
 export default function FeaturedLocalProject () {
-  const router = useRouter()
+  const router = useRouter();
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
 
-  // Function to navigate to /our-programs
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+  }, []);
+
   const handleViewAllClick = () => {
-    router.push('/our-programs')
-  }
+    router.push("/our-programs");
+  };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} ref={ref}>
       <div className={styles.container}>
-        <p className={styles.subheading}>FEATURED LOCAL PROJECTS</p>
+        <p className={`${styles.subheading} ${visible ? styles.fadeIn : ""}`}>
+          FEATURED LOCAL PROJECTS
+        </p>
 
-        <h2 className={styles.heading}>
-          NTHF&apos;S LOCAL PROJECTS IN THE SOUTH KOREA AND ACROSS ASIA
+        <h2 className={`${styles.heading} ${visible ? styles.fadeIn : ""}`}>
+          NTHF'S LOCAL PROJECTS IN THE SOUTH KOREA AND ACROSS ASIA
         </h2>
 
-        <p className={styles.description}>
-          NTHF helps families in need right here at home — from food pantries to
-          family emergency support. These programs are especially active in
-          Seoul and other underserved areas.
+        <p className={`${styles.description} ${visible ? styles.fadeIn : ""}`}>
+          NTHF helps families in need right here at home...
         </p>
 
         <div className={styles.grid}>
           {projects.map((project, i) => (
-            <div key={i} className={styles.card}>
+            <div
+              key={i}
+              className={`${styles.card} ${
+                visible ? styles.showCard : ""
+              }`}
+              style={{ transitionDelay: `${i * 0.1}s` }}
+            >
               {project.icon}
               <span>{project.title}</span>
             </div>
           ))}
         </div>
 
-        <button className={styles.button} onClick={handleViewAllClick}>
+        <button
+          className={`${styles.button} ${visible ? styles.fadeIn : ""}`}
+          onClick={handleViewAllClick}
+        >
           → VIEW OUR PROGRAMS
         </button>
       </div>
-
-      {/* Fixed Translate Button */}
     </section>
   )
 }

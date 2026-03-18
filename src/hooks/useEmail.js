@@ -16,7 +16,7 @@ export function useEmail() {
       const result = await sendUniversalEmail({ formType, data, replyTo });
       if (result.success) {
         setSuccess(true);
-        toast.success('Enquiry sent successfully!');
+        toast.success('Sent successfully!');
         return true;
       } else {
         throw new Error(result.error);

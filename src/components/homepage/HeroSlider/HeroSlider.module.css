@@ -188,3 +188,41 @@
     display: none;
   }
 }
+
+
+/* TEXT animation */
+.fadeIn {
+  animation: fadeSlide 0.8s ease forwards;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* IMAGE animation */
+.zoomIn img {
+  animation: zoomImage 6s ease forwards;
+}
+
+@keyframes zoomImage {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Optional: smoother transitions */
+.imageWrap img {
+  transition: transform 1s ease;
+}
+
+

@@ -128,6 +128,11 @@
   .donateInfo h2 {
     font-size: 26px;
   }
+
+
+  .advantageList{
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -138,4 +143,47 @@
   .containerSmall {
     padding: 60px 15px;
   }
+}
+
+
+/* ===== LIGHT ANIMATIONS ===== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Hover effects */
+.donateCard {
+  transition: transform 0.3s ease;
+}
+
+.donateCard:hover {
+  transform: scale(1.02);
+}
+
+.donateInfo li {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.donateInfo li:hover {
+  color: #00adef;
+  transform: translateX(5px);
+}
+
+.bitcoinAdvantages {
+  transition: background-color 0.3s ease;
+}
+
+.bitcoinAdvantages:hover {
+  background-color: #f0f0f0;
 }

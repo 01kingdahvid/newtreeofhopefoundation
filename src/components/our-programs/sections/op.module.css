@@ -40,12 +40,14 @@
   border-radius: 40px;
   font-weight: 600;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .donateBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .right {
@@ -109,12 +111,33 @@
   padding: 2rem 1.5rem;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.6s ease;
 }
 
 .statItem:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.03);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Title animation */
+.fadeIn {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .statNumber {
@@ -170,13 +193,15 @@
   background: #f9f9f9;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .initiativeCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .initiativeImage {
@@ -277,7 +302,7 @@
 .image img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* ===== Gallery ===== */
@@ -337,12 +362,14 @@
   border-radius: 40px;
   font-weight: 700;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .ctaButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* ===== List ===== */
@@ -381,7 +408,7 @@
   background: #f9f9f9;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .item h3 {
@@ -477,7 +504,7 @@
   background: white;
   padding: 0.5rem 1.5rem;
   border-radius: 30px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   color: #555;
 }
 
@@ -553,7 +580,7 @@
   .left h2 {
     font-size: 2rem;
   }
-  .left{
+  .left {
     flex: 1 1 200px;
   }
   .right {
@@ -587,7 +614,7 @@
   .statsGrid {
     grid-template-columns: 1fr;
   }
-  .left{
+  .left {
     flex: 1 1 250px;
   }
   .right {
@@ -613,4 +640,39 @@
     padding: 0.8rem 2rem;
     font-size: 1rem;
   }
+}
+
+
+/* ===== REVEAL SYSTEM ===== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+.revealVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* stagger helper */
+.stagger {
+  opacity: 0;
+  transform: translateY(30px) scale(0.96);
+  transition: all 0.6s ease;
+}
+
+.staggerVisible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* subtle zoom */
+.zoomImage img {
+  transition: transform 0.6s ease;
+}
+
+.zoomImage:hover img {
+  transform: scale(1.05);
 }

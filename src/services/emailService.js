@@ -15,7 +15,6 @@ const FIELD_LABELS = {
   payment_method: 'Payment Method',
   note: 'Note to Donation',
   cover_fees: 'Cover Transaction Fees',
-  // NEW: payment destination fields
   wallet_address: 'Wallet Address (Crypto)',
   bank_name: 'Bank Name',
   bank_account_name: 'Account Name',
@@ -44,7 +43,6 @@ const SECTIONS = [
       'cover_fees'
     ]
   },
-  // NEW SECTION: Payment Destination
   {
     key: 'destination',
     emoji: '📍',
@@ -90,8 +88,6 @@ function normalise (data) {
         ? 'Yes'
         : data.cover_fees
       : undefined,
-
-    // NEW: payment destination fields
     wallet_address: data.wallet_address,
     bank_name: data.bank_name,
     bank_account_name: data.bank_account_name,
@@ -182,40 +178,52 @@ export async function sendUniversalEmail ({
   data = {},
   replyTo = ''
 }) {
+  const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_MASTER
+  const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+
+  if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+    console.error('EmailJS env vars missing:', {
+      SERVICE_ID: !!SERVICE_ID,
+      TEMPLATE_ID: !!TEMPLATE_ID,
+      PUBLIC_KEY: !!PUBLIC_KEY
+    })
+    return {
+      success: false,
+      error: 'Email service is not configured. Please contact support.'
+    }
+  }
+
+  const templateParams = {
+    form_type: formType,
+    from_name:
+      data.from_name ||
+      data.fullName ||
+      [data.first_name, data.last_name].filter(Boolean).join(' ') ||
+      'Website Visitor',
+    dynamic_content: buildDynamicContent(data),
+    time: new Date().toLocaleString('en-GB', {
+      dateStyle: 'full',
+      timeStyle: 'short'
+    }),
+    reply_to: replyTo || data.from_email || data.email || ''
+  }
+
   try {
-    const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
-    const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_MASTER
-    const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-
-    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
-      throw new Error('EmailJS environment variables are missing.')
-    }
-
-    const templateParams = {
-      form_type: formType,
-      from_name:
-        data.from_name ||
-        data.fullName ||
-        [data.first_name, data.last_name].filter(Boolean).join(' ') ||
-        'Website Visitor',
-      dynamic_content: buildDynamicContent(data),
-      time: new Date().toLocaleString('en-GB', {
-        dateStyle: 'full',
-        timeStyle: 'short'
-      }),
-      reply_to: replyTo || data.from_email || data.email || ''
-    }
-
-    const result = await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
-
+    // ✅ Pass publicKey directly here — no need for emailjs.init()
+    const result = await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, {
+      publicKey: PUBLIC_KEY
+    })
     return { success: true, result }
   } catch (error) {
-    console.error('EmailJS error details:', {
+    console.error('EmailJS send failed:', {
       message: error?.message,
       text: error?.text,
-      status: error?.status,
-      error: error
+      status: error?.status
     })
-    return { success: false, error: error?.message || 'Failed to send email' }
+    return {
+      success: false,
+      error: error?.text || error?.message || 'Failed to send email'
+    }
   }
 }

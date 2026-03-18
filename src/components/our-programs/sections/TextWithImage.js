@@ -1,58 +1,50 @@
-import styles from './op.module.css';
+"use client";
+
+import styles from "./op.module.css";
+import useReveal from "@/hooks/useReveal";
 
 export default function TextWithImage({
   title,
   content,
   image,
-  imagePosition = 'right'
+  imagePosition = "right",
 }) {
+  const { ref, visible } = useReveal();
   const hasImage = Boolean(image);
 
-  const renderContentItem = (item, idx) => {
-    if (typeof item === 'string') return <p key={idx}>{item}</p>;
-
-    if (item.paragraph) return <p key={idx}>{item.paragraph}</p>;
-
-    if (item.listItem) {
-      return (
-        <p key={idx} className={styles.listItem}>
-          • {item.listItem}
-        </p>
-      );
-    }
-
-    if (item.listTitle && Array.isArray(item.listItems)) {
-      return (
-        <div key={idx} className={styles.listBlock}>
-          <h3>{item.listTitle}</h3>
-          <ul>
-            {item.listItems.map((li, i) => (
-              <li key={i}>{li}</li>
-            ))}
-          </ul>
-        </div>
-      );
-    }
-
-    return null;
-  };
-
   return (
-    <section className={styles.textWithImage}>
+    <section ref={ref} className={styles.textWithImage}>
       <div
         className={`${styles.container} 
-        ${imagePosition === 'left' ? styles.reverse : ''} 
-        ${!hasImage ? styles.noImage : ''}`}
+        ${imagePosition === "left" ? styles.reverse : ""}`}
       >
-        <div className={styles.content}>
+        <div
+          className={styles.content}
+          style={{
+            opacity: visible ? 1 : 0,
+            transform: visible
+              ? "translateX(0)"
+              : "translateX(-40px)",
+            transition: "all 0.7s ease",
+          }}
+        >
           <h2>{title}</h2>
           {Array.isArray(content)
-            ? content.map(renderContentItem)
+            ? content.map((c, i) => <p key={i}>{c.paragraph || c}</p>)
             : <p>{content}</p>}
         </div>
 
         {hasImage && (
-          <div className={styles.image}>
+          <div
+            className={`${styles.image} ${styles.zoomImage}`}
+            style={{
+              opacity: visible ? 1 : 0,
+              transform: visible
+                ? "translateX(0)"
+                : "translateX(40px)",
+              transition: "all 0.7s ease",
+            }}
+          >
             <img src={image} alt={title} />
           </div>
         )}

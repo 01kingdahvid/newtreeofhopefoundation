@@ -37,21 +37,30 @@ const slides = [
 
 export default function HeroSlider () {
   const [index, setIndex] = useState(0)
+  const [animate, setAnimate] = useState(true)
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setIndex(prev => (prev + 1) % slides.length)
+      triggerSlideChange(prev => (prev + 1) % slides.length)
     }, 8000)
 
     return () => clearInterval(timer)
   }, [])
 
+  const triggerSlideChange = newIndexFn => {
+    setAnimate(false) // reset animation
+    setTimeout(() => {
+      setIndex(newIndexFn)
+      setAnimate(true) // trigger animation
+    }, 100)
+  }
+
   const nextSlide = () => {
-    setIndex((index + 1) % slides.length)
+    triggerSlideChange((index + 1) % slides.length)
   }
 
   const prevSlide = () => {
-    setIndex(index === 0 ? slides.length - 1 : index - 1)
+    triggerSlideChange(index === 0 ? slides.length - 1 : index - 1)
   }
 
   const slide = slides[index]
@@ -60,16 +69,16 @@ export default function HeroSlider () {
     <section className={styles.hero}>
       <div className={styles.inner}>
         {/* TEXT */}
-        <div className={styles.content}>
+        <div className={`${styles.content} ${animate ? styles.fadeIn : ''}`}>
           <h1>{slide.title}</h1>
           <p>{slide.text}</p>
-          <Link href={slide.link} passHref>
+          <Link href={slide.link}>
             <button>{slide.button}</button>
           </Link>
         </div>
 
         {/* IMAGE */}
-        <div className={styles.imageWrap}>
+        <div className={`${styles.imageWrap} ${animate ? styles.zoomIn : ''}`}>
           <img src={slide.image} alt={slide.title} />
         </div>
       </div>

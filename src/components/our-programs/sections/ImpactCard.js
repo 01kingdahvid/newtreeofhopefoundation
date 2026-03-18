@@ -1,19 +1,41 @@
-// components/our-programs/sections/ImpactCard.jsx
-import styles from './op.module.css';
-import Link from 'next/link';
+"use client";
+
+import styles from "./op.module.css";
+import Link from "next/link";
+import useReveal from "@/hooks/useReveal";
 
 export default function ImpactCard({ title, content, cta, programSlug }) {
-  const href = programSlug ? `/our-programs/donate?slug=${programSlug}` : '/our-programs/donate';
+  const { ref, visible } = useReveal();
+
+  const href = programSlug
+    ? `/our-programs/donate?slug=${programSlug}`
+    : "/our-programs/donate";
+
   return (
-    <section className={styles.impactCard}>
+    <section
+      ref={ref}
+      className={`${styles.impactCard} ${styles.reveal} ${
+        visible ? styles.revealVisible : ""
+      }`}
+    >
       <div className={styles.impactContent}>
-        <div className={styles.left}>
+        <div
+          className={`${styles.left} ${
+            visible ? styles.revealVisible : ""
+          }`}
+        >
           <h2>{title}</h2>
           <Link href={href} className={styles.donateBtn}>
-            {cta || 'Donate Now'}
+            {cta || "Donate Now"}
           </Link>
         </div>
-        <div className={styles.right}>
+
+        <div
+          className={`${styles.right} ${
+            visible ? styles.revealVisible : ""
+          }`}
+          style={{ transitionDelay: "0.2s" }}
+        >
           <p>{content}</p>
         </div>
       </div>

@@ -144,3 +144,32 @@
     text-align: center;
   }
 }
+
+
+/* Initial state */
+.imageWrap,
+.content {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+/* Image slides from left */
+.showLeft {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Content slides from right */
+.showRight {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* CTA hover polish */
+.cta {
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  transform: translateY(-3px) scale(1.03);
+}

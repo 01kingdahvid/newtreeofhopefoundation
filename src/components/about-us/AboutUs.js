@@ -1,22 +1,76 @@
-import React from 'react'
-import styles from './AboutUs.module.css'
-import PageHero from '../shared/PageHero/PageHero'
+'use client'
+
+import React, { useRef, useEffect, useState } from 'react';
+import styles from './AboutUs.module.css';
+import PageHero from '../shared/PageHero/PageHero';
 
 const AboutUs = () => {
+  // Refs for each animated section
+  const rowRef = useRef(null);
+  const rowReverseRef = useRef(null);
+  const card1Ref = useRef(null);
+  const card2Ref = useRef(null);
+
+  // State to track visibility
+  const [rowInView, setRowInView] = useState(false);
+  const [rowReverseInView, setRowReverseInView] = useState(false);
+  const [card1InView, setCard1InView] = useState(false);
+  const [card2InView, setCard2InView] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            switch (entry.target) {
+              case rowRef.current:
+                setRowInView(true);
+                break;
+              case rowReverseRef.current:
+                setRowReverseInView(true);
+                break;
+              case card1Ref.current:
+                setCard1InView(true);
+                break;
+              case card2Ref.current:
+                setCard2InView(true);
+                break;
+              default:
+                break;
+            }
+            // Stop observing after animation triggers
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 } // Trigger when 20% visible
+    );
+
+    if (rowRef.current) observer.observe(rowRef.current);
+    if (rowReverseRef.current) observer.observe(rowReverseRef.current);
+    if (card1Ref.current) observer.observe(card1Ref.current);
+    if (card2Ref.current) observer.observe(card2Ref.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div>
       <PageHero
-        title='WHO WE ARE'
-        subtitle='New Tree of Hope Foundation - Hope For Humanity'
-        image='/images/shared/kids-2.avif'
+        title="WHO WE ARE"
+        subtitle="New Tree of Hope Foundation - Hope For Humanity"
+        image="/images/shared/kids-2.avif"
       />
 
       <section className={styles.container}>
         {/* WHO WE ARE */}
-
-        <div className={styles.row}>
+        <div
+          ref={rowRef}
+          className={`${styles.row} ${rowInView ? styles.animate : ''}`}
+        >
           <img
-            src='/images/shared/abt-kids.jpg'
+            src="/images/shared/abt-kids.jpg"
+            alt="Children at New Tree of Hope Foundation"
             className={styles.image}
           />
 
@@ -26,15 +80,14 @@ const AboutUs = () => {
               A small team with a big heart, working tirelessly to bring hope
               to those who need it most.
             </h5>
-
             <p>
               New Tree of Hope Foundation (NTHF) is a grassroots nonprofit
               headquartered in Seoul, South Korea. We started with a simple
               belief: that even a handful of dedicated people can make a real
-              difference. Today, we are still that handful—a small but passionate
-              team committed to serving vulnerable communities across Asia.
+              difference. Today, we are still that handful—a small but
+              passionate team committed to serving vulnerable communities across
+              Asia.
             </p>
-
             <p>
               The truth is, we are not a large organization with endless
               resources. We are a growing family of givers, doers, and dreamers
@@ -45,7 +98,6 @@ const AboutUs = () => {
               every prayer matters. With your help, we can grow from a small
               tree into a forest of hope.
             </p>
-
             <p>
               Guided by compassion and a belief that every life matters, NTHF
               serves people whose basic needs for food, shelter, health, and
@@ -58,11 +110,12 @@ const AboutUs = () => {
         </div>
 
         {/* VISION & MISSION */}
-
         <div className={styles.visionMission}>
-          <div className={styles.card}>
+          <div
+            ref={card1Ref}
+            className={`${styles.card} ${card1InView ? styles.animate : ''}`}
+          >
             <h3>Our Vision</h3>
-
             <p>
               A world where every person affected by disaster, conflict, or
               poverty has the essentials to survive and the opportunity to
@@ -71,9 +124,11 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className={styles.card}>
+          <div
+            ref={card2Ref}
+            className={`${styles.card} ${card2InView ? styles.animate : ''}`}
+          >
             <h3>Our Mission</h3>
-
             <p>
               New Tree of Hope Foundation (NTHF) provides emergency aid and
               fosters sustainable development for communities in crisis. With
@@ -87,12 +142,13 @@ const AboutUs = () => {
         </div>
 
         {/* OUR STORY */}
-
-        <div className={styles.rowReverse}>
+        <div
+          ref={rowReverseRef}
+          className={`${styles.rowReverse} ${rowReverseInView ? styles.animate : ''}`}
+        >
           <div className={styles.text}>
             <h2>Our Story</h2>
             <h5>From a seed of compassion to a growing tree of hope.</h5>
-
             <p>
               New Tree of Hope Foundation began not in a boardroom, but in the
               hearts of a few individuals who saw suffering and refused to look
@@ -101,7 +157,6 @@ const AboutUs = () => {
               orphanages—has slowly grown into an organized effort to serve
               communities across Asia.
             </p>
-
             <p>
               But the truth is, we are still small. There are countless
               villages we haven’t reached, orphanages we haven’t renovated,
@@ -113,7 +168,6 @@ const AboutUs = () => {
               being: one that can respond to every crisis, uplift every
               community, and give every child a future.
             </p>
-
             <p>
               Our vision is rooted in dignity and inclusivity: we serve without
               boundaries of nationality, race, religion, or social status.
@@ -125,13 +179,14 @@ const AboutUs = () => {
           </div>
 
           <img
-            src='/images/shared/abt-donation.jpg'
+            src="/images/shared/abt-donation.jpg"
+            alt="Donation drive by New Tree of Hope Foundation"
             className={styles.image}
           />
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;

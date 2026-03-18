@@ -1,21 +1,38 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from './AboutUsSection.module.css'
 import { useRouter } from 'next/navigation'
 
 const AboutUsSection = () => {
   const router = useRouter()
+  const ref = useRef(null)
+  const [visible, setVisible] = useState(false)
 
-  // Function to navigate to /our-programs
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.2 }
+    )
+
+    if (ref.current) observer.observe(ref.current)
+  }, [])
+
   const handleAboutUsClick = () => {
     router.push('/about-us')
   }
 
   return (
-    <section className={styles.aboutSection}>
+    <section className={styles.aboutSection} ref={ref}>
       <div className={styles.container}>
-        <div className={styles.imageWrap}>
+        <div
+          className={`${styles.imageWrap} ${visible ? styles.showLeft : ''}`}
+        >
           <img
             src='/images/shared/abt-kids.jpg'
             alt='New Tree of Hope Foundation helping children'
@@ -23,7 +40,7 @@ const AboutUsSection = () => {
           />
         </div>
 
-        <div className={styles.content}>
+        <div className={`${styles.content} ${visible ? styles.showRight : ''}`}>
           <span className={styles.smallHeading}>ABOUT NTHF</span>
 
           <h1 className={styles.title}>Who We Are and Why We Serve</h1>

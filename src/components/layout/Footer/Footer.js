@@ -30,7 +30,7 @@ const Footer = () => {
 
     if (success) {
       setSubscribeEmail('')
-      toast.success('Subscribed! Check your inbox.')
+      // toast.success('Subscribed! Check your inbox.')
     }
   }
 

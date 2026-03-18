@@ -7,7 +7,7 @@ import { useEmail } from '@/hooks/useEmail'
 
 const ContactUs = () => {
   // Form state
- const { sendEmail, isSending } = useEmail()
+  const { sendEmail, isSending } = useEmail()
 
   const [formData, setFormData] = useState({
     fullName: '',
@@ -20,7 +20,10 @@ const ContactUs = () => {
   const [errors, setErrors] = useState({})
 
   const validateEmail = email => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
-  const validatePhone = phone => /^[\+]?[(]?[0-9]{1,4}[)]?[-\s\.]?[(]?[0-9]{1,4}[)]?[-\s\.]?[0-9]{1,9}$/.test(phone)
+  const validatePhone = phone =>
+    /^[\+]?[(]?[0-9]{1,4}[)]?[-\s\.]?[(]?[0-9]{1,4}[)]?[-\s\.]?[0-9]{1,9}$/.test(
+      phone
+    )
 
   const handleChange = e => {
     const { name, value } = e.target
@@ -35,7 +38,8 @@ const ContactUs = () => {
     if (!formData.email.trim()) newErrors.email = 'Email is required'
     else if (!validateEmail(formData.email)) newErrors.email = 'Invalid email'
     if (!formData.phone.trim()) newErrors.phone = 'Phone is required'
-    else if (!validatePhone(formData.phone)) newErrors.phone = 'Invalid phone number'
+    else if (!validatePhone(formData.phone))
+      newErrors.phone = 'Invalid phone number'
     if (!formData.subject.trim()) newErrors.subject = 'Subject is required'
     if (!formData.message.trim()) newErrors.message = 'Message is required'
 
@@ -224,8 +228,12 @@ const ContactUs = () => {
                 )}
               </div>
 
-              <button type='submit' className={styles.submitBtn} disabled={isSending}>
-                CONTACT US NOW
+              <button
+                type='submit'
+                className={styles.submitBtn}
+                disabled={isSending}
+              >
+                {isSending ? 'Sending...' : 'CONTACT US NOW'}
               </button>
             </form>
           </div>

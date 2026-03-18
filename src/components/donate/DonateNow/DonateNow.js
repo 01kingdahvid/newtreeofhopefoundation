@@ -1,38 +1,81 @@
-import DonateNowSection from '@/components/homepage/DonateNowSection/DonateNowSection'
-import styles from './DonateNow.module.css'
+'use client';
 
-export default function DonateNow () {
+import React, { useRef, useEffect, useState } from 'react';
+import DonateNowSection from '@/components/homepage/DonateNowSection/DonateNowSection';
+import styles from './DonateNow.module.css';
+
+export default function DonateNow() {
+  // Refs for animated sections
+  const donateCardRef = useRef(null);
+  const donateInfoRef = useRef(null);
+  const bitcoinAdvantagesRef = useRef(null);
+
+  // Visibility states
+  const [donateCardVisible, setDonateCardVisible] = useState(false);
+  const [donateInfoVisible, setDonateInfoVisible] = useState(false);
+  const [bitcoinAdvantagesVisible, setBitcoinAdvantagesVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            switch (entry.target) {
+              case donateCardRef.current:
+                setDonateCardVisible(true);
+                break;
+              case donateInfoRef.current:
+                setDonateInfoVisible(true);
+                break;
+              case bitcoinAdvantagesRef.current:
+                setBitcoinAdvantagesVisible(true);
+                break;
+              default:
+                break;
+            }
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (donateCardRef.current) observer.observe(donateCardRef.current);
+    if (donateInfoRef.current) observer.observe(donateInfoRef.current);
+    if (bitcoinAdvantagesRef.current) observer.observe(bitcoinAdvantagesRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <main>
       {/* Donation Section */}
-
       <section className={styles.donateSection}>
         <div className={styles.container}>
           {/* LEFT - DONATION CARD */}
-
-          <div className={styles.donateCard}>
+          <div
+            ref={donateCardRef}
+            className={`${styles.donateCard} ${donateCardVisible ? styles.animate : ''}`}
+          >
             <DonateNowSection />
           </div>
 
           {/* RIGHT - HOW TO DONATE */}
-
-          <div className={styles.donateInfo}>
+          <div
+            ref={donateInfoRef}
+            className={`${styles.donateInfo} ${donateInfoVisible ? styles.animate : ''}`}
+          >
             <h2>How to Complete Your Donation</h2>
-
             <p>Follow these simple steps to make your donation:</p>
-
             <ol>
               <li>
                 Enter your donation amount, select a country and program, and
                 add any notes if needed.
               </li>
-
               <li>Provide your details or choose to donate anonymously.</li>
-
               <li>
                 Select your preferred payment method (Crypto or Bank Transfer).
               </li>
-
               <li>
                 On the next step, follow the payment instructions provided:
                 <ul>
@@ -46,63 +89,51 @@ export default function DonateNow () {
                   </li>
                 </ul>
               </li>
-
               <li>
                 After completing your payment, click
                 <strong> "I've sent the money"</strong> to notify us.
               </li>
             </ol>
-
             <p className={styles.note}>
               ⚠️ Please double-check all payment details before sending.
               Cryptocurrency transactions cannot be reversed, and incorrect
               transfers may result in loss of funds.
             </p>
           </div>
-
         </div>
       </section>
 
       {/* BITCOIN ADVANTAGES */}
-
-      <section className={styles.bitcoinAdvantages}>
+      <section
+        ref={bitcoinAdvantagesRef}
+        className={`${styles.bitcoinAdvantages} ${bitcoinAdvantagesVisible ? styles.animate : ''}`}
+      >
         <div className={styles.containerSmall}>
-          <h2>
-            What are the advantages of donating Bitcoin to Save the Children?
-          </h2>
-
+          <h2>What are the advantages of donating Bitcoin to Save the Children?</h2>
           <ol className={styles.advantageList}>
             <li>
               <strong>Turn your capital gains to good:</strong> In the U.S., the
               IRS classifies Bitcoin donations as property, meaning your Bitcoin
               donation can help offset capital gains tax.
             </li>
-
             <li>
               <strong>Remain anonymous if you wish:</strong> We accept anonymous
-              donations. 
+              donations.
             </li>
-
             <li>
               <strong>Don't Trust, Verify:</strong> Bitcoin donations can be
               verified on-chain so you can feel confident your contribution went
               to the right place.
             </li>
-
             <li>
-              <strong>We understand the value of Bitcoin:</strong>
-              Bitcoin is a store of value and peer-to-peer technology that can
-              supercharge the way we reach those who need help.
+              <strong>We understand the value of Bitcoin:</strong> Bitcoin is a
+              store of value and peer-to-peer technology that can supercharge the
+              way we reach those who need help.
             </li>
           </ol>
-
-         
-
-          <p className={styles.smallNote}>
-            *Subject to change. Please consult your tax advisor.
-          </p>
+          <p className={styles.smallNote}>*Subject to change. Please consult your tax advisor.</p>
         </div>
       </section>
     </main>
-  )
+  );
 }
