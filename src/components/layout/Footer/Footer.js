@@ -109,10 +109,7 @@ const Footer = () => {
           <h3>QUICK LINKS</h3>
           <ul>
             <li>
-              <Link href='/about'>ABOUT US</Link>
-            </li>
-            <li>
-              <Link href='/about/our-story'>OUR STORY</Link>
+              <Link href='/about-us'>ABOUT US</Link>
             </li>
             <li>
               <Link href='/our-programs'>OUR PROGRAMS</Link>
@@ -121,7 +118,7 @@ const Footer = () => {
               <Link href='/where-we-work'>WHERE WE WORK</Link>
             </li>
             <li>
-              <Link href='/contact'>CONTACT US</Link>
+              <Link href='/contact-us'>CONTACT US</Link>
             </li>
           </ul>
         </div>
