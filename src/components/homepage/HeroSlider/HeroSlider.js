@@ -6,32 +6,32 @@ import styles from './HeroSlider.module.css'
 
 const slides = [
   {
-    title: 'SUPPORT ORPHANAGES IN SOUTH KOREA',
-    text: 'HELP PROVIDE A SAFE HOME, EDUCATION, AND HOPE FOR ORPHANED CHILDREN IN SOUTH KOREA.',
-    button: 'DONATE NOW',
+    title: 'A SAFE HOME FOR NTHF CHILDREN',
+    text: 'At New Tree of Hope Foundation, every child deserves a safe place to sleep, grow, and feel loved. Your support helps us provide a stable home and a brighter future for every child in our care.',
+    button: 'Donate Now',
     image: '/images/shared/hero-orphan-g1.jpg',
-    link: '/our-programs/donate?slug=shelter' // goes to donate page with shelter pre-selected
+    link: '/our-programs/donate?slug=shelter'
   },
   {
-    title: 'EDUCATION FOR ORPHANS IN ASIA',
-    text: 'EMPOWER ORPHANED CHILDREN WITH QUALITY EDUCATION AND SKILLS FOR A BRIGHTER FUTURE.',
+    title: 'EDUCATION THAT SHAPES THEIR FUTURE',
+    text: 'We equip NTHF children with the education, tools, and support they need to succeed in school and in life — building confidence, knowledge, and lifelong opportunities.',
     button: 'Learn More',
     image: '/images/shared/hero-edu.jpg',
-    link: '/our-programs/education' // program detail page for education
+    link: '/our-programs/education'
   },
   {
-    title: 'HEALTHCARE FOR VULNERABLE CHILDREN',
-    text: 'ENSURE ORPHANS AND UNDERPRIVILEGED CHILDREN RECEIVE ESSENTIAL MEDICAL CARE AND NUTRITION.',
+    title: 'CARING FOR THEIR HEALTH AND WELL-BEING',
+    text: 'From routine care to critical medical support, we ensure every NTHF child receives the attention and treatment they need to grow up healthy and strong.',
     button: 'Learn More',
     image: '/images/shared/hero-healthcare.jpg',
-    link: '/our-programs/health' // program detail page for health
+    link: '/our-programs/health'
   },
   {
-    title: 'SPONSOR AN ORPHAN IN SOUTH KOREA',
-    text: "CHANGE A CHILD'S LIFE WITH MONTHLY SUPPORT FOR FOOD, EDUCATION, AND CARE.",
-    button: 'Sponsor Now',
+    title: 'BECOME PART OF A CHILD’S STORY',
+    text: 'Your support provides daily care, education, and stability for children at NTHF. Together, we can give them the love, security, and opportunities they deserve.',
+    button: 'Support a Child',
     image: '/images/shared/hero-orphan-g2.jpg',
-    link: '/donate#donation-section' // main donate page, scroll to donation section
+    link: '/donate#donation-section'
   }
 ]
 
