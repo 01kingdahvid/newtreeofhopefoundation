@@ -8,8 +8,15 @@ import { Toaster } from 'react-hot-toast'
 import EmailJSInitializer from '@/lib/utils/EmailProvider'
 
 export const metadata = {
-  title: 'New Tree of Hope Foundation - NTHF',
-  description: 'Relief and Development NGO'
+  title: 'New Tree of Hope Foundation (NTHF) | A Home for Children in Need',
+  description:
+    'New Tree of Hope Foundation (NTHF) is a child-centered nonprofit providing a safe home, education, and healthcare for children in our care.',
+  openGraph: {
+    title: 'New Tree of Hope Foundation (NTHF)',
+    description:
+      'Providing a safe home, education, and care for children at NTHF.',
+    images: ['/images/logos/nthf-logo.png']
+  }
 }
 
 export default function RootLayout ({ children }) {
