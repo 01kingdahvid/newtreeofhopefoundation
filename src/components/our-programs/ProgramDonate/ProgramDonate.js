@@ -127,6 +127,14 @@ export default function ProgramDonate ({ program: initialProgram = null }) {
   const copyTimeoutRef = useRef(null)
 
   const sectionRef = useRef(null)
+  // Read from sessionStorage on mount — clears it immediately so it can't be re-used
+useEffect(() => {
+  const savedNote = sessionStorage.getItem('donationNote');
+  if (savedNote) {
+    setNote(savedNote);
+    sessionStorage.removeItem('donationNote'); // consumed once, gone
+  }
+}, []);
 
    // ---------- Function to handle final step and send email ----------
   const goToThankYou = async () => {

@@ -5,13 +5,11 @@ import styles from './AboutUs.module.css';
 import PageHero from '../shared/PageHero/PageHero';
 
 const AboutUs = () => {
-  // Refs for each animated section
   const rowRef = useRef(null);
   const rowReverseRef = useRef(null);
   const card1Ref = useRef(null);
   const card2Ref = useRef(null);
 
-  // State to track visibility
   const [rowInView, setRowInView] = useState(false);
   const [rowReverseInView, setRowReverseInView] = useState(false);
   const [card1InView, setCard1InView] = useState(false);
@@ -38,12 +36,11 @@ const AboutUs = () => {
               default:
                 break;
             }
-            // Stop observing after animation triggers
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.2 } // Trigger when 20% visible
+      { threshold: 0.2 }
     );
 
     if (rowRef.current) observer.observe(rowRef.current);
@@ -58,11 +55,12 @@ const AboutUs = () => {
     <div>
       <PageHero
         title="WHO WE ARE"
-        subtitle="New Tree of Hope Foundation - Hope For Humanity"
+        subtitle="New Tree of Hope Foundation — A Family Built on Love"
         image="/images/shared/kids-2.avif"
       />
 
       <section className={styles.container}>
+
         {/* WHO WE ARE */}
         <div
           ref={rowRef}
@@ -77,34 +75,35 @@ const AboutUs = () => {
           <div className={styles.text}>
             <h2>NEW TREE OF HOPE FOUNDATION</h2>
             <h5>
-              A small team with a big heart, working tirelessly to bring hope
-              to those who need it most.
+              More than an orphanage - a home where every child is cherished,
+              protected, and given a future worth dreaming about.
             </h5>
             <p>
-              New Tree of Hope Foundation (NTHF) is a grassroots nonprofit
-              headquartered in Seoul, South Korea. We started with a simple
-              belief: that even a handful of dedicated people can make a real
-              difference. Today, we are still that handful—a small but
-              passionate team committed to serving vulnerable communities across
-              Asia.
+              New Tree of Hope Foundation (NTHF) is a nonprofit orphanage and
+              child welfare home based in Seoul, South Korea. We are a small,
+              dedicated team bound together not by resources, but by a deep and
+              unwavering commitment to the children under our roof. Every child
+              in our care has faced loss - some have lost parents, some have
+              lost stability, and some have lost the simple assurance that
+              someone will be there for them. We exist to be that someone.
             </p>
             <p>
-              The truth is, we are not a large organization with endless
-              resources. We are a growing family of givers, doers, and dreamers
-              who often stretch every dollar to reach one more child, one more
-              family. Our vision is vast—a world where no one goes hungry,
-              homeless, or hopeless—but our current reach is limited by funds
-              and capacity. That’s why every partnership, every donation, and
-              every prayer matters. With your help, we can grow from a small
-              tree into a forest of hope.
+              At NTHF, our children are not cases or statistics. They are
+              individuals - with personalities, gifts, dreams, and a right to
+              a life full of warmth and dignity. From the youngest toddler
+              finding their footing, to the teenager preparing to step into
+              the world, we walk alongside each one with patience, love, and
+              intentionality. Our home is their home, and their wellbeing is
+              our greatest calling.
             </p>
             <p>
-              Guided by compassion and a belief that every life matters, NTHF
-              serves people whose basic needs for food, shelter, health, and
-              education are unmet due to disaster, conflict, or poverty. From
-              emergency relief to long-term development, we work to restore
-              dignity and resilience for vulnerable communities in South Korea
-              and across Asia.
+              We are honest about our limitations. We are a growing
+              organization, and there are more children who need us than our
+              current resources allow. But we press forward every day - because
+              for every child already in our care, giving up is simply not an
+              option. With the support of generous donors and partners, we are
+              slowly but steadily building the kind of home every child
+              deserves.
             </p>
           </div>
         </div>
@@ -117,10 +116,11 @@ const AboutUs = () => {
           >
             <h3>Our Vision</h3>
             <p>
-              A world where every person affected by disaster, conflict, or
-              poverty has the essentials to survive and the opportunity to
-              rebuild a dignified life. We dream of expanding our reach to
-              every corner of Asia and beyond—but we know we can’t do it alone.
+              A world where no child under NTHF's care ever feels forgotten,
+              unloved, or without a future. We envision a fully resourced home
+              where every child has a safe bed, a full plate, quality education,
+              proper healthcare, and the emotional security that comes from
+              belonging to a family - even when life has taken theirs away.
             </p>
           </div>
 
@@ -130,13 +130,13 @@ const AboutUs = () => {
           >
             <h3>Our Mission</h3>
             <p>
-              New Tree of Hope Foundation (NTHF) provides emergency aid and
-              fosters sustainable development for communities in crisis. With
-              the resources we have, we deliver food, shelter, healthcare, and
-              education, while empowering children, families, and vulnerable
-              groups to overcome hardship—regardless of race, nationality, or
-              religion. As we grow, we aim to deepen our impact and broaden our
-              reach, one community at a time.
+              New Tree of Hope Foundation provides a safe, nurturing, and
+              structured home for orphaned and vulnerable children. Through
+              holistic care - food, shelter, healthcare, education, and
+              emotional support - we raise children who are resilient, loved,
+              and equipped for life. Every decision we make, every resource we
+              steward, and every partnership we pursue is done with one goal:
+              the flourishing of the children in our care.
             </p>
           </div>
         </div>
@@ -148,42 +148,45 @@ const AboutUs = () => {
         >
           <div className={styles.text}>
             <h2>Our Story</h2>
-            <h5>From a seed of compassion to a growing tree of hope.</h5>
+            <h5>
+              It started with a child who had nowhere to go - and a few hearts
+              that couldn't turn away.
+            </h5>
             <p>
-              New Tree of Hope Foundation began not in a boardroom, but in the
-              hearts of a few individuals who saw suffering and refused to look
-              away. What started as small acts of kindness—delivering meals to
-              elderly neighbors in Seoul, collecting school supplies for
-              orphanages—has slowly grown into an organized effort to serve
-              communities across Asia.
+              New Tree of Hope Foundation was not born out of a strategic plan
+              or a polished proposal. It was born out of a moment of conscience
+              - the quiet, unmistakable weight of seeing a child in need and
+              choosing to do something about it. What began as small, personal
+              acts of care in Seoul - opening a door, providing a meal, offering
+              a safe place to sleep - gradually took shape into the organization
+              we are today.
             </p>
             <p>
-              But the truth is, we are still small. There are countless
-              villages we haven’t reached, orphanages we haven’t renovated,
-              children we haven’t sponsored. Our potential to do good far
-              outstrips our current resources. We are working day and night to
-              change that—building partnerships, raising awareness, and
-              stretching every donation to its maximum impact. We believe that
-              with more support, we can become the organization we dream of
-              being: one that can respond to every crisis, uplift every
-              community, and give every child a future.
+              We are still small, and we carry that truth with both humility
+              and urgency. There are children in our community who haven't yet
+              found their way to us. There are rooms we haven't been able to
+              open, needs we haven't been able to fully meet. But every day, we
+              stretch what we have as far as it will go - because the children
+              already with us are counting on us, and the ones who haven't
+              arrived yet deserve our continued readiness.
             </p>
             <p>
-              Our vision is rooted in dignity and inclusivity: we serve without
-              boundaries of nationality, race, religion, or social status.
-              Through partnerships, community engagement, and the generosity of
-              supporters around the world, NTHF continues to expand its reach
-              and bring hope to people who need it most—one step, one meal, one
-              life at a time.
+              Our story is still being written - one child at a time. With
+              every donor who believes in our mission, every volunteer who
+              gives their time, and every partner who stands with us, NTHF
+              grows stronger and more capable of being the home these children
+              need. We are a family in progress - and we are grateful you
+              are part of it.
             </p>
           </div>
 
           <img
             src="/images/shared/abt-donation.jpg"
-            alt="Donation drive by New Tree of Hope Foundation"
+            alt="Support and care at New Tree of Hope Foundation"
             className={styles.image}
           />
         </div>
+
       </section>
     </div>
   );

@@ -6,10 +6,13 @@ import useReveal from "@/hooks/useReveal";
 
 export default function ImpactCard({ title, content, cta, programSlug }) {
   const { ref, visible } = useReveal();
-
-  const href = programSlug
-    ? `/our-programs/donate?slug=${programSlug}`
-    : "/our-programs/donate";
+// Add this helper at the top of ImpactCard.jsx and update the Link href:
+const isContactUs = cta?.toLowerCase().trim() === 'contact us';
+const href = isContactUs
+  ? '/contact-us#contact-form'
+  : programSlug
+  ? `/our-programs/donate?slug=${programSlug}`
+  : '/our-programs/donate';
 
   return (
     <section

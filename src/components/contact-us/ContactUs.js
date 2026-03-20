@@ -115,7 +115,7 @@ const ContactUs = () => {
         </section>
 
         {/* Contact Form Section */}
-        <section className={styles.formSection}>
+        <section className={styles.formSection} id="contact-form">
           <div className={styles.container}>
             <div className={styles.formText}>
               <h3 className={styles.subheading}>New Tree Of Hope Foundation</h3>

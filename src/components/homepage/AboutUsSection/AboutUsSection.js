@@ -43,16 +43,17 @@ const AboutUsSection = () => {
         <div className={`${styles.content} ${visible ? styles.showRight : ''}`}>
           <span className={styles.smallHeading}>ABOUT NTHF</span>
 
-          <h1 className={styles.title}>Who We Are and Why We Serve</h1>
+          <h1 className={styles.title}>A Home for Every Child Who Needs One</h1>
 
-          <p className={styles.description}>
-            New Tree Of Hope Foundation (NTHF) is a nonprofit humanitarian and
-            development organization headquartered in Seoul, South Korea. Guided
-            by compassion and inclusivity, NTHF serves people whose basic needs
-            for food, shelter, health, and education are unmet due to disaster,
-            conflict, or poverty. From emergency relief to long-term
-            development, we work to restore dignity and resilience for
-            vulnerable communities worldwide and in South Korea.
+            <p className={styles.description}>
+            New Tree of Hope Foundation (NTHF) is a nonprofit orphanage and
+            child welfare organization headquartered in Seoul, South Korea. We
+            exist for one reason - the children in our care. Each child who
+            walks through our doors carries a story of loss, hardship, or
+            uncertainty, and it is our privilege to rewrite that story with
+            love, safety, and opportunity. At NTHF, every child is known by
+            name, valued beyond measure, and surrounded by a family that will
+            never give up on them.
           </p>
 
           <button className={styles.cta} onClick={handleAboutUsClick}>
