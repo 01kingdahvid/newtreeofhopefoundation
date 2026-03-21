@@ -8,7 +8,7 @@ const GetInvolvedPage = () => {
       <main>
         <PageHero
           title='PARTNERSHIPS AND COMMUNITY SUPPORT'
-          image='/images/our-program/shelter.jpg'
+          image='/images/shared/abt-kids2.jpg'
           subtitle='PROVIDING SUPPORT AND ASSISTANCE'
         />
 
