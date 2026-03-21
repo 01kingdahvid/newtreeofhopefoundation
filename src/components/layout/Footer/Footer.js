@@ -123,7 +123,7 @@ const Footer = () => {
               <Link href='/our-programs'>OUR PROGRAMS</Link>
             </li>
             <li>
-              <Link href='/where-we-work'>WHERE WE WORK</Link>
+              <Link href='/get-involved'>GET INVOLVED</Link>
             </li>
             <li>
               <Link href='/contact-us'>CONTACT US</Link>

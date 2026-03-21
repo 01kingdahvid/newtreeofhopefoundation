@@ -15,7 +15,7 @@ export const metadata = {
     title: 'New Tree of Hope Foundation (NTHF)',
     description:
       'Providing a safe home, education, and care for children at NTHF.',
-    images: ['/images/logos/nthf-logo.png']
+    images: ['/images/logos/favicon,ico.png']
   }
 }
 

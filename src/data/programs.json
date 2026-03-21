@@ -30,19 +30,19 @@
             {
               "title": "Dormitory Expansion",
               "description": "We are expanding our dormitory facilities to provide safe, comfortable, and dignified housing for more children under NTHF care. The expansion includes new sleeping quarters, study areas, and common spaces.",
-              "image": "/images/our-program/shelter7.jpg",
+              "image": "/images/our-program/shelter-dom.jpg",
               "cta": "Donate Now"
             },
             {
               "title": "Standard Football Field & Training Ground",
               "description": "We are developing a standard football field with quality grass turf and a dedicated training ground, giving our children access to professional-grade facilities for sports, fitness, and teamwork.",
-              "image": "/images/our-program/shelter4.jpg",
+              "image": "/images/our-program/project.jpeg",
               "cta": "Donate Now"
             },
             {
               "title": "Playground Upgrade — New Carousel Installation",
               "description": "A new carousel and upgraded playground equipment are being installed to provide younger children with safe, joyful recreational spaces within the NTHF compound.",
-              "image": "/images/our-program/shelter5.jpg",
+              "image": "/images/our-program/shelter-carousel.jpg",
               "cta": "Donate Now"
             }
           ]
@@ -74,10 +74,9 @@
         "type": "gallery",
         "props": {
           "images": [
-            "/images/our-program/shelter2.jpg",
-            "/images/our-program/shelter4.jpg",
-            "/images/our-program/shelter5.jpg",
-            "/images/our-program/shelter.jpg"
+            "/images/our-program/shelter-new.jpg",
+            "/images/our-program/shelter-new1.jpg",
+            "/images/our-program/shelter-foot.jpg"
           ]
         }
       },
@@ -122,7 +121,7 @@
             {
               "title": "Surgical Support for Children in Need",
               "description": "NTHF identifies and supports children requiring major or minor surgeries, covering medical costs and coordinating care with trusted healthcare providers to ensure successful treatment and recovery.",
-              "image": "/images/our-program/health5.jpg",
+              "image": "/images/our-program/child-surgery.jpeg",
               "cta": "Donate Now"
             },
             {
@@ -205,7 +204,7 @@
             {
               "title": "Library Expansion — More Reading Desks",
               "description": "We are adding more reading desks to our library to accommodate more children during study hours. A well-equipped library encourages a love of reading and supports academic achievement.",
-              "image": "/images/our-program/school6.jpg",
+              "image": "/images/our-program/edu-desk.jpg",
               "cta": "Donate Now"
             },
             {
@@ -217,7 +216,7 @@
             {
               "title": "School Supplies & Learning Materials",
               "description": "NTHF provides notebooks, stationery, uniforms, and other essential school materials to ensure every child is prepared and confident in the classroom.",
-              "image": "/images/our-program/school-class.jpg",
+              "image": "/images/our-program/edu-supply.jpg",
               "cta": "Donate Now"
             }
           ]

@@ -88,17 +88,16 @@ const ContactUs = () => {
                 <li>
                   <MapPin size={20} className={styles.icon} />
                   <span>
-                    Visit Us: Iqbal Town Near (Chashma Town Riksha Stop)
-                    Islamabad
+                    Visit Us: Seoul, South Korea
                   </span>
                 </li>
                 <li>
                   <Mail size={20} className={styles.icon} />
-                  <span>Mail Us: nabeelghauri3@gmail.com</span>
+                  <span>Mail Us: contact@treeofhopefoundation.org</span>
                 </li>
                 <li>
                   <Phone size={20} className={styles.icon} />
-                  <span>Phone Us: +92 (313) 7740449</span>
+                  <span>Phone Us: +82 000 000 000</span>
                 </li>
               </ul>
             </div>

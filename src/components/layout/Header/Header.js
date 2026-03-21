@@ -23,7 +23,7 @@ export default function Header () {
     { href: '/', label: 'Home' },
     { href: '/about-us', label: 'About Us' },
     { href: '/our-programs', label: 'Our Programs' },
-    { href: '/where-we-work', label: 'Where We Work' },
+    { href: '/get-involved', label: 'Get Involved' },
     { href: '/contact-us', label: 'Contact Us' }
   ]
 
