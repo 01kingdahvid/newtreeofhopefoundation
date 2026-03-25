@@ -181,7 +181,7 @@ const AboutUs = () => {
           </div>
 
           <img
-            src="/images/shared/abt-donation.jpg"
+            src="/images/shared/abt-kids2.jpg"
             alt="Support and care at New Tree of Hope Foundation"
             className={styles.image}
           />

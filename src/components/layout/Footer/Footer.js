@@ -15,10 +15,10 @@ const Footer = () => {
   const BTC = process.env.NEXT_PUBLIC_BTC_ADDRESS
   const ETH = process.env.NEXT_PUBLIC_ETH_ADDRESS
   const USDT = process.env.NEXT_PUBLIC_USDT_ADDRESS
-  const shorten = (addr) => {
-  if (!addr) return "Not available"
-  return `${addr.slice(0, 6)}...${addr.slice(-4)}`
-}
+  const shorten = addr => {
+    if (!addr) return 'Not available'
+    return `${addr.slice(0, 6)}...${addr.slice(-4)}`
+  }
 
   const handleDonateClick = () => router.push('/donate')
 
@@ -42,18 +42,18 @@ const Footer = () => {
   }
 
   const copyToClipboard = async (address, label) => {
-  if (!address) {
-    toast.error(`${label} address not available`)
-    return
-  }
+    if (!address) {
+      toast.error(`${label} address not available`)
+      return
+    }
 
-  try {
-    await navigator.clipboard.writeText(address)
-    toast.success(`${label} address copied!`)
-  } catch (err) {
-    toast.error('Failed to copy address')
+    try {
+      await navigator.clipboard.writeText(address)
+      toast.success(`${label} address copied!`)
+    } catch (err) {
+      toast.error('Failed to copy address')
+    }
   }
-}
 
   return (
     <footer className={styles.footer}>
@@ -75,8 +75,10 @@ const Footer = () => {
           </Link>
 
           <ul className={styles.contact}>
-            <li>📍 Seoul, South Korea</li>
-            <li>📞 +82 000 000 000</li>
+            <li>
+              📍 N 19 Jingwan-gil, Eunpyeong District, Seoul 03308, South Korea
+            </li>
+            <li>📞 +82-2-9248-7302</li>
             <li>✉️ contact@treeofhopefoundation.org</li>
           </ul>
         </div>

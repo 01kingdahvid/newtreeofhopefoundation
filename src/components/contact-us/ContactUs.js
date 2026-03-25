@@ -88,7 +88,8 @@ const ContactUs = () => {
                 <li>
                   <MapPin size={20} className={styles.icon} />
                   <span>
-                    Visit Us: Seoul, South Korea
+                    Visit Us: N 19 Jingwan-gil, Eunpyeong District, Seoul 03308,
+                    South Korea
                   </span>
                 </li>
                 <li>
@@ -97,24 +98,25 @@ const ContactUs = () => {
                 </li>
                 <li>
                   <Phone size={20} className={styles.icon} />
-                  <span>Phone Us: +82 000 000 000</span>
+                  <span>Phone Us: +82-2-9248-7302</span>
                 </li>
               </ul>
             </div>
             <div className={styles.mapColumn}>
               <iframe
-                title='Seoul Map'
-                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.919123456789!2d126.9780!3d37.5665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2d3c8d591ed%3A0x7c5d1b7f1f3f1f3f!2sSeoul%2C%20South%20Korea!5e0!3m2!1sen!2s!4v123456789'
+                title='NTHF Seoul Location'
+                src='https://www.google.com/maps?q=N%2019%20Jingwan-gil%2C%20Eunpyeong-gu%2C%20Seoul%2003308&output=embed'
                 allowFullScreen
                 loading='lazy'
+                referrerPolicy='no-referrer-when-downgrade'
                 className={styles.mapIframe}
-              ></iframe>
+              />
             </div>
           </div>
         </section>
 
         {/* Contact Form Section */}
-        <section className={styles.formSection} id="contact-form">
+        <section className={styles.formSection} id='contact-form'>
           <div className={styles.container}>
             <div className={styles.formText}>
               <h3 className={styles.subheading}>New Tree Of Hope Foundation</h3>
