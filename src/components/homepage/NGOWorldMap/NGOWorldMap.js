@@ -59,8 +59,8 @@ export default function NgoWorldMap () {
     x: 0,
     y: 0
   })
-  const [zoom, setZoom] = useState(1) // Zoom in on Asia
-  const [center, setCenter] = useState([30, 20]) // Center on Asia
+  const [zoom, setZoom] = useState(3) // Zoom in on Asia
+  const [center, setCenter] = useState([78.5, 36.5]) // Center on Asia
 
   const handleZoomIn = () => setZoom(z => Math.min(z * 1.5, MAX_ZOOM))
   const handleZoomOut = () => setZoom(z => Math.max(z / 1.5, MIN_ZOOM))
