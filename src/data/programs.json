@@ -6,11 +6,11 @@
     "subtitle": "Expanding Safe Spaces: Building Better Homes for NTHF Children",
     "tagline": "A Safe Home for Every Child",
     "description": "Every child deserves a safe, comfortable place to grow, learn, and play. NTHF is actively expanding its dormitory facilities and upgrading recreational infrastructure to give our children the environment they need to thrive. Your support helps us build the spaces that shape futures.",
-    "image": "/images/our-program/other-need.jpg",
+    "image": "/images/our-program/shelter.jpeg",
     "hero": {
       "title": "Shelter & Infrastructure",
       "heading": "Building Safe Spaces, Shaping Futures",
-      "image": "/images/programs/shelter/orphanage-korea.jpg",
+      "image": "/images/programs/shelter/shelter.jpeg",
       "overlayText": "Every brick laid, every room expanded — a promise to our children that they are loved and valued."
     },
     "sections": [
@@ -97,7 +97,7 @@
     "subtitle": "Healing with Compassion: Supporting NTHF Children Through Health Challenges",
     "tagline": "Every Child Deserves to Be Healthy",
     "description": "Some of our children face serious health challenges that require medical intervention — from minor procedures to major surgeries. NTHF is committed to ensuring no child is left behind due to lack of medical care. We also seek compassionate volunteer nurses to support our dedicated healthcare team.",
-    "image": "/images/our-program/health.jpg",
+    "image": "/images/our-program/health.jpeg",
     "hero": {
       "title": "Healthcare for NTHF Children",
       "heading": "No Child Left Behind in Health",
@@ -180,7 +180,7 @@
     "subtitle": "Opening Doors to Knowledge: Equipping NTHF Children for a Brighter Tomorrow",
     "tagline": "Education Builds Futures",
     "description": "Education is the most powerful tool we can give a child. NTHF is expanding its library facilities and supporting children through school, ensuring they have the resources and encouragement they need to succeed academically and beyond.",
-    "image": "/images/our-program/school2.jpg",
+    "image": "/images/our-program/education.jpeg",
     "hero": {
       "title": "Education at NTHF",
       "heading": "Every Child Deserves to Learn and Grow",
