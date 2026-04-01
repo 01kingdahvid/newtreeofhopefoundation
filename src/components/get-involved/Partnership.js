@@ -18,17 +18,7 @@ export default function Partnership () {
       <div className={styles.container}>
         
         {/* IMAGE */}
-        <div
-          className={`${styles.imageWrapper} ${
-            visible ? styles.fadeInLeft : ''
-          }`}
-        >
-          <img
-            src='/images/shared/partner.jpg'
-            alt='NTHF Partnership'
-            className={styles.image}
-          />
-        </div>
+        
 
         {/* CONTENT */}
         <div

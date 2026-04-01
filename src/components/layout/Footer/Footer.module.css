@@ -71,6 +71,18 @@
   word-wrap: break-word;
 }
 
+.contactLink {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  word-break: break-word;
+}
+
+.contactLink:hover {
+  color: #6fd0ea;
+  text-decoration: underline;
+}
+
 .socials {
   display: flex;
   gap: 10px;

@@ -66,11 +66,7 @@ const AboutUs = () => {
           ref={rowRef}
           className={`${styles.row} ${rowInView ? styles.animate : ''}`}
         >
-          <img
-            src="/images/shared/abt-kids.jpg"
-            alt="Children at New Tree of Hope Foundation"
-            className={styles.image}
-          />
+         
 
           <div className={styles.text}>
             <h2>NEW TREE OF HOPE FOUNDATION</h2>
@@ -180,11 +176,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <img
-            src="/images/shared/abt-kids2.jpg"
-            alt="Support and care at New Tree of Hope Foundation"
-            className={styles.image}
-          />
+       
         </div>
 
       </section>

@@ -9,18 +9,7 @@
 
 /* rows */
 
-.row {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
 
-.rowReverse {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 50px;
-}
 
 .image {
   width: 50%;
@@ -29,7 +18,8 @@
 }
 
 .text {
-  width: 50%;
+  width: 100%;
+  /* text-align: center; */
 }
 
 .text h2 {

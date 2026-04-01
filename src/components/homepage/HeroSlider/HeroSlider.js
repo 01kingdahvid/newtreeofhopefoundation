@@ -9,28 +9,28 @@ const slides = [
     title: 'A SAFE HOME FOR NTHF CHILDREN',
     text: 'At New Tree of Hope Foundation, every child deserves a safe place to sleep, grow, and feel loved. Your support helps us provide a stable home and a brighter future for every child in our care.',
     button: 'Donate Now',
-    image: '/images/shared/hero-orphan-g1.jpg',
+    // image: '/images/shared/hero-orphan-g1.jpg',
     link: '/our-programs/donate?slug=shelter'
   },
   {
     title: 'EDUCATION THAT SHAPES THEIR FUTURE',
     text: 'We equip NTHF children with the education, tools, and support they need to succeed in school and in life — building confidence, knowledge, and lifelong opportunities.',
     button: 'Learn More',
-    image: '/images/shared/hero-edu.jpg',
+    // image: '/images/shared/hero-edu.jpg',
     link: '/our-programs/education'
   },
   {
     title: 'CARING FOR THEIR HEALTH AND WELL-BEING',
     text: 'From routine care to critical medical support, we ensure every NTHF child receives the attention and treatment they need to grow up healthy and strong.',
     button: 'Learn More',
-    image: '/images/shared/hero-healthcare.jpg',
+    // image: '/images/shared/hero-healthcare.jpg',
     link: '/our-programs/health'
   },
   {
     title: 'BECOME PART OF A CHILD’S STORY',
     text: 'Your support provides daily care, education, and stability for children at NTHF. Together, we can give them the love, security, and opportunities they deserve.',
     button: 'Support a Child',
-    image: '/images/shared/hero-orphan-g2.jpg',
+    // image: '/images/shared/hero-orphan-g2.jpg',
     link: '/donate#donation-section'
   }
 ]
@@ -78,9 +78,7 @@ export default function HeroSlider () {
         </div>
 
         {/* IMAGE */}
-        <div className={`${styles.imageWrap} ${animate ? styles.zoomIn : ''}`}>
-          <img src={slide.image} alt={slide.title} />
-        </div>
+      
       </div>
 
       {/* ARROWS */}

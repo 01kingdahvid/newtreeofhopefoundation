@@ -78,8 +78,22 @@ const Footer = () => {
             <li>
               📍 N 19 Jingwan-gil, Eunpyeong District, Seoul 03308, South Korea
             </li>
-            <li>📞 +82-2-9248-7302</li>
-            <li>✉️ contact@treeofhopefoundation.org</li>
+            <li>
+              📞{' '}
+              <a href='tel:+82292487302' className={styles.contactLink}>
+                +82-2-9248-7302
+              </a>
+            </li>
+
+            <li>
+              ✉️{' '}
+              <a
+                href='mailto:contact@newtreeofhopefoundation.org?subject=Inquiry from NTHF Website'
+                className={styles.contactLink}
+              >
+                contact@newtreeofhopefoundation.org
+              </a>
+            </li>
           </ul>
         </div>
 

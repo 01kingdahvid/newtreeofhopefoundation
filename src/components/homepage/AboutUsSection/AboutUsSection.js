@@ -30,15 +30,7 @@ const AboutUsSection = () => {
   return (
     <section className={styles.aboutSection} ref={ref}>
       <div className={styles.container}>
-        <div
-          className={`${styles.imageWrap} ${visible ? styles.showLeft : ''}`}
-        >
-          <img
-            src='/images/shared/abt-kids.jpg'
-            alt='New Tree of Hope Foundation helping children'
-            className={styles.image}
-          />
-        </div>
+       
 
         <div className={`${styles.content} ${visible ? styles.showRight : ''}`}>
           <span className={styles.smallHeading}>ABOUT NTHF</span>

@@ -12,23 +12,15 @@
   gap: 60px;
 }
 
-/* IMAGE */
 
-.imageWrap {
-  flex: 1;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  object-fit: cover;
-}
 
 /* CONTENT */
 
 .content {
-  flex: 1;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -55,14 +47,16 @@
   font-family: Figtree, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
   color: rgb(18, 18, 18);
-  max-width: 540px;
+  text-align: center;
 }
 
 .cta {
   margin-top: 10px;
   width: fit-content;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   padding: 14px 26px;
   border: none;
   border-radius: 999px;
@@ -70,7 +64,6 @@
   font-family: Figtree, sans-serif;
   font-size: 14.4px;
   font-weight: 500;
-  line-height: 15.84px;
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -147,7 +140,6 @@
 
 
 /* Initial state */
-.imageWrap,
 .content {
   opacity: 0;
   transition: all 0.8s ease;

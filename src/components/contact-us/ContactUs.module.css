@@ -69,11 +69,24 @@
   font-size: 1rem;
   font-weight: 400;
   color: white;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .icon {
   flex-shrink: 0;
   margin-top: 0.2rem;
+}
+
+.contactLink {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.contactLink:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 .mapColumn {
@@ -249,7 +262,7 @@
   padding: 1rem 2rem;
   font-size: 1.1rem;
   font-weight: 600;
-    font-family: Figtree, sans-serif;
+  font-family: Figtree, sans-serif;
   border-radius: 50px;
   cursor: pointer;
   width: 100%;
@@ -350,9 +363,10 @@
   }
   .submitBtn {
     max-width: 100%;
+    font-size: 0.8rem;
+    font-weight: 600;
   }
 }
-
 
 /* ===== LIGHT ANIMATIONS ===== */
 @keyframes fadeInUp {
@@ -380,7 +394,9 @@
 }
 
 .mapColumn {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .mapColumn:hover {
@@ -390,9 +406,13 @@
 
 .formGroup input,
 .formGroup textarea {
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .submitBtn {
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
 }

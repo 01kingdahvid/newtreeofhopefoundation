@@ -6,7 +6,7 @@ import { Analytics } from '@vercel/analytics/next'
 import LoadingWrapper from './loading-wrapper'
 import { Toaster } from 'react-hot-toast'
 import EmailJSInitializer from '@/lib/utils/EmailProvider'
-import SecurityProvider from '@/components/shared/SecurityProvider/SecurityProvider'
+
 
 export const metadata = {
   title: 'New Tree of Hope Foundation (NTHF) | A Home for Children in Need',
@@ -24,7 +24,7 @@ export default function RootLayout ({ children }) {
   return (
     <html lang='en'>
       <body>
-        <SecurityProvider /> {/* ✅ SAFE CLIENT COMPONENT */}
+        
         <EmailJSInitializer />
         <LoadingWrapper>
           <Header />

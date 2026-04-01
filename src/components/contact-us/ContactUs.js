@@ -94,11 +94,19 @@ const ContactUs = () => {
                 </li>
                 <li>
                   <Mail size={20} className={styles.icon} />
-                  <span>Mail Us: contact@treeofhopefoundation.org</span>
+                  <a
+                    href='mailto:contact@newtreeofhopefoundation.org?subject=Inquiry from Website'
+                    className={styles.contactLink}
+                  >
+                    Mail Us: contact@newtreeofhopefoundation.org
+                  </a>
                 </li>
+
                 <li>
                   <Phone size={20} className={styles.icon} />
-                  <span>Phone Us: +82-2-9248-7302</span>
+                  <a href='tel:+82292487302' className={styles.contactLink}>
+                    Phone Us: +82-2-9248-7302
+                  </a>
                 </li>
               </ul>
             </div>
